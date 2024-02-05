@@ -1,0 +1,52 @@
+01/13/2024 13:28:46 - INFO - __main__ - Namespace(do_tensorize=False, tensorize_dir='tensorized', n_gpu=1, n_process=40, n_prefix_tokens=10, use_demonstrations=False, log_dir='logs', prefix_embed_file=None, dataset=None, task='glue', split='glue', data_dir='data/', k=16384, test_k=4, seed=100, train_seed=1, lr=0.01, warmup_steps=0, batch_size=16, num_training_steps=3000, weight_decay=0.0, no_masking=False, use_random_english_words=False, out_dir='checkpoints\\gpt2\\glue-glue\\prefix={10}-{direct}-lr={1e-2}-initByVocab', method='direct', gpt2='gpt2', optimization='adamw', fp16=False, local_rank=-1)
+01/13/2024 13:28:46 - INFO - __main__ - batch_size=16	max_length=256	max_length_per_example=256
+01/13/2024 13:28:46 - INFO - __main__ - [Train] glue-cola	8551
+01/13/2024 13:28:46 - INFO - __main__ - [Train] glue-mnli	16384
+01/13/2024 13:28:46 - INFO - __main__ - [Train] glue-qqp	16384
+01/13/2024 13:28:46 - INFO - __main__ - [Train] glue-mrpc	3668
+01/13/2024 13:28:46 - INFO - __main__ - [Train] glue-qnli	16384
+01/13/2024 13:28:46 - INFO - __main__ - [Train] glue-rte	2490
+01/13/2024 13:28:46 - INFO - __main__ - [Train] glue-sst2	16384
+01/13/2024 13:28:46 - INFO - __main__ - [Train] glue-wnli	635
+01/13/2024 13:28:46 - INFO - __main__ - direct on None (8 train)
+01/13/2024 13:28:48 - INFO - __main__ - tensorized\glue_direct_k=80880_seed=100_length=10-256-rank=%d.pkl
+01/13/2024 13:28:51 - INFO - __main__ - Checking the first example...
+Input:
+<glue-qqp-0><glue-qqp-1><glue-qqp-2><glue-qqp-3><glue-qqp-4><glue-qqp-5><glue-qqp-6><glue-qqp-7><glue-qqp-8><glue-qqp-9>question 1: Why do women cross legs while standing? [SEP] question 2: Why do models cross the legs when doing the catwalk?
+Output:
+ not_duplicate
+01/13/2024 13:28:51 - INFO - __main__ - checkpoints\gpt2\glue-glue\prefix={10}-{direct}-lr={1e-2}-initByVocab
+01/13/2024 13:28:51 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/13/2024 13:28:55 - INFO - __main__ - torch.Size([80880, 256])
+01/13/2024 13:28:55 - INFO - __main__ - Training 1 parameters on 80880 examples for 3000 steps using 1 GPUs
+01/13/2024 13:30:01 - INFO - __main__ - local rank -1	global step 100	train loss 4.36
+01/13/2024 13:31:06 - INFO - __main__ - local rank -1	global step 200	train loss 1.10
+01/13/2024 13:32:12 - INFO - __main__ - local rank -1	global step 300	train loss 0.83
+01/13/2024 13:33:18 - INFO - __main__ - local rank -1	global step 400	train loss 0.72
+01/13/2024 13:34:24 - INFO - __main__ - local rank -1	global step 500	train loss 0.73
+01/13/2024 13:35:30 - INFO - __main__ - local rank -1	global step 600	train loss 0.68
+01/13/2024 13:36:36 - INFO - __main__ - local rank -1	global step 700	train loss 0.64
+01/13/2024 13:37:42 - INFO - __main__ - local rank -1	global step 800	train loss 0.63
+01/13/2024 13:38:47 - INFO - __main__ - local rank -1	global step 900	train loss 0.64
+01/13/2024 13:39:53 - INFO - __main__ - local rank -1	global step 1000	train loss 0.63
+01/13/2024 13:40:59 - INFO - __main__ - local rank -1	global step 1100	train loss 0.61
+01/13/2024 13:42:05 - INFO - __main__ - local rank -1	global step 1200	train loss 0.60
+01/13/2024 13:43:11 - INFO - __main__ - local rank -1	global step 1300	train loss 0.58
+01/13/2024 13:44:17 - INFO - __main__ - local rank -1	global step 1400	train loss 0.57
+01/13/2024 13:45:22 - INFO - __main__ - local rank -1	global step 1500	train loss 0.56
+01/13/2024 13:46:28 - INFO - __main__ - local rank -1	global step 1600	train loss 0.56
+01/13/2024 13:47:34 - INFO - __main__ - local rank -1	global step 1700	train loss 0.58
+01/13/2024 13:48:40 - INFO - __main__ - local rank -1	global step 1800	train loss 0.56
+01/13/2024 13:49:46 - INFO - __main__ - local rank -1	global step 1900	train loss 0.57
+01/13/2024 13:50:51 - INFO - __main__ - local rank -1	global step 2000	train loss 0.58
+01/13/2024 13:51:57 - INFO - __main__ - local rank -1	global step 2100	train loss 0.54
+01/13/2024 13:53:03 - INFO - __main__ - local rank -1	global step 2200	train loss 0.55
+01/13/2024 13:54:09 - INFO - __main__ - local rank -1	global step 2300	train loss 0.53
+01/13/2024 13:55:15 - INFO - __main__ - local rank -1	global step 2400	train loss 0.53
+01/13/2024 13:56:21 - INFO - __main__ - local rank -1	global step 2500	train loss 0.54
+01/13/2024 13:57:26 - INFO - __main__ - local rank -1	global step 2600	train loss 0.52
+01/13/2024 13:58:32 - INFO - __main__ - local rank -1	global step 2700	train loss 0.53
+01/13/2024 13:59:38 - INFO - __main__ - local rank -1	global step 2800	train loss 0.54
+01/13/2024 14:00:44 - INFO - __main__ - local rank -1	global step 2900	train loss 0.52
+01/13/2024 14:01:50 - INFO - __main__ - local rank -1	global step 3000	train loss 0.54
+01/13/2024 14:01:50 - INFO - __main__ - Finish training

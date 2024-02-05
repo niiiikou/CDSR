@@ -1,0 +1,750 @@
+02/04/2024 00:17:23 - INFO - __main__ - Namespace(use_demonstrations=True, use_soft_prefix=False, use_soft_postfix=False, n_prefix_tokens=10, max_length=1024, prior=['easiest'], difficulty='concept_calibrated', reorder=True, log_dir='logs', out_dir='out\\gpt2', load_dir=None, concept_dir='concept_likelihood\\gpt2\\glue-glue-100\\glue-sst2-channel-prefix=10-lr=1e-3-1000', prefix_embed_file='checkpoints\\gpt2\\glue-glue\\prefix={10}-{channel}-lr={1e-3}-initByVocab\\soft_embeddings-1000.pt', task=None, dataset='glue-sst2', data_dir='data/', k=4, seed='100,13,21,42,87', test_batch_size=8, global_step=None, use_random_english_words=False, use_random_label=False, use_instruction=False, unseen_domain_only=False, split='test', method='channel', gpt='gpt2', api=None, test_size=1000, train_size=100, embedding_dir='embeddings\\', embedding_model='all-mpnet-base-v2', similarity_temperature=0.1, concept_temperature=50.0)
+02/04/2024 00:17:25 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:17:27 - INFO - __main__ - batch_size=8	max_length=1024	max_length_per_example=256
+02/04/2024 00:17:29 - INFO - __main__ - [Train] glue-sst2	67349
+02/04/2024 00:17:29 - INFO - __main__ - [Dev] glue-sst2	872
+02/04/2024 00:17:29 - INFO - __main__ - channel on None (1 train, 1 dev)
+02/04/2024 00:17:29 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:17:29 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:17:34 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: the stars may be college kids, but the subject matter is as adult as you can get :
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+02/04/2024 00:17:34 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:17:49 - INFO - __main__ - time use for computing 100 examples: 20.223098278045654
+02/04/2024 00:17:49 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:17:49 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:17:54 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: the stars may be college kids, but the subject matter is as adult as you can get :
+Output:
+<glue-mnli-0><glue-mnli-1><glue-mnli-2><glue-mnli-3><glue-mnli-4><glue-mnli-5><glue-mnli-6><glue-mnli-7><glue-mnli-8><glue-mnli-9>
+02/04/2024 00:17:54 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:18:09 - INFO - __main__ - time use for computing 100 examples: 19.897846221923828
+02/04/2024 00:18:09 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:18:09 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:18:13 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: the stars may be college kids, but the subject matter is as adult as you can get :
+Output:
+<glue-qqp-0><glue-qqp-1><glue-qqp-2><glue-qqp-3><glue-qqp-4><glue-qqp-5><glue-qqp-6><glue-qqp-7><glue-qqp-8><glue-qqp-9>
+02/04/2024 00:18:13 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:18:28 - INFO - __main__ - time use for computing 100 examples: 19.311679124832153
+02/04/2024 00:18:28 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:18:28 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:18:33 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: the stars may be college kids, but the subject matter is as adult as you can get :
+Output:
+<glue-mrpc-0><glue-mrpc-1><glue-mrpc-2><glue-mrpc-3><glue-mrpc-4><glue-mrpc-5><glue-mrpc-6><glue-mrpc-7><glue-mrpc-8><glue-mrpc-9>
+02/04/2024 00:18:33 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:18:48 - INFO - __main__ - time use for computing 100 examples: 19.43004322052002
+02/04/2024 00:18:48 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:18:48 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:18:53 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: the stars may be college kids, but the subject matter is as adult as you can get :
+Output:
+<glue-qnli-0><glue-qnli-1><glue-qnli-2><glue-qnli-3><glue-qnli-4><glue-qnli-5><glue-qnli-6><glue-qnli-7><glue-qnli-8><glue-qnli-9>
+02/04/2024 00:18:53 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:19:08 - INFO - __main__ - time use for computing 100 examples: 20.660473346710205
+02/04/2024 00:19:08 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:19:08 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:19:12 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: the stars may be college kids, but the subject matter is as adult as you can get :
+Output:
+<glue-rte-0><glue-rte-1><glue-rte-2><glue-rte-3><glue-rte-4><glue-rte-5><glue-rte-6><glue-rte-7><glue-rte-8><glue-rte-9>
+02/04/2024 00:19:12 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:19:27 - INFO - __main__ - time use for computing 100 examples: 19.102483987808228
+02/04/2024 00:19:27 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:19:27 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:19:32 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: the stars may be college kids, but the subject matter is as adult as you can get :
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:19:32 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:19:47 - INFO - __main__ - time use for computing 100 examples: 19.283548593521118
+02/04/2024 00:19:47 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:19:47 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:19:51 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: the stars may be college kids, but the subject matter is as adult as you can get :
+Output:
+<glue-wnli-0><glue-wnli-1><glue-wnli-2><glue-wnli-3><glue-wnli-4><glue-wnli-5><glue-wnli-6><glue-wnli-7><glue-wnli-8><glue-wnli-9>
+02/04/2024 00:19:51 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:20:06 - INFO - __main__ - time use for computing 100 examples: 19.084033966064453
+02/04/2024 00:20:06 - INFO - __main__ - min difficulty: 1.0
+02/04/2024 00:20:06 - INFO - __main__ - max difficulty: 1.0
+02/04/2024 00:20:06 - INFO - __main__ - average difficulty: 1.0
+02/04/2024 00:20:06 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:20:10 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: the stars may be college kids, but the subject matter is as adult as you can get : negative sentence:, it isn't much fun. negative sentence: a case of too many chefs fussing over too weak a recipe positive sentence: hubert with a mixture of deadpan cool, wry humor and just the measure of tenderness required to give this comic slugfest some heart
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:20:10 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:20:12 - INFO - __main__ - time use for computing 24 examples: 4.762740612030029
+02/04/2024 00:20:12 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:20:16 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: the stars may be college kids, but the subject matter is as adult as you can get : negative sentence:, it isn't much fun. negative sentence: a case of too many chefs fussing over too weak a recipe positive sentence: hubert with a mixture of deadpan cool, wry humor and just the measure of tenderness required to give this comic slugfest some heart
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:20:16 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:20:18 - INFO - __main__ - time use for computing 24 examples: 4.519004821777344
+02/04/2024 00:20:18 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:20:22 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: the stars may be college kids, but the subject matter is as adult as you can get : negative sentence:, it isn't much fun. negative sentence: a case of too many chefs fussing over too weak a recipe positive sentence: hubert with a mixture of deadpan cool, wry humor and just the measure of tenderness required to give this comic slugfest some heart
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:20:22 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:20:24 - INFO - __main__ - time use for computing 24 examples: 4.834580421447754
+02/04/2024 00:20:24 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:20:28 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: the stars may be college kids, but the subject matter is as adult as you can get : negative sentence:, it isn't much fun. negative sentence: a case of too many chefs fussing over too weak a recipe positive sentence: hubert with a mixture of deadpan cool, wry humor and just the measure of tenderness required to give this comic slugfest some heart
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:20:28 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:20:30 - INFO - __main__ - time use for computing 24 examples: 4.754484415054321
+02/04/2024 00:20:30 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:20:35 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: the stars may be college kids, but the subject matter is as adult as you can get : negative sentence:, it isn't much fun. negative sentence: a case of too many chefs fussing over too weak a recipe positive sentence: hubert with a mixture of deadpan cool, wry humor and just the measure of tenderness required to give this comic slugfest some heart
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:20:35 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:20:37 - INFO - __main__ - time use for computing 24 examples: 5.4265313148498535
+02/04/2024 00:20:37 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:20:42 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: the stars may be college kids, but the subject matter is as adult as you can get : negative sentence:, it isn't much fun. negative sentence: a case of too many chefs fussing over too weak a recipe positive sentence: hubert with a mixture of deadpan cool, wry humor and just the measure of tenderness required to give this comic slugfest some heart
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:20:42 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:20:44 - INFO - __main__ - time use for computing 24 examples: 4.878880262374878
+02/04/2024 00:20:44 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:20:48 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: the stars may be college kids, but the subject matter is as adult as you can get : negative sentence:, it isn't much fun. negative sentence: a case of too many chefs fussing over too weak a recipe positive sentence: hubert with a mixture of deadpan cool, wry humor and just the measure of tenderness required to give this comic slugfest some heart
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:20:48 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:20:50 - INFO - __main__ - time use for computing 24 examples: 4.912815093994141
+02/04/2024 00:20:50 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:20:54 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: the stars may be college kids, but the subject matter is as adult as you can get : negative sentence:, it isn't much fun. negative sentence: a case of too many chefs fussing over too weak a recipe positive sentence: hubert with a mixture of deadpan cool, wry humor and just the measure of tenderness required to give this comic slugfest some heart
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:20:54 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:20:57 - INFO - __main__ - time use for computing 24 examples: 4.970065593719482
+02/04/2024 00:20:57 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: the stars may be college kids, but the subject matter is as adult as you can get : negative sentence:, it isn't much fun. negative sentence: a case of too many chefs fussing over too weak a recipe positive sentence: hubert with a mixture of deadpan cool, wry humor and just the measure of tenderness required to give this comic slugfest some heart negative
+Output:
+ sentence: it's a charming and often affecting journey.
+02/04/2024 00:20:57 - INFO - __main__ - torch.Size([1744, 1024])
+02/04/2024 00:23:12 - INFO - __main__ - None task (seed=100): Macro-F1: 78.7, Accuracy: 78.7
+02/04/2024 00:23:12 - INFO - __main__ - [Train] glue-sst2	67349
+02/04/2024 00:23:12 - INFO - __main__ - [Dev] glue-sst2	872
+02/04/2024 00:23:12 - INFO - __main__ - channel on None (1 train, 1 dev)
+02/04/2024 00:23:12 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:23:12 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:23:16 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: well worth revisiting as many times
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+02/04/2024 00:23:16 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:23:31 - INFO - __main__ - time use for computing 100 examples: 19.12015175819397
+02/04/2024 00:23:31 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:23:31 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:23:35 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: well worth revisiting as many times
+Output:
+<glue-mnli-0><glue-mnli-1><glue-mnli-2><glue-mnli-3><glue-mnli-4><glue-mnli-5><glue-mnli-6><glue-mnli-7><glue-mnli-8><glue-mnli-9>
+02/04/2024 00:23:35 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:23:51 - INFO - __main__ - time use for computing 100 examples: 19.513327836990356
+02/04/2024 00:23:51 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:23:51 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:23:56 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: well worth revisiting as many times
+Output:
+<glue-qqp-0><glue-qqp-1><glue-qqp-2><glue-qqp-3><glue-qqp-4><glue-qqp-5><glue-qqp-6><glue-qqp-7><glue-qqp-8><glue-qqp-9>
+02/04/2024 00:23:56 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:24:11 - INFO - __main__ - time use for computing 100 examples: 20.57266402244568
+02/04/2024 00:24:11 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:24:11 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:24:15 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: well worth revisiting as many times
+Output:
+<glue-mrpc-0><glue-mrpc-1><glue-mrpc-2><glue-mrpc-3><glue-mrpc-4><glue-mrpc-5><glue-mrpc-6><glue-mrpc-7><glue-mrpc-8><glue-mrpc-9>
+02/04/2024 00:24:15 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:24:30 - INFO - __main__ - time use for computing 100 examples: 18.904788732528687
+02/04/2024 00:24:30 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:24:30 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:24:35 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: well worth revisiting as many times
+Output:
+<glue-qnli-0><glue-qnli-1><glue-qnli-2><glue-qnli-3><glue-qnli-4><glue-qnli-5><glue-qnli-6><glue-qnli-7><glue-qnli-8><glue-qnli-9>
+02/04/2024 00:24:35 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:24:50 - INFO - __main__ - time use for computing 100 examples: 19.83634305000305
+02/04/2024 00:24:50 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:24:50 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:24:54 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: well worth revisiting as many times
+Output:
+<glue-rte-0><glue-rte-1><glue-rte-2><glue-rte-3><glue-rte-4><glue-rte-5><glue-rte-6><glue-rte-7><glue-rte-8><glue-rte-9>
+02/04/2024 00:24:54 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:25:09 - INFO - __main__ - time use for computing 100 examples: 19.137064456939697
+02/04/2024 00:25:09 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:25:09 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:25:13 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: well worth revisiting as many times
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:25:13 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:25:29 - INFO - __main__ - time use for computing 100 examples: 19.668967962265015
+02/04/2024 00:25:29 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:25:29 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:25:34 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: well worth revisiting as many times
+Output:
+<glue-wnli-0><glue-wnli-1><glue-wnli-2><glue-wnli-3><glue-wnli-4><glue-wnli-5><glue-wnli-6><glue-wnli-7><glue-wnli-8><glue-wnli-9>
+02/04/2024 00:25:34 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:25:49 - INFO - __main__ - time use for computing 100 examples: 20.10962700843811
+02/04/2024 00:25:49 - INFO - __main__ - min difficulty: 1.0
+02/04/2024 00:25:49 - INFO - __main__ - max difficulty: 1.0
+02/04/2024 00:25:49 - INFO - __main__ - average difficulty: 1.0
+02/04/2024 00:25:49 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:25:53 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: well worth revisiting as many times negative sentence:'re just a couple of cops in copmovieland, these two positive sentence: is impressively true for being so hot-blooded positive sentence: like the rugrats movies, the wild thornberrys movie doesn't offer much more than the series, but its emphasis on caring for animals and respecting other cultures is particularly welcome
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:25:53 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:25:55 - INFO - __main__ - time use for computing 24 examples: 4.7855494022369385
+02/04/2024 00:25:55 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:25:59 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: well worth revisiting as many times negative sentence:'re just a couple of cops in copmovieland, these two positive sentence: is impressively true for being so hot-blooded positive sentence: like the rugrats movies, the wild thornberrys movie doesn't offer much more than the series, but its emphasis on caring for animals and respecting other cultures is particularly welcome
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:25:59 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:26:01 - INFO - __main__ - time use for computing 24 examples: 4.505412578582764
+02/04/2024 00:26:01 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:26:05 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: well worth revisiting as many times negative sentence:'re just a couple of cops in copmovieland, these two positive sentence: is impressively true for being so hot-blooded positive sentence: like the rugrats movies, the wild thornberrys movie doesn't offer much more than the series, but its emphasis on caring for animals and respecting other cultures is particularly welcome
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:26:05 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:26:07 - INFO - __main__ - time use for computing 24 examples: 4.657761812210083
+02/04/2024 00:26:07 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:26:11 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: well worth revisiting as many times negative sentence:'re just a couple of cops in copmovieland, these two positive sentence: is impressively true for being so hot-blooded positive sentence: like the rugrats movies, the wild thornberrys movie doesn't offer much more than the series, but its emphasis on caring for animals and respecting other cultures is particularly welcome
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:26:11 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:26:13 - INFO - __main__ - time use for computing 24 examples: 4.384229898452759
+02/04/2024 00:26:13 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:26:19 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: well worth revisiting as many times negative sentence:'re just a couple of cops in copmovieland, these two positive sentence: is impressively true for being so hot-blooded positive sentence: like the rugrats movies, the wild thornberrys movie doesn't offer much more than the series, but its emphasis on caring for animals and respecting other cultures is particularly welcome
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:26:19 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:26:21 - INFO - __main__ - time use for computing 24 examples: 6.9502952098846436
+02/04/2024 00:26:21 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:26:25 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: well worth revisiting as many times negative sentence:'re just a couple of cops in copmovieland, these two positive sentence: is impressively true for being so hot-blooded positive sentence: like the rugrats movies, the wild thornberrys movie doesn't offer much more than the series, but its emphasis on caring for animals and respecting other cultures is particularly welcome
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:26:25 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:26:27 - INFO - __main__ - time use for computing 24 examples: 4.742607116699219
+02/04/2024 00:26:27 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:26:31 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: well worth revisiting as many times negative sentence:'re just a couple of cops in copmovieland, these two positive sentence: is impressively true for being so hot-blooded positive sentence: like the rugrats movies, the wild thornberrys movie doesn't offer much more than the series, but its emphasis on caring for animals and respecting other cultures is particularly welcome
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:26:31 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:26:33 - INFO - __main__ - time use for computing 24 examples: 4.335669040679932
+02/04/2024 00:26:33 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:26:37 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: well worth revisiting as many times negative sentence:'re just a couple of cops in copmovieland, these two positive sentence: is impressively true for being so hot-blooded positive sentence: like the rugrats movies, the wild thornberrys movie doesn't offer much more than the series, but its emphasis on caring for animals and respecting other cultures is particularly welcome
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:26:37 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:26:39 - INFO - __main__ - time use for computing 24 examples: 4.713782072067261
+02/04/2024 00:26:40 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: well worth revisiting as many times negative sentence:'re just a couple of cops in copmovieland, these two positive sentence: is impressively true for being so hot-blooded positive sentence: like the rugrats movies, the wild thornberrys movie doesn't offer much more than the series, but its emphasis on caring for animals and respecting other cultures is particularly welcome negative
+Output:
+ sentence: it's a charming and often affecting journey.
+02/04/2024 00:26:40 - INFO - __main__ - torch.Size([1744, 1024])
+02/04/2024 00:28:54 - INFO - __main__ - None task (seed=13): Macro-F1: 78.4, Accuracy: 78.4
+02/04/2024 00:28:54 - INFO - __main__ - [Train] glue-sst2	67349
+02/04/2024 00:28:54 - INFO - __main__ - [Dev] glue-sst2	872
+02/04/2024 00:28:54 - INFO - __main__ - channel on None (1 train, 1 dev)
+02/04/2024 00:28:54 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:28:54 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:28:58 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: in his role of observer of the scene, lawrence sounds whiny and defensive, as if his life-altering experiences made him bitter and less mature.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+02/04/2024 00:28:58 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:29:14 - INFO - __main__ - time use for computing 100 examples: 19.122491121292114
+02/04/2024 00:29:14 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:29:14 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:29:18 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: in his role of observer of the scene, lawrence sounds whiny and defensive, as if his life-altering experiences made him bitter and less mature.
+Output:
+<glue-mnli-0><glue-mnli-1><glue-mnli-2><glue-mnli-3><glue-mnli-4><glue-mnli-5><glue-mnli-6><glue-mnli-7><glue-mnli-8><glue-mnli-9>
+02/04/2024 00:29:18 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:29:33 - INFO - __main__ - time use for computing 100 examples: 19.616564512252808
+02/04/2024 00:29:33 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:29:33 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:29:37 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: in his role of observer of the scene, lawrence sounds whiny and defensive, as if his life-altering experiences made him bitter and less mature.
+Output:
+<glue-qqp-0><glue-qqp-1><glue-qqp-2><glue-qqp-3><glue-qqp-4><glue-qqp-5><glue-qqp-6><glue-qqp-7><glue-qqp-8><glue-qqp-9>
+02/04/2024 00:29:37 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:29:53 - INFO - __main__ - time use for computing 100 examples: 19.713211059570312
+02/04/2024 00:29:53 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:29:53 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:29:57 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: in his role of observer of the scene, lawrence sounds whiny and defensive, as if his life-altering experiences made him bitter and less mature.
+Output:
+<glue-mrpc-0><glue-mrpc-1><glue-mrpc-2><glue-mrpc-3><glue-mrpc-4><glue-mrpc-5><glue-mrpc-6><glue-mrpc-7><glue-mrpc-8><glue-mrpc-9>
+02/04/2024 00:29:57 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:30:12 - INFO - __main__ - time use for computing 100 examples: 19.22480845451355
+02/04/2024 00:30:12 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:30:12 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:30:16 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: in his role of observer of the scene, lawrence sounds whiny and defensive, as if his life-altering experiences made him bitter and less mature.
+Output:
+<glue-qnli-0><glue-qnli-1><glue-qnli-2><glue-qnli-3><glue-qnli-4><glue-qnli-5><glue-qnli-6><glue-qnli-7><glue-qnli-8><glue-qnli-9>
+02/04/2024 00:30:16 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:30:31 - INFO - __main__ - time use for computing 100 examples: 19.026142835617065
+02/04/2024 00:30:31 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:30:31 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:30:36 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: in his role of observer of the scene, lawrence sounds whiny and defensive, as if his life-altering experiences made him bitter and less mature.
+Output:
+<glue-rte-0><glue-rte-1><glue-rte-2><glue-rte-3><glue-rte-4><glue-rte-5><glue-rte-6><glue-rte-7><glue-rte-8><glue-rte-9>
+02/04/2024 00:30:36 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:30:51 - INFO - __main__ - time use for computing 100 examples: 19.66570019721985
+02/04/2024 00:30:51 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:30:51 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:30:57 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: in his role of observer of the scene, lawrence sounds whiny and defensive, as if his life-altering experiences made him bitter and less mature.
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:30:57 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:31:12 - INFO - __main__ - time use for computing 100 examples: 21.223098039627075
+02/04/2024 00:31:12 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:31:12 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:31:16 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: in his role of observer of the scene, lawrence sounds whiny and defensive, as if his life-altering experiences made him bitter and less mature.
+Output:
+<glue-wnli-0><glue-wnli-1><glue-wnli-2><glue-wnli-3><glue-wnli-4><glue-wnli-5><glue-wnli-6><glue-wnli-7><glue-wnli-8><glue-wnli-9>
+02/04/2024 00:31:16 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:31:31 - INFO - __main__ - time use for computing 100 examples: 18.86684250831604
+02/04/2024 00:31:31 - INFO - __main__ - min difficulty: 1.0
+02/04/2024 00:31:31 - INFO - __main__ - max difficulty: 1.0
+02/04/2024 00:31:31 - INFO - __main__ - average difficulty: 1.0
+02/04/2024 00:31:31 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:31:35 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: in his role of observer of the scene, lawrence sounds whiny and defensive, as if his life-altering experiences made him bitter and less mature. negative sentence: disgusted positive sentence: self-promotion ends and negative sentence: while american adobo has its heart ( and its palate ) in the right place, its brain is a little scattered -- ditsy, even.
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:31:35 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:31:37 - INFO - __main__ - time use for computing 24 examples: 4.360841989517212
+02/04/2024 00:31:37 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:31:40 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: in his role of observer of the scene, lawrence sounds whiny and defensive, as if his life-altering experiences made him bitter and less mature. negative sentence: disgusted positive sentence: self-promotion ends and negative sentence: while american adobo has its heart ( and its palate ) in the right place, its brain is a little scattered -- ditsy, even.
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:31:40 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:31:42 - INFO - __main__ - time use for computing 24 examples: 4.528726816177368
+02/04/2024 00:31:42 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:31:46 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: in his role of observer of the scene, lawrence sounds whiny and defensive, as if his life-altering experiences made him bitter and less mature. negative sentence: disgusted positive sentence: self-promotion ends and negative sentence: while american adobo has its heart ( and its palate ) in the right place, its brain is a little scattered -- ditsy, even.
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:31:46 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:31:48 - INFO - __main__ - time use for computing 24 examples: 4.40622878074646
+02/04/2024 00:31:48 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:31:52 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: in his role of observer of the scene, lawrence sounds whiny and defensive, as if his life-altering experiences made him bitter and less mature. negative sentence: disgusted positive sentence: self-promotion ends and negative sentence: while american adobo has its heart ( and its palate ) in the right place, its brain is a little scattered -- ditsy, even.
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:31:52 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:31:54 - INFO - __main__ - time use for computing 24 examples: 4.479856491088867
+02/04/2024 00:31:54 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:31:58 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: in his role of observer of the scene, lawrence sounds whiny and defensive, as if his life-altering experiences made him bitter and less mature. negative sentence: disgusted positive sentence: self-promotion ends and negative sentence: while american adobo has its heart ( and its palate ) in the right place, its brain is a little scattered -- ditsy, even.
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:31:58 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:32:00 - INFO - __main__ - time use for computing 24 examples: 4.808664798736572
+02/04/2024 00:32:00 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:32:04 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: in his role of observer of the scene, lawrence sounds whiny and defensive, as if his life-altering experiences made him bitter and less mature. negative sentence: disgusted positive sentence: self-promotion ends and negative sentence: while american adobo has its heart ( and its palate ) in the right place, its brain is a little scattered -- ditsy, even.
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:32:04 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:32:06 - INFO - __main__ - time use for computing 24 examples: 4.445566892623901
+02/04/2024 00:32:06 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:32:10 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: in his role of observer of the scene, lawrence sounds whiny and defensive, as if his life-altering experiences made him bitter and less mature. negative sentence: disgusted positive sentence: self-promotion ends and negative sentence: while american adobo has its heart ( and its palate ) in the right place, its brain is a little scattered -- ditsy, even.
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:32:10 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:32:12 - INFO - __main__ - time use for computing 24 examples: 5.037428379058838
+02/04/2024 00:32:12 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:32:16 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: in his role of observer of the scene, lawrence sounds whiny and defensive, as if his life-altering experiences made him bitter and less mature. negative sentence: disgusted positive sentence: self-promotion ends and negative sentence: while american adobo has its heart ( and its palate ) in the right place, its brain is a little scattered -- ditsy, even.
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:32:16 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:32:18 - INFO - __main__ - time use for computing 24 examples: 4.6831374168396
+02/04/2024 00:32:19 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: in his role of observer of the scene, lawrence sounds whiny and defensive, as if his life-altering experiences made him bitter and less mature. negative sentence: disgusted positive sentence: self-promotion ends and negative sentence: while american adobo has its heart ( and its palate ) in the right place, its brain is a little scattered -- ditsy, even. negative
+Output:
+ sentence: it's a charming and often affecting journey.
+02/04/2024 00:32:19 - INFO - __main__ - torch.Size([1744, 1024])
+02/04/2024 00:34:34 - INFO - __main__ - None task (seed=21): Macro-F1: 72.5, Accuracy: 72.8
+02/04/2024 00:34:34 - INFO - __main__ - [Train] glue-sst2	67349
+02/04/2024 00:34:34 - INFO - __main__ - [Dev] glue-sst2	872
+02/04/2024 00:34:34 - INFO - __main__ - channel on None (1 train, 1 dev)
+02/04/2024 00:34:34 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:34:34 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:34:38 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: with outtakes in which most of the characters forget their lines and just utter ` uhhh,'which is better than most of the writing in the movie
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+02/04/2024 00:34:38 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:34:53 - INFO - __main__ - time use for computing 100 examples: 19.14214015007019
+02/04/2024 00:34:53 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:34:53 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:34:58 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: with outtakes in which most of the characters forget their lines and just utter ` uhhh,'which is better than most of the writing in the movie
+Output:
+<glue-mnli-0><glue-mnli-1><glue-mnli-2><glue-mnli-3><glue-mnli-4><glue-mnli-5><glue-mnli-6><glue-mnli-7><glue-mnli-8><glue-mnli-9>
+02/04/2024 00:34:58 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:35:13 - INFO - __main__ - time use for computing 100 examples: 20.310373306274414
+02/04/2024 00:35:13 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:35:13 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:35:17 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: with outtakes in which most of the characters forget their lines and just utter ` uhhh,'which is better than most of the writing in the movie
+Output:
+<glue-qqp-0><glue-qqp-1><glue-qqp-2><glue-qqp-3><glue-qqp-4><glue-qqp-5><glue-qqp-6><glue-qqp-7><glue-qqp-8><glue-qqp-9>
+02/04/2024 00:35:17 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:35:33 - INFO - __main__ - time use for computing 100 examples: 19.238372802734375
+02/04/2024 00:35:33 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:35:33 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:35:37 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: with outtakes in which most of the characters forget their lines and just utter ` uhhh,'which is better than most of the writing in the movie
+Output:
+<glue-mrpc-0><glue-mrpc-1><glue-mrpc-2><glue-mrpc-3><glue-mrpc-4><glue-mrpc-5><glue-mrpc-6><glue-mrpc-7><glue-mrpc-8><glue-mrpc-9>
+02/04/2024 00:35:37 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:35:52 - INFO - __main__ - time use for computing 100 examples: 19.323993921279907
+02/04/2024 00:35:52 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:35:52 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:35:56 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: with outtakes in which most of the characters forget their lines and just utter ` uhhh,'which is better than most of the writing in the movie
+Output:
+<glue-qnli-0><glue-qnli-1><glue-qnli-2><glue-qnli-3><glue-qnli-4><glue-qnli-5><glue-qnli-6><glue-qnli-7><glue-qnli-8><glue-qnli-9>
+02/04/2024 00:35:56 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:36:11 - INFO - __main__ - time use for computing 100 examples: 19.226487398147583
+02/04/2024 00:36:11 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:36:11 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:36:15 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: with outtakes in which most of the characters forget their lines and just utter ` uhhh,'which is better than most of the writing in the movie
+Output:
+<glue-rte-0><glue-rte-1><glue-rte-2><glue-rte-3><glue-rte-4><glue-rte-5><glue-rte-6><glue-rte-7><glue-rte-8><glue-rte-9>
+02/04/2024 00:36:15 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:36:30 - INFO - __main__ - time use for computing 100 examples: 19.360761404037476
+02/04/2024 00:36:30 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:36:30 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:36:35 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: with outtakes in which most of the characters forget their lines and just utter ` uhhh,'which is better than most of the writing in the movie
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:36:35 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:36:50 - INFO - __main__ - time use for computing 100 examples: 19.66179347038269
+02/04/2024 00:36:50 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:36:50 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:36:54 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: with outtakes in which most of the characters forget their lines and just utter ` uhhh,'which is better than most of the writing in the movie
+Output:
+<glue-wnli-0><glue-wnli-1><glue-wnli-2><glue-wnli-3><glue-wnli-4><glue-wnli-5><glue-wnli-6><glue-wnli-7><glue-wnli-8><glue-wnli-9>
+02/04/2024 00:36:54 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:37:09 - INFO - __main__ - time use for computing 100 examples: 19.34678816795349
+02/04/2024 00:37:09 - INFO - __main__ - min difficulty: 1.0
+02/04/2024 00:37:09 - INFO - __main__ - max difficulty: 1.0
+02/04/2024 00:37:09 - INFO - __main__ - average difficulty: 1.0
+02/04/2024 00:37:09 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:37:14 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: with outtakes in which most of the characters forget their lines and just utter ` uhhh,'which is better than most of the writing in the movie negative sentence: gets very ugly, very fast negative sentence: called best bad film you thought was going to be really awful but positive sentence: delicate treatment
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:37:14 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:37:16 - INFO - __main__ - time use for computing 24 examples: 4.83307409286499
+02/04/2024 00:37:16 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:37:19 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: with outtakes in which most of the characters forget their lines and just utter ` uhhh,'which is better than most of the writing in the movie negative sentence: gets very ugly, very fast negative sentence: called best bad film you thought was going to be really awful but positive sentence: delicate treatment
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:37:20 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:37:22 - INFO - __main__ - time use for computing 24 examples: 4.501187801361084
+02/04/2024 00:37:22 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:37:26 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: with outtakes in which most of the characters forget their lines and just utter ` uhhh,'which is better than most of the writing in the movie negative sentence: gets very ugly, very fast negative sentence: called best bad film you thought was going to be really awful but positive sentence: delicate treatment
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:37:26 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:37:28 - INFO - __main__ - time use for computing 24 examples: 4.961012125015259
+02/04/2024 00:37:28 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:37:32 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: with outtakes in which most of the characters forget their lines and just utter ` uhhh,'which is better than most of the writing in the movie negative sentence: gets very ugly, very fast negative sentence: called best bad film you thought was going to be really awful but positive sentence: delicate treatment
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:37:32 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:37:34 - INFO - __main__ - time use for computing 24 examples: 4.800236940383911
+02/04/2024 00:37:34 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:37:38 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: with outtakes in which most of the characters forget their lines and just utter ` uhhh,'which is better than most of the writing in the movie negative sentence: gets very ugly, very fast negative sentence: called best bad film you thought was going to be really awful but positive sentence: delicate treatment
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:37:38 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:37:40 - INFO - __main__ - time use for computing 24 examples: 4.781781196594238
+02/04/2024 00:37:40 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:37:44 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: with outtakes in which most of the characters forget their lines and just utter ` uhhh,'which is better than most of the writing in the movie negative sentence: gets very ugly, very fast negative sentence: called best bad film you thought was going to be really awful but positive sentence: delicate treatment
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:37:44 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:37:46 - INFO - __main__ - time use for computing 24 examples: 4.6924474239349365
+02/04/2024 00:37:46 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:37:50 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: with outtakes in which most of the characters forget their lines and just utter ` uhhh,'which is better than most of the writing in the movie negative sentence: gets very ugly, very fast negative sentence: called best bad film you thought was going to be really awful but positive sentence: delicate treatment
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:37:50 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:37:52 - INFO - __main__ - time use for computing 24 examples: 4.49120306968689
+02/04/2024 00:37:52 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:37:56 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: with outtakes in which most of the characters forget their lines and just utter ` uhhh,'which is better than most of the writing in the movie negative sentence: gets very ugly, very fast negative sentence: called best bad film you thought was going to be really awful but positive sentence: delicate treatment
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:37:56 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:37:58 - INFO - __main__ - time use for computing 24 examples: 4.566077709197998
+02/04/2024 00:37:59 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: with outtakes in which most of the characters forget their lines and just utter ` uhhh,'which is better than most of the writing in the movie negative sentence: gets very ugly, very fast negative sentence: called best bad film you thought was going to be really awful but positive sentence: delicate treatment negative
+Output:
+ sentence: it's a charming and often affecting journey.
+02/04/2024 00:37:59 - INFO - __main__ - torch.Size([1744, 1024])
+02/04/2024 00:40:13 - INFO - __main__ - None task (seed=42): Macro-F1: 68.9, Accuracy: 69.2
+02/04/2024 00:40:13 - INFO - __main__ - [Train] glue-sst2	67349
+02/04/2024 00:40:13 - INFO - __main__ - [Dev] glue-sst2	872
+02/04/2024 00:40:13 - INFO - __main__ - channel on None (1 train, 1 dev)
+02/04/2024 00:40:13 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:40:13 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:40:17 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: titular
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+02/04/2024 00:40:17 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:40:33 - INFO - __main__ - time use for computing 100 examples: 19.11275029182434
+02/04/2024 00:40:33 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:40:33 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:40:36 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: titular
+Output:
+<glue-mnli-0><glue-mnli-1><glue-mnli-2><glue-mnli-3><glue-mnli-4><glue-mnli-5><glue-mnli-6><glue-mnli-7><glue-mnli-8><glue-mnli-9>
+02/04/2024 00:40:36 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:40:52 - INFO - __main__ - time use for computing 100 examples: 19.085714101791382
+02/04/2024 00:40:52 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:40:52 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:40:57 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: titular
+Output:
+<glue-qqp-0><glue-qqp-1><glue-qqp-2><glue-qqp-3><glue-qqp-4><glue-qqp-5><glue-qqp-6><glue-qqp-7><glue-qqp-8><glue-qqp-9>
+02/04/2024 00:40:57 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:41:12 - INFO - __main__ - time use for computing 100 examples: 20.421644687652588
+02/04/2024 00:41:12 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:41:12 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:41:16 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: titular
+Output:
+<glue-mrpc-0><glue-mrpc-1><glue-mrpc-2><glue-mrpc-3><glue-mrpc-4><glue-mrpc-5><glue-mrpc-6><glue-mrpc-7><glue-mrpc-8><glue-mrpc-9>
+02/04/2024 00:41:16 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:41:31 - INFO - __main__ - time use for computing 100 examples: 19.387505531311035
+02/04/2024 00:41:31 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:41:31 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:41:37 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: titular
+Output:
+<glue-qnli-0><glue-qnli-1><glue-qnli-2><glue-qnli-3><glue-qnli-4><glue-qnli-5><glue-qnli-6><glue-qnli-7><glue-qnli-8><glue-qnli-9>
+02/04/2024 00:41:37 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:41:53 - INFO - __main__ - time use for computing 100 examples: 21.3954598903656
+02/04/2024 00:41:53 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:41:53 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:41:57 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: titular
+Output:
+<glue-rte-0><glue-rte-1><glue-rte-2><glue-rte-3><glue-rte-4><glue-rte-5><glue-rte-6><glue-rte-7><glue-rte-8><glue-rte-9>
+02/04/2024 00:41:57 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:42:12 - INFO - __main__ - time use for computing 100 examples: 19.05950903892517
+02/04/2024 00:42:12 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:42:12 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:42:16 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: titular
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:42:16 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:42:31 - INFO - __main__ - time use for computing 100 examples: 19.147202730178833
+02/04/2024 00:42:31 - INFO - __main__ - start running soft prefix model
+02/04/2024 00:42:31 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:42:35 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: titular
+Output:
+<glue-wnli-0><glue-wnli-1><glue-wnli-2><glue-wnli-3><glue-wnli-4><glue-wnli-5><glue-wnli-6><glue-wnli-7><glue-wnli-8><glue-wnli-9>
+02/04/2024 00:42:35 - INFO - __main__ - torch.Size([200, 1024])
+02/04/2024 00:42:50 - INFO - __main__ - time use for computing 100 examples: 19.424214839935303
+02/04/2024 00:42:50 - INFO - __main__ - min difficulty: 1.0
+02/04/2024 00:42:50 - INFO - __main__ - max difficulty: 1.0
+02/04/2024 00:42:50 - INFO - __main__ - average difficulty: 1.0
+02/04/2024 00:42:50 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:42:55 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: titular positive sentence: various amusing sidekicks negative sentence: loses its sense of humor negative sentence: maintaining consciousness just long enough to achieve callow pretension
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:42:55 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:42:57 - INFO - __main__ - time use for computing 24 examples: 5.237901449203491
+02/04/2024 00:42:57 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:43:01 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: titular positive sentence: various amusing sidekicks negative sentence: loses its sense of humor negative sentence: maintaining consciousness just long enough to achieve callow pretension
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:43:01 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:43:03 - INFO - __main__ - time use for computing 24 examples: 4.5769758224487305
+02/04/2024 00:43:03 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:43:08 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: titular positive sentence: various amusing sidekicks negative sentence: loses its sense of humor negative sentence: maintaining consciousness just long enough to achieve callow pretension
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:43:08 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:43:10 - INFO - __main__ - time use for computing 24 examples: 4.96008825302124
+02/04/2024 00:43:10 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:43:14 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: titular positive sentence: various amusing sidekicks negative sentence: loses its sense of humor negative sentence: maintaining consciousness just long enough to achieve callow pretension
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:43:14 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:43:16 - INFO - __main__ - time use for computing 24 examples: 4.604039907455444
+02/04/2024 00:43:16 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:43:20 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: titular positive sentence: various amusing sidekicks negative sentence: loses its sense of humor negative sentence: maintaining consciousness just long enough to achieve callow pretension
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:43:20 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:43:22 - INFO - __main__ - time use for computing 24 examples: 4.706199884414673
+02/04/2024 00:43:22 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:43:26 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: titular positive sentence: various amusing sidekicks negative sentence: loses its sense of humor negative sentence: maintaining consciousness just long enough to achieve callow pretension
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:43:26 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:43:28 - INFO - __main__ - time use for computing 24 examples: 4.662029981613159
+02/04/2024 00:43:28 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:43:32 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: titular positive sentence: various amusing sidekicks negative sentence: loses its sense of humor negative sentence: maintaining consciousness just long enough to achieve callow pretension
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:43:32 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:43:34 - INFO - __main__ - time use for computing 24 examples: 4.880142688751221
+02/04/2024 00:43:34 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 00:43:39 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: titular positive sentence: various amusing sidekicks negative sentence: loses its sense of humor negative sentence: maintaining consciousness just long enough to achieve callow pretension
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/04/2024 00:43:39 - INFO - __main__ - torch.Size([24, 1024])
+02/04/2024 00:43:40 - INFO - __main__ - time use for computing 24 examples: 4.696239233016968
+02/04/2024 00:43:41 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: titular positive sentence: various amusing sidekicks negative sentence: loses its sense of humor negative sentence: maintaining consciousness just long enough to achieve callow pretension negative
+Output:
+ sentence: it's a charming and often affecting journey.
+02/04/2024 00:43:41 - INFO - __main__ - torch.Size([1744, 1024])
+02/04/2024 00:45:56 - INFO - __main__ - None task (seed=87): Macro-F1: 66.2, Accuracy: 67.0
+02/04/2024 00:45:56 - INFO - __main__ - None over 1 target tasks with majority vote: Macro-F1: 78.9, Accuracy: 78.9
+02/04/2024 00:45:56 - INFO - __main__ - None over 1 target tasks on average: Macro-F1: 72.9 +- 5.0, Accuracy: 73.2 +- 4.7

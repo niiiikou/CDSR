@@ -1,0 +1,52 @@
+02/04/2024 03:26:54 - INFO - __main__ - Namespace(do_tensorize=False, tensorize_dir='tensorized', n_gpu=1, n_process=40, n_prefix_tokens=10, use_demonstrations=False, log_dir='logs', prefix_embed_file=None, dataset=None, task='glue', split='glue', data_dir='data/', k=16384, test_k=4, seed=100, train_seed=1, lr=1e-05, warmup_steps=0, batch_size=8, num_training_steps=3000, weight_decay=0.0, no_masking=False, use_random_english_words=False, out_dir='checkpoints\\gpt2\\glue-glue\\prefix={10}-{channel}-lr={1e-5}-initByVocab', method='channel', gpt2='gpt2', optimization='adamw', fp16=False, local_rank=-1)
+02/04/2024 03:26:54 - INFO - __main__ - batch_size=8	max_length=256	max_length_per_example=256
+02/04/2024 03:26:55 - INFO - __main__ - [Train] glue-cola	8551
+02/04/2024 03:26:55 - INFO - __main__ - [Train] glue-mnli	16384
+02/04/2024 03:26:55 - INFO - __main__ - [Train] glue-qqp	16384
+02/04/2024 03:26:55 - INFO - __main__ - [Train] glue-mrpc	3668
+02/04/2024 03:26:55 - INFO - __main__ - [Train] glue-qnli	16384
+02/04/2024 03:26:55 - INFO - __main__ - [Train] glue-rte	2490
+02/04/2024 03:26:55 - INFO - __main__ - [Train] glue-sst2	16384
+02/04/2024 03:26:55 - INFO - __main__ - [Train] glue-wnli	635
+02/04/2024 03:26:55 - INFO - __main__ - channel on None (8 train)
+02/04/2024 03:26:58 - INFO - __main__ - tensorized\glue_channel_k=80880_seed=100_length=10-256-rank=%d.pkl
+02/04/2024 03:27:00 - INFO - __main__ - Checking the first example...
+Input:
+<glue-qnli-0><glue-qnli-1><glue-qnli-2><glue-qnli-3><glue-qnli-4><glue-qnli-5><glue-qnli-6><glue-qnli-7><glue-qnli-8><glue-qnli-9>entailment
+Output:
+ question: What is Yale largely known for? [SEP] sentence: Yale is noted for its largely Collegiate Gothic campus as well as for several iconic modern buildings commonly discussed in architectural history survey courses: Louis Kahn's Yale Art Gallery and Center for British Art, Eero Saarinen's Ingalls Rink and Ezra Stiles and Morse Colleges, and Paul Rudolph's Art & Architecture Building.
+02/04/2024 03:27:00 - INFO - __main__ - checkpoints\gpt2\glue-glue\prefix={10}-{channel}-lr={1e-5}-initByVocab
+02/04/2024 03:27:00 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 03:27:07 - INFO - __main__ - torch.Size([80880, 256])
+02/04/2024 03:27:07 - INFO - __main__ - Training 1 parameters on 80880 examples for 3000 steps using 1 GPUs
+02/04/2024 03:27:55 - INFO - __main__ - local rank -1	global step 100	train loss 8.49
+02/04/2024 03:28:42 - INFO - __main__ - local rank -1	global step 200	train loss 8.90
+02/04/2024 03:29:29 - INFO - __main__ - local rank -1	global step 300	train loss 8.77
+02/04/2024 03:30:16 - INFO - __main__ - local rank -1	global step 400	train loss 8.71
+02/04/2024 03:31:03 - INFO - __main__ - local rank -1	global step 500	train loss 8.62
+02/04/2024 03:31:49 - INFO - __main__ - local rank -1	global step 600	train loss 8.45
+02/04/2024 03:32:35 - INFO - __main__ - local rank -1	global step 700	train loss 8.42
+02/04/2024 03:33:21 - INFO - __main__ - local rank -1	global step 800	train loss 8.34
+02/04/2024 03:34:07 - INFO - __main__ - local rank -1	global step 900	train loss 8.31
+02/04/2024 03:34:53 - INFO - __main__ - local rank -1	global step 1000	train loss 8.20
+02/04/2024 03:35:40 - INFO - __main__ - local rank -1	global step 1100	train loss 8.15
+02/04/2024 03:36:27 - INFO - __main__ - local rank -1	global step 1200	train loss 8.16
+02/04/2024 03:37:14 - INFO - __main__ - local rank -1	global step 1300	train loss 8.08
+02/04/2024 03:38:00 - INFO - __main__ - local rank -1	global step 1400	train loss 8.05
+02/04/2024 03:38:46 - INFO - __main__ - local rank -1	global step 1500	train loss 8.01
+02/04/2024 03:39:35 - INFO - __main__ - local rank -1	global step 1600	train loss 7.98
+02/04/2024 03:40:19 - INFO - __main__ - local rank -1	global step 1700	train loss 7.94
+02/04/2024 03:41:02 - INFO - __main__ - local rank -1	global step 1800	train loss 7.94
+02/04/2024 03:41:45 - INFO - __main__ - local rank -1	global step 1900	train loss 7.84
+02/04/2024 03:42:28 - INFO - __main__ - local rank -1	global step 2000	train loss 7.86
+02/04/2024 03:43:11 - INFO - __main__ - local rank -1	global step 2100	train loss 7.88
+02/04/2024 03:43:54 - INFO - __main__ - local rank -1	global step 2200	train loss 7.82
+02/04/2024 03:44:37 - INFO - __main__ - local rank -1	global step 2300	train loss 7.83
+02/04/2024 03:45:21 - INFO - __main__ - local rank -1	global step 2400	train loss 7.87
+02/04/2024 03:46:04 - INFO - __main__ - local rank -1	global step 2500	train loss 7.79
+02/04/2024 03:46:47 - INFO - __main__ - local rank -1	global step 2600	train loss 7.77
+02/04/2024 03:47:30 - INFO - __main__ - local rank -1	global step 2700	train loss 7.76
+02/04/2024 03:48:13 - INFO - __main__ - local rank -1	global step 2800	train loss 7.79
+02/04/2024 03:48:56 - INFO - __main__ - local rank -1	global step 2900	train loss 7.75
+02/04/2024 03:49:38 - INFO - __main__ - local rank -1	global step 3000	train loss 7.80
+02/04/2024 03:49:39 - INFO - __main__ - Finish training

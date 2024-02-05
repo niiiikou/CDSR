@@ -1,0 +1,302 @@
+01/15/2024 17:49:23 - INFO - __main__ - Namespace(use_demonstrations=True, use_soft_prefix=False, use_soft_postfix=False, n_prefix_tokens=10, max_length=1024, prior=['easiest'], difficulty='concept_calibrated', reorder=True, log_dir='logs', out_dir='out\\gpt2', load_dir=None, concept_dir='concept_likelihood\\gpt2\\glue-glue-100\\glue-sst2-channel-prefix=10-lr=1e-5-3000', prefix_embed_file='checkpoints\\gpt2\\glue-glue\\prefix={10}-{channel}-lr={1e-5}-initByVocab\\soft_embeddings-3000.pt', task=None, dataset='glue-sst2', data_dir='data/', k=4, seed='100,13,21,42,87', test_batch_size=8, global_step=None, use_random_english_words=False, use_random_label=False, use_instruction=False, unseen_domain_only=False, split='test', method='channel', gpt='gpt2', api=None, test_size=1000, train_size=100, embedding_dir='embeddings\\', embedding_model='all-mpnet-base-v2', similarity_temperature=0.1, concept_temperature=50.0)
+01/15/2024 17:49:25 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:49:26 - INFO - __main__ - batch_size=8	max_length=1024	max_length_per_example=256
+01/15/2024 17:49:28 - INFO - __main__ - [Train] glue-sst2	67349
+01/15/2024 17:49:28 - INFO - __main__ - [Dev] glue-sst2	872
+01/15/2024 17:49:28 - INFO - __main__ - channel on None (1 train, 1 dev)
+01/15/2024 17:49:28 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:49:28 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:49:28 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:49:28 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:49:28 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:49:28 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:49:28 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:49:28 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:49:28 - INFO - __main__ - min difficulty: -inf
+01/15/2024 17:49:28 - INFO - __main__ - max difficulty: 0.9997261901007374
+01/15/2024 17:49:28 - INFO - __main__ - average difficulty: -inf
+01/15/2024 17:49:28 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:49:29 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:49:29 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:49:30 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:49:30 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:49:31 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:49:31 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:49:33 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:49:33 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:49:34 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:49:34 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:49:36 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:49:36 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:49:37 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:49:37 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:49:38 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:49:39 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: the stars may be college kids, but the subject matter is as adult as you can get : positive sentence: fuelled devito's early work positive sentence: eloquent negative sentence: to the empty stud knockabout of equilibrium negative
+Output:
+ sentence: it's a charming and often affecting journey.
+01/15/2024 17:49:39 - INFO - __main__ - torch.Size([1744, 1024])
+01/15/2024 17:51:47 - INFO - __main__ - None task (seed=100): Macro-F1: 62.7, Accuracy: 62.7
+01/15/2024 17:51:48 - INFO - __main__ - [Train] glue-sst2	67349
+01/15/2024 17:51:48 - INFO - __main__ - [Dev] glue-sst2	872
+01/15/2024 17:51:48 - INFO - __main__ - channel on None (1 train, 1 dev)
+01/15/2024 17:51:48 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:51:48 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:51:48 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:51:48 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:51:48 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:51:48 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:51:48 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:51:48 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:51:48 - INFO - __main__ - min difficulty: -inf
+01/15/2024 17:51:48 - INFO - __main__ - max difficulty: 1.0
+01/15/2024 17:51:48 - INFO - __main__ - average difficulty: -inf
+01/15/2024 17:51:48 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:51:49 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:51:49 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:51:50 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:51:50 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:51:52 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:51:52 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:51:53 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:51:53 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:51:54 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:51:54 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:51:55 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:51:55 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:51:57 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:51:57 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:51:58 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:51:59 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: there are very, very good reasons for certain movies to be sealed in a jar and left on a remote shelf indefinitely. negative sentence: has the thrown-together feel of a summer-camp talent show : hastily written, underrehearsed, arbitrarily plotted and filled with crude humor and vulgar innuendo. negative sentence: tiresome positive sentence: has made a movie that will leave you wondering about the characters'lives after the clever credits roll. negative
+Output:
+ sentence: it's a charming and often affecting journey.
+01/15/2024 17:51:59 - INFO - __main__ - torch.Size([1744, 1024])
+01/15/2024 17:54:07 - INFO - __main__ - None task (seed=13): Macro-F1: 65.6, Accuracy: 67.4
+01/15/2024 17:54:07 - INFO - __main__ - [Train] glue-sst2	67349
+01/15/2024 17:54:07 - INFO - __main__ - [Dev] glue-sst2	872
+01/15/2024 17:54:07 - INFO - __main__ - channel on None (1 train, 1 dev)
+01/15/2024 17:54:07 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:54:07 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:54:07 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:54:07 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:54:07 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:54:07 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:54:07 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:54:07 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:54:07 - INFO - __main__ - min difficulty: -inf
+01/15/2024 17:54:07 - INFO - __main__ - max difficulty: 0.9999964898289649
+01/15/2024 17:54:07 - INFO - __main__ - average difficulty: -inf
+01/15/2024 17:54:07 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:54:09 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:54:09 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:54:10 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:54:10 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:54:11 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:54:11 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:54:12 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:54:12 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:54:14 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:54:14 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:54:15 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:54:15 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:54:17 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:54:17 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:54:18 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:54:18 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: in his role of observer of the scene, lawrence sounds whiny and defensive, as if his life-altering experiences made him bitter and less mature. negative sentence: completely serviceable and quickly forgettable negative sentence: a story which fails to rise above its disgusting source material. negative sentence: maybe you 'll be lucky, and there 'll be a power outage during your screening so you can get your money back negative
+Output:
+ sentence: it's a charming and often affecting journey.
+01/15/2024 17:54:18 - INFO - __main__ - torch.Size([1744, 1024])
+01/15/2024 17:56:26 - INFO - __main__ - None task (seed=21): Macro-F1: 69.0, Accuracy: 69.0
+01/15/2024 17:56:26 - INFO - __main__ - [Train] glue-sst2	67349
+01/15/2024 17:56:26 - INFO - __main__ - [Dev] glue-sst2	872
+01/15/2024 17:56:26 - INFO - __main__ - channel on None (1 train, 1 dev)
+01/15/2024 17:56:26 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:56:26 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:56:26 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:56:26 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:56:26 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:56:26 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:56:27 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:56:27 - INFO - __main__ - loading saved concept likelihoods
+01/15/2024 17:56:27 - INFO - __main__ - min difficulty: -inf
+01/15/2024 17:56:27 - INFO - __main__ - max difficulty: 1.0
+01/15/2024 17:56:27 - INFO - __main__ - average difficulty: -inf
+01/15/2024 17:56:27 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:56:28 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:56:28 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:56:29 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:56:29 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:56:30 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:56:30 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:56:31 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:56:31 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:56:33 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:56:33 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:56:34 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:56:34 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:56:35 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:56:35 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:56:36 - INFO - __main__ - loading saved demo nlls
+01/15/2024 17:56:37 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: in spite of all that he's witnessed, remains surprisingly idealistic positive sentence: about a wild-and-woolly, wall-to-wall good time negative sentence: so many red herrings, negative sentence: expects something special but instead gets ( sci-fi ) rehash. negative
+Output:
+ sentence: it's a charming and often affecting journey.
+01/15/2024 17:56:37 - INFO - __main__ - torch.Size([1744, 1024])
+01/15/2024 17:58:45 - INFO - __main__ - None task (seed=42): Macro-F1: 68.7, Accuracy: 70.0
+01/15/2024 17:58:45 - INFO - __main__ - [Train] glue-sst2	67349
+01/15/2024 17:58:45 - INFO - __main__ - [Dev] glue-sst2	872
+01/15/2024 17:58:45 - INFO - __main__ - channel on None (1 train, 1 dev)
+01/15/2024 17:58:45 - INFO - __main__ - start running soft prefix model
+01/15/2024 17:58:45 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:58:48 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: titular
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/15/2024 17:58:48 - INFO - __main__ - torch.Size([200, 1024])
+01/15/2024 17:59:21 - INFO - __main__ - time use for computing 100 examples: 35.65811109542847
+01/15/2024 17:59:21 - INFO - __main__ - start running soft prefix model
+01/15/2024 17:59:21 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:59:24 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: titular
+Output:
+<glue-mnli-0><glue-mnli-1><glue-mnli-2><glue-mnli-3><glue-mnli-4><glue-mnli-5><glue-mnli-6><glue-mnli-7><glue-mnli-8><glue-mnli-9>
+01/15/2024 17:59:24 - INFO - __main__ - torch.Size([200, 1024])
+01/15/2024 17:59:52 - INFO - __main__ - time use for computing 100 examples: 31.183836698532104
+01/15/2024 17:59:52 - INFO - __main__ - start running soft prefix model
+01/15/2024 17:59:52 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 17:59:55 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: titular
+Output:
+<glue-qqp-0><glue-qqp-1><glue-qqp-2><glue-qqp-3><glue-qqp-4><glue-qqp-5><glue-qqp-6><glue-qqp-7><glue-qqp-8><glue-qqp-9>
+01/15/2024 17:59:55 - INFO - __main__ - torch.Size([200, 1024])
+01/15/2024 18:00:23 - INFO - __main__ - time use for computing 100 examples: 30.988933801651
+01/15/2024 18:00:23 - INFO - __main__ - start running soft prefix model
+01/15/2024 18:00:23 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 18:00:26 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: titular
+Output:
+<glue-mrpc-0><glue-mrpc-1><glue-mrpc-2><glue-mrpc-3><glue-mrpc-4><glue-mrpc-5><glue-mrpc-6><glue-mrpc-7><glue-mrpc-8><glue-mrpc-9>
+01/15/2024 18:00:26 - INFO - __main__ - torch.Size([200, 1024])
+01/15/2024 18:00:54 - INFO - __main__ - time use for computing 100 examples: 31.361079931259155
+01/15/2024 18:00:54 - INFO - __main__ - start running soft prefix model
+01/15/2024 18:00:54 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 18:00:59 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: titular
+Output:
+<glue-qnli-0><glue-qnli-1><glue-qnli-2><glue-qnli-3><glue-qnli-4><glue-qnli-5><glue-qnli-6><glue-qnli-7><glue-qnli-8><glue-qnli-9>
+01/15/2024 18:00:59 - INFO - __main__ - torch.Size([200, 1024])
+01/15/2024 18:01:26 - INFO - __main__ - time use for computing 100 examples: 31.98288083076477
+01/15/2024 18:01:26 - INFO - __main__ - start running soft prefix model
+01/15/2024 18:01:26 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 18:01:30 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: titular
+Output:
+<glue-rte-0><glue-rte-1><glue-rte-2><glue-rte-3><glue-rte-4><glue-rte-5><glue-rte-6><glue-rte-7><glue-rte-8><glue-rte-9>
+01/15/2024 18:01:30 - INFO - __main__ - torch.Size([200, 1024])
+01/15/2024 18:01:58 - INFO - __main__ - time use for computing 100 examples: 31.575520038604736
+01/15/2024 18:01:58 - INFO - __main__ - start running soft prefix model
+01/15/2024 18:01:58 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 18:02:01 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: titular
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/15/2024 18:02:01 - INFO - __main__ - torch.Size([200, 1024])
+01/15/2024 18:02:29 - INFO - __main__ - time use for computing 100 examples: 31.04584240913391
+01/15/2024 18:02:29 - INFO - __main__ - start running soft prefix model
+01/15/2024 18:02:29 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 18:02:32 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: titular
+Output:
+<glue-wnli-0><glue-wnli-1><glue-wnli-2><glue-wnli-3><glue-wnli-4><glue-wnli-5><glue-wnli-6><glue-wnli-7><glue-wnli-8><glue-wnli-9>
+01/15/2024 18:02:33 - INFO - __main__ - torch.Size([200, 1024])
+01/15/2024 18:03:00 - INFO - __main__ - time use for computing 100 examples: 31.319364070892334
+01/15/2024 18:03:00 - INFO - __main__ - min difficulty: -inf
+01/15/2024 18:03:00 - INFO - __main__ - max difficulty: 1.0
+01/15/2024 18:03:00 - INFO - __main__ - average difficulty: -inf
+01/15/2024 18:03:00 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 18:03:03 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: comes off as a long negative sentence: stifling morality tale positive sentence:, amusing and unsettling positive sentence:, it succeeds as a powerful look at a failure of our justice system.
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/15/2024 18:03:03 - INFO - __main__ - torch.Size([24, 1024])
+01/15/2024 18:03:07 - INFO - __main__ - time use for computing 24 examples: 5.601713418960571
+01/15/2024 18:03:07 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 18:03:11 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: comes off as a long negative sentence: stifling morality tale positive sentence:, amusing and unsettling positive sentence:, it succeeds as a powerful look at a failure of our justice system.
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/15/2024 18:03:11 - INFO - __main__ - torch.Size([24, 1024])
+01/15/2024 18:03:15 - INFO - __main__ - time use for computing 24 examples: 6.266848802566528
+01/15/2024 18:03:15 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 18:03:18 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: comes off as a long negative sentence: stifling morality tale positive sentence:, amusing and unsettling positive sentence:, it succeeds as a powerful look at a failure of our justice system.
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/15/2024 18:03:18 - INFO - __main__ - torch.Size([24, 1024])
+01/15/2024 18:03:21 - INFO - __main__ - time use for computing 24 examples: 5.50176739692688
+01/15/2024 18:03:21 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 18:03:25 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: comes off as a long negative sentence: stifling morality tale positive sentence:, amusing and unsettling positive sentence:, it succeeds as a powerful look at a failure of our justice system.
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/15/2024 18:03:25 - INFO - __main__ - torch.Size([24, 1024])
+01/15/2024 18:03:28 - INFO - __main__ - time use for computing 24 examples: 5.69292950630188
+01/15/2024 18:03:28 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 18:03:32 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: comes off as a long negative sentence: stifling morality tale positive sentence:, amusing and unsettling positive sentence:, it succeeds as a powerful look at a failure of our justice system.
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/15/2024 18:03:32 - INFO - __main__ - torch.Size([24, 1024])
+01/15/2024 18:03:35 - INFO - __main__ - time use for computing 24 examples: 5.554300546646118
+01/15/2024 18:03:35 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 18:03:38 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: comes off as a long negative sentence: stifling morality tale positive sentence:, amusing and unsettling positive sentence:, it succeeds as a powerful look at a failure of our justice system.
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/15/2024 18:03:38 - INFO - __main__ - torch.Size([24, 1024])
+01/15/2024 18:03:42 - INFO - __main__ - time use for computing 24 examples: 5.491927146911621
+01/15/2024 18:03:42 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 18:03:45 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: comes off as a long negative sentence: stifling morality tale positive sentence:, amusing and unsettling positive sentence:, it succeeds as a powerful look at a failure of our justice system.
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/15/2024 18:03:45 - INFO - __main__ - torch.Size([24, 1024])
+01/15/2024 18:03:49 - INFO - __main__ - time use for computing 24 examples: 5.626392841339111
+01/15/2024 18:03:49 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 18:03:52 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: comes off as a long negative sentence: stifling morality tale positive sentence:, amusing and unsettling positive sentence:, it succeeds as a powerful look at a failure of our justice system.
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/15/2024 18:03:52 - INFO - __main__ - torch.Size([24, 1024])
+01/15/2024 18:03:56 - INFO - __main__ - time use for computing 24 examples: 5.779505252838135
+01/15/2024 18:03:56 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: comes off as a long negative sentence: stifling morality tale positive sentence:, amusing and unsettling positive sentence:, it succeeds as a powerful look at a failure of our justice system. negative
+Output:
+ sentence: it's a charming and often affecting journey.
+01/15/2024 18:03:56 - INFO - __main__ - torch.Size([1744, 1024])
+01/15/2024 18:06:21 - INFO - __main__ - None task (seed=87): Macro-F1: 64.8, Accuracy: 67.3
+01/15/2024 18:06:21 - INFO - __main__ - None over 1 target tasks with majority vote: Macro-F1: 73.5, Accuracy: 73.7
+01/15/2024 18:06:21 - INFO - __main__ - None over 1 target tasks on average: Macro-F1: 66.2 +- 2.4, Accuracy: 67.3 +- 2.5

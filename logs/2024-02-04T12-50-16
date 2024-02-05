@@ -1,0 +1,190 @@
+02/04/2024 12:50:16 - INFO - __main__ - Namespace(use_demonstrations=True, use_soft_prefix=False, use_soft_postfix=False, n_prefix_tokens=10, max_length=1024, prior=['easiest'], difficulty='concept_calibrated', reorder=True, log_dir='logs', out_dir='out\\gpt2', load_dir=None, concept_dir='concept_likelihood\\gpt2\\glue-glue-100\\glue-sst2-channel-prefix=10-lr=1e-5-1000', prefix_embed_file='checkpoints\\gpt2\\glue-glue\\prefix={10}-{channel}-lr={1e-5}-initByVocab\\soft_embeddings-1000.pt', task=None, dataset='glue-sst2', data_dir='data/', k=4, seed='100,13,21,42,87', test_batch_size=8, global_step=None, use_random_english_words=False, use_random_label=False, use_instruction=False, unseen_domain_only=False, split='test', method='channel', gpt='gpt2', api=None, test_size=1000, train_size=100, embedding_dir='embeddings\\', embedding_model='all-mpnet-base-v2', similarity_temperature=0.1, concept_temperature=50.0)
+02/04/2024 12:50:16 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:50:18 - INFO - __main__ - batch_size=8	max_length=1024	max_length_per_example=256
+02/04/2024 12:50:19 - INFO - __main__ - [Train] glue-sst2	67349
+02/04/2024 12:50:19 - INFO - __main__ - [Dev] glue-sst2	872
+02/04/2024 12:50:19 - INFO - __main__ - channel on None (1 train, 1 dev)
+02/04/2024 12:50:19 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:50:19 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:50:19 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:50:19 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:50:19 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:50:19 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:50:19 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:50:19 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:50:19 - INFO - __main__ - min difficulty: 0.9999999998846275
+02/04/2024 12:50:19 - INFO - __main__ - max difficulty: 0.9999999999999999
+02/04/2024 12:50:19 - INFO - __main__ - average difficulty: 0.9999999999945903
+02/04/2024 12:50:19 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:50:20 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:50:20 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:50:22 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:50:22 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:50:23 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:50:23 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:50:24 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:50:24 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:50:25 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:50:25 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:50:26 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:50:26 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:50:27 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:50:27 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:50:29 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:50:29 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: though overall an overwhelmingly positive portrayal negative sentence: a mormon family movie, and a sappy, preachy one at that negative sentence: low, very low negative sentence: yawn-provoking negative
+Output:
+ sentence: it's a charming and often affecting journey.
+02/04/2024 12:50:29 - INFO - __main__ - torch.Size([1744, 1024])
+02/04/2024 12:52:37 - INFO - __main__ - None task (seed=100): Macro-F1: 72.7, Accuracy: 72.7
+02/04/2024 12:52:38 - INFO - __main__ - [Train] glue-sst2	67349
+02/04/2024 12:52:38 - INFO - __main__ - [Dev] glue-sst2	872
+02/04/2024 12:52:38 - INFO - __main__ - channel on None (1 train, 1 dev)
+02/04/2024 12:52:38 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:52:38 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:52:38 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:52:38 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:52:38 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:52:38 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:52:38 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:52:38 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:52:38 - INFO - __main__ - min difficulty: 0.9999999996965158
+02/04/2024 12:52:38 - INFO - __main__ - max difficulty: 0.9999999999999999
+02/04/2024 12:52:38 - INFO - __main__ - average difficulty: 0.999999999989991
+02/04/2024 12:52:38 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:52:39 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:52:39 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:52:40 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:52:40 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:52:42 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:52:42 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:52:43 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:52:43 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:52:44 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:52:44 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:52:45 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:52:45 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:52:47 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:52:47 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:52:48 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:52:48 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: loses points when it surrenders to a formulaic bang-bang, shoot-em-up scene at the conclusion positive sentence: the power positive sentence: utterly absorbing negative sentence: be as bored negative
+Output:
+ sentence: it's a charming and often affecting journey.
+02/04/2024 12:52:48 - INFO - __main__ - torch.Size([1744, 1024])
+02/04/2024 12:54:56 - INFO - __main__ - None task (seed=13): Macro-F1: 69.0, Accuracy: 69.0
+02/04/2024 12:54:57 - INFO - __main__ - [Train] glue-sst2	67349
+02/04/2024 12:54:57 - INFO - __main__ - [Dev] glue-sst2	872
+02/04/2024 12:54:57 - INFO - __main__ - channel on None (1 train, 1 dev)
+02/04/2024 12:54:57 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:54:57 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:54:57 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:54:57 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:54:57 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:54:57 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:54:57 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:54:57 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:54:57 - INFO - __main__ - min difficulty: 0.9999999999103767
+02/04/2024 12:54:57 - INFO - __main__ - max difficulty: 0.9999999999999999
+02/04/2024 12:54:57 - INFO - __main__ - average difficulty: 0.9999999999948443
+02/04/2024 12:54:57 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:54:58 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:54:58 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:54:59 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:54:59 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:55:00 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:55:00 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:55:02 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:55:02 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:55:03 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:55:03 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:55:04 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:55:04 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:55:05 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:55:05 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:55:07 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:55:07 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: of mindless pace in collision negative sentence: murky positive sentence: wide-smiling negative sentence: disgusted negative
+Output:
+ sentence: it's a charming and often affecting journey.
+02/04/2024 12:55:07 - INFO - __main__ - torch.Size([1744, 1024])
+02/04/2024 12:57:16 - INFO - __main__ - None task (seed=21): Macro-F1: 55.5, Accuracy: 55.6
+02/04/2024 12:57:16 - INFO - __main__ - [Train] glue-sst2	67349
+02/04/2024 12:57:16 - INFO - __main__ - [Dev] glue-sst2	872
+02/04/2024 12:57:16 - INFO - __main__ - channel on None (1 train, 1 dev)
+02/04/2024 12:57:16 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:57:16 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:57:16 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:57:16 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:57:16 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:57:16 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:57:16 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:57:16 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:57:16 - INFO - __main__ - min difficulty: 0.9999999998136474
+02/04/2024 12:57:16 - INFO - __main__ - max difficulty: 0.9999999999999998
+02/04/2024 12:57:16 - INFO - __main__ - average difficulty: 0.999999999990334
+02/04/2024 12:57:16 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:57:18 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:57:18 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:57:19 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:57:19 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:57:21 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:57:21 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:57:22 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:57:22 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:57:23 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:57:23 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:57:24 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:57:24 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:57:26 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:57:26 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:57:27 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:57:28 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: the acting, for the most part positive sentence: has rewards, from the exoticism of its seas of sand to the fierce grandeur of its sweeping battle scenes negative sentence: brainless positive sentence: begin with negative
+Output:
+ sentence: it's a charming and often affecting journey.
+02/04/2024 12:57:28 - INFO - __main__ - torch.Size([1744, 1024])
+02/04/2024 12:59:37 - INFO - __main__ - None task (seed=42): Macro-F1: 52.7, Accuracy: 58.4
+02/04/2024 12:59:37 - INFO - __main__ - [Train] glue-sst2	67349
+02/04/2024 12:59:37 - INFO - __main__ - [Dev] glue-sst2	872
+02/04/2024 12:59:37 - INFO - __main__ - channel on None (1 train, 1 dev)
+02/04/2024 12:59:37 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:59:37 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:59:37 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:59:37 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:59:37 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:59:37 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:59:37 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:59:37 - INFO - __main__ - loading saved concept likelihoods
+02/04/2024 12:59:37 - INFO - __main__ - min difficulty: 0.9999999998603737
+02/04/2024 12:59:37 - INFO - __main__ - max difficulty: 0.9999999999999983
+02/04/2024 12:59:37 - INFO - __main__ - average difficulty: 0.9999999999905045
+02/04/2024 12:59:37 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:59:39 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:59:39 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:59:40 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:59:40 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:59:41 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:59:41 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:59:43 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:59:43 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:59:44 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:59:44 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:59:45 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:59:45 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:59:47 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:59:47 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 12:59:48 - INFO - __main__ - loading saved demo nlls
+02/04/2024 12:59:49 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: like smoke signals, the film is also imbued with strong themes of familial ties and spirituality that are powerful and moving without stooping to base melodrama negative sentence: between the artificial structure positive sentence: drama, romance, tragedy, bravery, political intrigue, partisans and sabotage positive sentence: deftly captures negative
+Output:
+ sentence: it's a charming and often affecting journey.
+02/04/2024 12:59:49 - INFO - __main__ - torch.Size([1744, 1024])
+02/04/2024 13:01:58 - INFO - __main__ - None task (seed=87): Macro-F1: 33.6, Accuracy: 49.3
+02/04/2024 13:01:58 - INFO - __main__ - None over 1 target tasks with majority vote: Macro-F1: 64.5, Accuracy: 65.8
+02/04/2024 13:01:58 - INFO - __main__ - None over 1 target tasks on average: Macro-F1: 56.7 +- 13.8, Accuracy: 61.0 +- 8.6

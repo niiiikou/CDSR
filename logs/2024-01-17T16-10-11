@@ -1,0 +1,750 @@
+01/17/2024 16:10:11 - INFO - __main__ - Namespace(use_demonstrations=True, use_soft_prefix=False, use_soft_postfix=False, n_prefix_tokens=10, max_length=1024, prior=['easiest'], difficulty='concept_calibrated', reorder=True, log_dir='logs', out_dir='out\\gpt2', load_dir=None, concept_dir='concept_likelihood\\gpt2\\glue-glue-100\\glue-cola-channel-prefix=10-lr=1e-5-3000', prefix_embed_file='checkpoints\\gpt2\\glue-glue\\prefix={10}-{channel}-lr={1e-5}-initByVocab\\soft_embeddings-3000.pt', task=None, dataset='glue-cola', data_dir='data/', k=4, seed='100,13,21,42,87', test_batch_size=8, global_step=None, use_random_english_words=False, use_random_label=False, use_instruction=False, unseen_domain_only=False, split='test', method='channel', gpt='gpt2', api=None, test_size=1000, train_size=100, embedding_dir='embeddings\\', embedding_model='all-mpnet-base-v2', similarity_temperature=0.1, concept_temperature=50.0)
+01/17/2024 16:10:12 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:10:14 - INFO - __main__ - batch_size=8	max_length=1024	max_length_per_example=256
+01/17/2024 16:10:15 - INFO - __main__ - [Train] glue-cola	8551
+01/17/2024 16:10:15 - INFO - __main__ - [Dev] glue-cola	1043
+01/17/2024 16:10:15 - INFO - __main__ - channel on None (1 train, 1 dev)
+01/17/2024 16:10:15 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:10:15 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:10:19 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Can he not have been working?
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:10:19 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:10:35 - INFO - __main__ - time use for computing 100 examples: 19.649700164794922
+01/17/2024 16:10:35 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:10:35 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:10:39 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Can he not have been working?
+Output:
+<glue-mnli-0><glue-mnli-1><glue-mnli-2><glue-mnli-3><glue-mnli-4><glue-mnli-5><glue-mnli-6><glue-mnli-7><glue-mnli-8><glue-mnli-9>
+01/17/2024 16:10:39 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:10:54 - INFO - __main__ - time use for computing 100 examples: 18.94356894493103
+01/17/2024 16:10:54 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:10:54 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:10:58 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Can he not have been working?
+Output:
+<glue-qqp-0><glue-qqp-1><glue-qqp-2><glue-qqp-3><glue-qqp-4><glue-qqp-5><glue-qqp-6><glue-qqp-7><glue-qqp-8><glue-qqp-9>
+01/17/2024 16:10:58 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:11:13 - INFO - __main__ - time use for computing 100 examples: 18.909780979156494
+01/17/2024 16:11:13 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:11:13 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:11:17 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Can he not have been working?
+Output:
+<glue-mrpc-0><glue-mrpc-1><glue-mrpc-2><glue-mrpc-3><glue-mrpc-4><glue-mrpc-5><glue-mrpc-6><glue-mrpc-7><glue-mrpc-8><glue-mrpc-9>
+01/17/2024 16:11:17 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:11:32 - INFO - __main__ - time use for computing 100 examples: 19.152047157287598
+01/17/2024 16:11:32 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:11:32 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:11:36 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Can he not have been working?
+Output:
+<glue-qnli-0><glue-qnli-1><glue-qnli-2><glue-qnli-3><glue-qnli-4><glue-qnli-5><glue-qnli-6><glue-qnli-7><glue-qnli-8><glue-qnli-9>
+01/17/2024 16:11:36 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:11:51 - INFO - __main__ - time use for computing 100 examples: 19.168250560760498
+01/17/2024 16:11:51 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:11:51 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:11:55 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Can he not have been working?
+Output:
+<glue-rte-0><glue-rte-1><glue-rte-2><glue-rte-3><glue-rte-4><glue-rte-5><glue-rte-6><glue-rte-7><glue-rte-8><glue-rte-9>
+01/17/2024 16:11:55 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:12:10 - INFO - __main__ - time use for computing 100 examples: 19.177333116531372
+01/17/2024 16:12:10 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:12:10 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:12:17 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Can he not have been working?
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/17/2024 16:12:17 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:12:32 - INFO - __main__ - time use for computing 100 examples: 22.139511585235596
+01/17/2024 16:12:32 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:12:32 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:12:38 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Can he not have been working?
+Output:
+<glue-wnli-0><glue-wnli-1><glue-wnli-2><glue-wnli-3><glue-wnli-4><glue-wnli-5><glue-wnli-6><glue-wnli-7><glue-wnli-8><glue-wnli-9>
+01/17/2024 16:12:38 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:12:53 - INFO - __main__ - time use for computing 100 examples: 20.71501588821411
+01/17/2024 16:12:53 - INFO - __main__ - min difficulty: 0.863624111205595
+01/17/2024 16:12:53 - INFO - __main__ - max difficulty: 0.9999999999941497
+01/17/2024 16:12:53 - INFO - __main__ - average difficulty: 0.9949521414019711
+01/17/2024 16:12:53 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:12:58 - INFO - __main__ - Checking the first example...
+Input:
+unacceptable It is not entirely obvious whether, Mary listens to the Grateful Dead, she gets depressed. unacceptable At 4 p.m. I saw John lecturing to anyone who was near him. unacceptable Every student who ever goes to Europe ever has enough money. acceptable Sally might be pregnant, and I know a girl who definitely is pregnant.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:12:58 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:13:00 - INFO - __main__ - time use for computing 24 examples: 5.138554334640503
+01/17/2024 16:13:00 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:13:04 - INFO - __main__ - Checking the first example...
+Input:
+unacceptable It is not entirely obvious whether, Mary listens to the Grateful Dead, she gets depressed. unacceptable At 4 p.m. I saw John lecturing to anyone who was near him. unacceptable Every student who ever goes to Europe ever has enough money. acceptable Sally might be pregnant, and I know a girl who definitely is pregnant.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:13:04 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:13:06 - INFO - __main__ - time use for computing 24 examples: 4.6144537925720215
+01/17/2024 16:13:06 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:13:12 - INFO - __main__ - Checking the first example...
+Input:
+unacceptable It is not entirely obvious whether, Mary listens to the Grateful Dead, she gets depressed. unacceptable At 4 p.m. I saw John lecturing to anyone who was near him. unacceptable Every student who ever goes to Europe ever has enough money. acceptable Sally might be pregnant, and I know a girl who definitely is pregnant.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:13:12 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:13:14 - INFO - __main__ - time use for computing 24 examples: 6.32111668586731
+01/17/2024 16:13:14 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:13:20 - INFO - __main__ - Checking the first example...
+Input:
+unacceptable It is not entirely obvious whether, Mary listens to the Grateful Dead, she gets depressed. unacceptable At 4 p.m. I saw John lecturing to anyone who was near him. unacceptable Every student who ever goes to Europe ever has enough money. acceptable Sally might be pregnant, and I know a girl who definitely is pregnant.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:13:20 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:13:22 - INFO - __main__ - time use for computing 24 examples: 5.636870384216309
+01/17/2024 16:13:22 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:13:27 - INFO - __main__ - Checking the first example...
+Input:
+unacceptable It is not entirely obvious whether, Mary listens to the Grateful Dead, she gets depressed. unacceptable At 4 p.m. I saw John lecturing to anyone who was near him. unacceptable Every student who ever goes to Europe ever has enough money. acceptable Sally might be pregnant, and I know a girl who definitely is pregnant.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:13:27 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:13:30 - INFO - __main__ - time use for computing 24 examples: 5.6485915184021
+01/17/2024 16:13:30 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:13:34 - INFO - __main__ - Checking the first example...
+Input:
+unacceptable It is not entirely obvious whether, Mary listens to the Grateful Dead, she gets depressed. unacceptable At 4 p.m. I saw John lecturing to anyone who was near him. unacceptable Every student who ever goes to Europe ever has enough money. acceptable Sally might be pregnant, and I know a girl who definitely is pregnant.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:13:34 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:13:36 - INFO - __main__ - time use for computing 24 examples: 5.135188102722168
+01/17/2024 16:13:36 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:13:41 - INFO - __main__ - Checking the first example...
+Input:
+unacceptable It is not entirely obvious whether, Mary listens to the Grateful Dead, she gets depressed. unacceptable At 4 p.m. I saw John lecturing to anyone who was near him. unacceptable Every student who ever goes to Europe ever has enough money. acceptable Sally might be pregnant, and I know a girl who definitely is pregnant.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:13:41 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:13:43 - INFO - __main__ - time use for computing 24 examples: 4.355581760406494
+01/17/2024 16:13:43 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:13:47 - INFO - __main__ - Checking the first example...
+Input:
+unacceptable It is not entirely obvious whether, Mary listens to the Grateful Dead, she gets depressed. unacceptable At 4 p.m. I saw John lecturing to anyone who was near him. unacceptable Every student who ever goes to Europe ever has enough money. acceptable Sally might be pregnant, and I know a girl who definitely is pregnant.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:13:47 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:13:49 - INFO - __main__ - time use for computing 24 examples: 4.542703628540039
+01/17/2024 16:13:50 - INFO - __main__ - Checking the first example...
+Input:
+unacceptable It is not entirely obvious whether, Mary listens to the Grateful Dead, she gets depressed. unacceptable At 4 p.m. I saw John lecturing to anyone who was near him. unacceptable Every student who ever goes to Europe ever has enough money. acceptable Sally might be pregnant, and I know a girl who definitely is pregnant. acceptable
+Output:
+ The kennel which Mary made and Fido sleeps has been stolen.
+01/17/2024 16:13:50 - INFO - __main__ - torch.Size([2000, 1024])
+01/17/2024 16:16:24 - INFO - __main__ - None task (seed=100): Macro-F1: 51.6, Accuracy: 57.0
+01/17/2024 16:16:24 - INFO - __main__ - [Train] glue-cola	8551
+01/17/2024 16:16:24 - INFO - __main__ - [Dev] glue-cola	1043
+01/17/2024 16:16:24 - INFO - __main__ - channel on None (1 train, 1 dev)
+01/17/2024 16:16:24 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:16:24 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:16:29 - INFO - __main__ - Checking the first example...
+Input:
+acceptable It is tough to please John.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:16:29 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:16:45 - INFO - __main__ - time use for computing 100 examples: 20.430744886398315
+01/17/2024 16:16:45 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:16:45 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:16:52 - INFO - __main__ - Checking the first example...
+Input:
+acceptable It is tough to please John.
+Output:
+<glue-mnli-0><glue-mnli-1><glue-mnli-2><glue-mnli-3><glue-mnli-4><glue-mnli-5><glue-mnli-6><glue-mnli-7><glue-mnli-8><glue-mnli-9>
+01/17/2024 16:16:52 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:17:07 - INFO - __main__ - time use for computing 100 examples: 22.438941955566406
+01/17/2024 16:17:07 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:17:07 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:17:11 - INFO - __main__ - Checking the first example...
+Input:
+acceptable It is tough to please John.
+Output:
+<glue-qqp-0><glue-qqp-1><glue-qqp-2><glue-qqp-3><glue-qqp-4><glue-qqp-5><glue-qqp-6><glue-qqp-7><glue-qqp-8><glue-qqp-9>
+01/17/2024 16:17:11 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:17:27 - INFO - __main__ - time use for computing 100 examples: 19.468075037002563
+01/17/2024 16:17:27 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:17:27 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:17:31 - INFO - __main__ - Checking the first example...
+Input:
+acceptable It is tough to please John.
+Output:
+<glue-mrpc-0><glue-mrpc-1><glue-mrpc-2><glue-mrpc-3><glue-mrpc-4><glue-mrpc-5><glue-mrpc-6><glue-mrpc-7><glue-mrpc-8><glue-mrpc-9>
+01/17/2024 16:17:31 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:17:46 - INFO - __main__ - time use for computing 100 examples: 19.61371874809265
+01/17/2024 16:17:46 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:17:46 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:17:50 - INFO - __main__ - Checking the first example...
+Input:
+acceptable It is tough to please John.
+Output:
+<glue-qnli-0><glue-qnli-1><glue-qnli-2><glue-qnli-3><glue-qnli-4><glue-qnli-5><glue-qnli-6><glue-qnli-7><glue-qnli-8><glue-qnli-9>
+01/17/2024 16:17:50 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:18:06 - INFO - __main__ - time use for computing 100 examples: 19.405719757080078
+01/17/2024 16:18:06 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:18:06 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:18:10 - INFO - __main__ - Checking the first example...
+Input:
+acceptable It is tough to please John.
+Output:
+<glue-rte-0><glue-rte-1><glue-rte-2><glue-rte-3><glue-rte-4><glue-rte-5><glue-rte-6><glue-rte-7><glue-rte-8><glue-rte-9>
+01/17/2024 16:18:10 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:18:25 - INFO - __main__ - time use for computing 100 examples: 19.588560104370117
+01/17/2024 16:18:25 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:18:25 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:18:30 - INFO - __main__ - Checking the first example...
+Input:
+acceptable It is tough to please John.
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/17/2024 16:18:30 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:18:45 - INFO - __main__ - time use for computing 100 examples: 19.751830339431763
+01/17/2024 16:18:45 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:18:45 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:18:49 - INFO - __main__ - Checking the first example...
+Input:
+acceptable It is tough to please John.
+Output:
+<glue-wnli-0><glue-wnli-1><glue-wnli-2><glue-wnli-3><glue-wnli-4><glue-wnli-5><glue-wnli-6><glue-wnli-7><glue-wnli-8><glue-wnli-9>
+01/17/2024 16:18:49 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:19:04 - INFO - __main__ - time use for computing 100 examples: 19.177969217300415
+01/17/2024 16:19:04 - INFO - __main__ - min difficulty: 0.9228436523003619
+01/17/2024 16:19:04 - INFO - __main__ - max difficulty: 0.9999999985040839
+01/17/2024 16:19:04 - INFO - __main__ - average difficulty: 0.9966923895124659
+01/17/2024 16:19:04 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:19:11 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Everybody who is in Mary's semantics seminar is writing a paper on polarity items. unacceptable We gave him enough opportunity and, sure enough, every senator succumbed to corruption. acceptable Harry got to be more of a celebrity. acceptable There is eager to be fifty students in this class.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:19:11 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:19:13 - INFO - __main__ - time use for computing 24 examples: 5.66864275932312
+01/17/2024 16:19:13 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:19:17 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Everybody who is in Mary's semantics seminar is writing a paper on polarity items. unacceptable We gave him enough opportunity and, sure enough, every senator succumbed to corruption. acceptable Harry got to be more of a celebrity. acceptable There is eager to be fifty students in this class.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:19:17 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:19:19 - INFO - __main__ - time use for computing 24 examples: 4.516725301742554
+01/17/2024 16:19:19 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:19:23 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Everybody who is in Mary's semantics seminar is writing a paper on polarity items. unacceptable We gave him enough opportunity and, sure enough, every senator succumbed to corruption. acceptable Harry got to be more of a celebrity. acceptable There is eager to be fifty students in this class.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:19:23 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:19:25 - INFO - __main__ - time use for computing 24 examples: 4.523836612701416
+01/17/2024 16:19:25 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:19:30 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Everybody who is in Mary's semantics seminar is writing a paper on polarity items. unacceptable We gave him enough opportunity and, sure enough, every senator succumbed to corruption. acceptable Harry got to be more of a celebrity. acceptable There is eager to be fifty students in this class.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:19:30 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:19:32 - INFO - __main__ - time use for computing 24 examples: 5.362241268157959
+01/17/2024 16:19:32 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:19:37 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Everybody who is in Mary's semantics seminar is writing a paper on polarity items. unacceptable We gave him enough opportunity and, sure enough, every senator succumbed to corruption. acceptable Harry got to be more of a celebrity. acceptable There is eager to be fifty students in this class.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:19:37 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:19:39 - INFO - __main__ - time use for computing 24 examples: 5.047118902206421
+01/17/2024 16:19:39 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:19:43 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Everybody who is in Mary's semantics seminar is writing a paper on polarity items. unacceptable We gave him enough opportunity and, sure enough, every senator succumbed to corruption. acceptable Harry got to be more of a celebrity. acceptable There is eager to be fifty students in this class.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:19:43 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:19:45 - INFO - __main__ - time use for computing 24 examples: 4.735759258270264
+01/17/2024 16:19:45 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:19:49 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Everybody who is in Mary's semantics seminar is writing a paper on polarity items. unacceptable We gave him enough opportunity and, sure enough, every senator succumbed to corruption. acceptable Harry got to be more of a celebrity. acceptable There is eager to be fifty students in this class.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:19:49 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:19:51 - INFO - __main__ - time use for computing 24 examples: 4.7484025955200195
+01/17/2024 16:19:51 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:19:57 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Everybody who is in Mary's semantics seminar is writing a paper on polarity items. unacceptable We gave him enough opportunity and, sure enough, every senator succumbed to corruption. acceptable Harry got to be more of a celebrity. acceptable There is eager to be fifty students in this class.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:19:57 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:19:59 - INFO - __main__ - time use for computing 24 examples: 6.047912120819092
+01/17/2024 16:20:00 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Everybody who is in Mary's semantics seminar is writing a paper on polarity items. unacceptable We gave him enough opportunity and, sure enough, every senator succumbed to corruption. acceptable Harry got to be more of a celebrity. acceptable There is eager to be fifty students in this class. acceptable
+Output:
+ Books were taken from each student and given to Mary by the other.
+01/17/2024 16:20:00 - INFO - __main__ - torch.Size([2000, 1024])
+01/17/2024 16:22:34 - INFO - __main__ - None task (seed=13): Macro-F1: 49.9, Accuracy: 56.8
+01/17/2024 16:22:34 - INFO - __main__ - [Train] glue-cola	8551
+01/17/2024 16:22:34 - INFO - __main__ - [Dev] glue-cola	1043
+01/17/2024 16:22:34 - INFO - __main__ - channel on None (1 train, 1 dev)
+01/17/2024 16:22:34 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:22:34 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:22:39 - INFO - __main__ - Checking the first example...
+Input:
+acceptable He's so reliable a man.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:22:39 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:22:54 - INFO - __main__ - time use for computing 100 examples: 20.48561382293701
+01/17/2024 16:22:54 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:22:54 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:22:58 - INFO - __main__ - Checking the first example...
+Input:
+acceptable He's so reliable a man.
+Output:
+<glue-mnli-0><glue-mnli-1><glue-mnli-2><glue-mnli-3><glue-mnli-4><glue-mnli-5><glue-mnli-6><glue-mnli-7><glue-mnli-8><glue-mnli-9>
+01/17/2024 16:22:58 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:23:13 - INFO - __main__ - time use for computing 100 examples: 18.943134784698486
+01/17/2024 16:23:13 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:23:13 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:23:17 - INFO - __main__ - Checking the first example...
+Input:
+acceptable He's so reliable a man.
+Output:
+<glue-qqp-0><glue-qqp-1><glue-qqp-2><glue-qqp-3><glue-qqp-4><glue-qqp-5><glue-qqp-6><glue-qqp-7><glue-qqp-8><glue-qqp-9>
+01/17/2024 16:23:17 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:23:33 - INFO - __main__ - time use for computing 100 examples: 19.11954355239868
+01/17/2024 16:23:33 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:23:33 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:23:37 - INFO - __main__ - Checking the first example...
+Input:
+acceptable He's so reliable a man.
+Output:
+<glue-mrpc-0><glue-mrpc-1><glue-mrpc-2><glue-mrpc-3><glue-mrpc-4><glue-mrpc-5><glue-mrpc-6><glue-mrpc-7><glue-mrpc-8><glue-mrpc-9>
+01/17/2024 16:23:37 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:23:52 - INFO - __main__ - time use for computing 100 examples: 19.16977334022522
+01/17/2024 16:23:52 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:23:52 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:23:55 - INFO - __main__ - Checking the first example...
+Input:
+acceptable He's so reliable a man.
+Output:
+<glue-qnli-0><glue-qnli-1><glue-qnli-2><glue-qnli-3><glue-qnli-4><glue-qnli-5><glue-qnli-6><glue-qnli-7><glue-qnli-8><glue-qnli-9>
+01/17/2024 16:23:55 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:24:11 - INFO - __main__ - time use for computing 100 examples: 19.00767207145691
+01/17/2024 16:24:11 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:24:11 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:24:15 - INFO - __main__ - Checking the first example...
+Input:
+acceptable He's so reliable a man.
+Output:
+<glue-rte-0><glue-rte-1><glue-rte-2><glue-rte-3><glue-rte-4><glue-rte-5><glue-rte-6><glue-rte-7><glue-rte-8><glue-rte-9>
+01/17/2024 16:24:15 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:24:30 - INFO - __main__ - time use for computing 100 examples: 19.268935680389404
+01/17/2024 16:24:30 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:24:30 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:24:35 - INFO - __main__ - Checking the first example...
+Input:
+acceptable He's so reliable a man.
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/17/2024 16:24:35 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:24:50 - INFO - __main__ - time use for computing 100 examples: 20.194795608520508
+01/17/2024 16:24:50 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:24:50 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:24:54 - INFO - __main__ - Checking the first example...
+Input:
+acceptable He's so reliable a man.
+Output:
+<glue-wnli-0><glue-wnli-1><glue-wnli-2><glue-wnli-3><glue-wnli-4><glue-wnli-5><glue-wnli-6><glue-wnli-7><glue-wnli-8><glue-wnli-9>
+01/17/2024 16:24:54 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:25:10 - INFO - __main__ - time use for computing 100 examples: 19.462212085723877
+01/17/2024 16:25:10 - INFO - __main__ - min difficulty: 0.8955665258387198
+01/17/2024 16:25:10 - INFO - __main__ - max difficulty: 0.9999997421465114
+01/17/2024 16:25:10 - INFO - __main__ - average difficulty: 0.995588484722557
+01/17/2024 16:25:10 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:25:13 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Aunt Hattie wants you to be nice and kiss your granny. acceptable There seem to be a good feeling developing among the students. acceptable No writer, nor any playwright, speaks clearly. acceptable Such a scholar as you were speaking of just now is here.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:25:13 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:25:15 - INFO - __main__ - time use for computing 24 examples: 4.296787738800049
+01/17/2024 16:25:15 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:25:21 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Aunt Hattie wants you to be nice and kiss your granny. acceptable There seem to be a good feeling developing among the students. acceptable No writer, nor any playwright, speaks clearly. acceptable Such a scholar as you were speaking of just now is here.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:25:21 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:25:23 - INFO - __main__ - time use for computing 24 examples: 5.684420824050903
+01/17/2024 16:25:23 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:25:27 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Aunt Hattie wants you to be nice and kiss your granny. acceptable There seem to be a good feeling developing among the students. acceptable No writer, nor any playwright, speaks clearly. acceptable Such a scholar as you were speaking of just now is here.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:25:27 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:25:29 - INFO - __main__ - time use for computing 24 examples: 4.691945791244507
+01/17/2024 16:25:29 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:25:33 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Aunt Hattie wants you to be nice and kiss your granny. acceptable There seem to be a good feeling developing among the students. acceptable No writer, nor any playwright, speaks clearly. acceptable Such a scholar as you were speaking of just now is here.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:25:33 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:25:35 - INFO - __main__ - time use for computing 24 examples: 4.689232349395752
+01/17/2024 16:25:35 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:25:44 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Aunt Hattie wants you to be nice and kiss your granny. acceptable There seem to be a good feeling developing among the students. acceptable No writer, nor any playwright, speaks clearly. acceptable Such a scholar as you were speaking of just now is here.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:25:44 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:25:46 - INFO - __main__ - time use for computing 24 examples: 6.221757650375366
+01/17/2024 16:25:46 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:25:50 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Aunt Hattie wants you to be nice and kiss your granny. acceptable There seem to be a good feeling developing among the students. acceptable No writer, nor any playwright, speaks clearly. acceptable Such a scholar as you were speaking of just now is here.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:25:50 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:25:52 - INFO - __main__ - time use for computing 24 examples: 4.388105392456055
+01/17/2024 16:25:52 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:25:57 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Aunt Hattie wants you to be nice and kiss your granny. acceptable There seem to be a good feeling developing among the students. acceptable No writer, nor any playwright, speaks clearly. acceptable Such a scholar as you were speaking of just now is here.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:25:57 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:26:00 - INFO - __main__ - time use for computing 24 examples: 5.311439514160156
+01/17/2024 16:26:00 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:26:05 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Aunt Hattie wants you to be nice and kiss your granny. acceptable There seem to be a good feeling developing among the students. acceptable No writer, nor any playwright, speaks clearly. acceptable Such a scholar as you were speaking of just now is here.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:26:05 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:26:07 - INFO - __main__ - time use for computing 24 examples: 5.392500162124634
+01/17/2024 16:26:08 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Aunt Hattie wants you to be nice and kiss your granny. acceptable There seem to be a good feeling developing among the students. acceptable No writer, nor any playwright, speaks clearly. acceptable Such a scholar as you were speaking of just now is here. acceptable
+Output:
+ Frances hid the presents in the drawer.
+01/17/2024 16:26:08 - INFO - __main__ - torch.Size([2000, 1024])
+01/17/2024 16:28:43 - INFO - __main__ - None task (seed=21): Macro-F1: 48.6, Accuracy: 52.3
+01/17/2024 16:28:43 - INFO - __main__ - [Train] glue-cola	8551
+01/17/2024 16:28:43 - INFO - __main__ - [Dev] glue-cola	1043
+01/17/2024 16:28:43 - INFO - __main__ - channel on None (1 train, 1 dev)
+01/17/2024 16:28:43 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:28:43 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:28:48 - INFO - __main__ - Checking the first example...
+Input:
+acceptable The sign warned against skating on the pond.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:28:48 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:29:03 - INFO - __main__ - time use for computing 100 examples: 20.459141969680786
+01/17/2024 16:29:03 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:29:03 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:29:07 - INFO - __main__ - Checking the first example...
+Input:
+acceptable The sign warned against skating on the pond.
+Output:
+<glue-mnli-0><glue-mnli-1><glue-mnli-2><glue-mnli-3><glue-mnli-4><glue-mnli-5><glue-mnli-6><glue-mnli-7><glue-mnli-8><glue-mnli-9>
+01/17/2024 16:29:07 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:29:23 - INFO - __main__ - time use for computing 100 examples: 19.534228086471558
+01/17/2024 16:29:23 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:29:23 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:29:29 - INFO - __main__ - Checking the first example...
+Input:
+acceptable The sign warned against skating on the pond.
+Output:
+<glue-qqp-0><glue-qqp-1><glue-qqp-2><glue-qqp-3><glue-qqp-4><glue-qqp-5><glue-qqp-6><glue-qqp-7><glue-qqp-8><glue-qqp-9>
+01/17/2024 16:29:29 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:29:44 - INFO - __main__ - time use for computing 100 examples: 21.20959711074829
+01/17/2024 16:29:44 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:29:44 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:29:52 - INFO - __main__ - Checking the first example...
+Input:
+acceptable The sign warned against skating on the pond.
+Output:
+<glue-mrpc-0><glue-mrpc-1><glue-mrpc-2><glue-mrpc-3><glue-mrpc-4><glue-mrpc-5><glue-mrpc-6><glue-mrpc-7><glue-mrpc-8><glue-mrpc-9>
+01/17/2024 16:29:52 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:30:07 - INFO - __main__ - time use for computing 100 examples: 23.604591131210327
+01/17/2024 16:30:07 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:30:07 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:30:18 - INFO - __main__ - Checking the first example...
+Input:
+acceptable The sign warned against skating on the pond.
+Output:
+<glue-qnli-0><glue-qnli-1><glue-qnli-2><glue-qnli-3><glue-qnli-4><glue-qnli-5><glue-qnli-6><glue-qnli-7><glue-qnli-8><glue-qnli-9>
+01/17/2024 16:30:18 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:30:33 - INFO - __main__ - time use for computing 100 examples: 25.384498834609985
+01/17/2024 16:30:33 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:30:33 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:30:37 - INFO - __main__ - Checking the first example...
+Input:
+acceptable The sign warned against skating on the pond.
+Output:
+<glue-rte-0><glue-rte-1><glue-rte-2><glue-rte-3><glue-rte-4><glue-rte-5><glue-rte-6><glue-rte-7><glue-rte-8><glue-rte-9>
+01/17/2024 16:30:37 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:30:52 - INFO - __main__ - time use for computing 100 examples: 19.396865844726562
+01/17/2024 16:30:52 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:30:52 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:30:57 - INFO - __main__ - Checking the first example...
+Input:
+acceptable The sign warned against skating on the pond.
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/17/2024 16:30:57 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:31:12 - INFO - __main__ - time use for computing 100 examples: 19.485347270965576
+01/17/2024 16:31:12 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:31:12 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:31:16 - INFO - __main__ - Checking the first example...
+Input:
+acceptable The sign warned against skating on the pond.
+Output:
+<glue-wnli-0><glue-wnli-1><glue-wnli-2><glue-wnli-3><glue-wnli-4><glue-wnli-5><glue-wnli-6><glue-wnli-7><glue-wnli-8><glue-wnli-9>
+01/17/2024 16:31:16 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:31:31 - INFO - __main__ - time use for computing 100 examples: 19.445501565933228
+01/17/2024 16:31:31 - INFO - __main__ - min difficulty: 0.9352421994340301
+01/17/2024 16:31:31 - INFO - __main__ - max difficulty: 0.9999999984447445
+01/17/2024 16:31:31 - INFO - __main__ - average difficulty: 0.9974098825382127
+01/17/2024 16:31:31 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:31:35 - INFO - __main__ - Checking the first example...
+Input:
+unacceptable We gave him enough opportunity and, sure enough, every senator succumbed to corruption. acceptable There seem to be a good feeling developing among the students. acceptable Tom ordered bacon, and Dick ordered lettuce, and Harry ordered tomatoes. acceptable Either Professor Swansong or the graduate students are going to proctor the exam.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:31:35 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:31:37 - INFO - __main__ - time use for computing 24 examples: 4.457707405090332
+01/17/2024 16:31:37 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:31:41 - INFO - __main__ - Checking the first example...
+Input:
+unacceptable We gave him enough opportunity and, sure enough, every senator succumbed to corruption. acceptable There seem to be a good feeling developing among the students. acceptable Tom ordered bacon, and Dick ordered lettuce, and Harry ordered tomatoes. acceptable Either Professor Swansong or the graduate students are going to proctor the exam.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:31:41 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:31:43 - INFO - __main__ - time use for computing 24 examples: 4.544389963150024
+01/17/2024 16:31:43 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:31:48 - INFO - __main__ - Checking the first example...
+Input:
+unacceptable We gave him enough opportunity and, sure enough, every senator succumbed to corruption. acceptable There seem to be a good feeling developing among the students. acceptable Tom ordered bacon, and Dick ordered lettuce, and Harry ordered tomatoes. acceptable Either Professor Swansong or the graduate students are going to proctor the exam.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:31:48 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:31:50 - INFO - __main__ - time use for computing 24 examples: 5.340898036956787
+01/17/2024 16:31:50 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:31:54 - INFO - __main__ - Checking the first example...
+Input:
+unacceptable We gave him enough opportunity and, sure enough, every senator succumbed to corruption. acceptable There seem to be a good feeling developing among the students. acceptable Tom ordered bacon, and Dick ordered lettuce, and Harry ordered tomatoes. acceptable Either Professor Swansong or the graduate students are going to proctor the exam.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:31:54 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:31:56 - INFO - __main__ - time use for computing 24 examples: 4.451909780502319
+01/17/2024 16:31:56 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:32:00 - INFO - __main__ - Checking the first example...
+Input:
+unacceptable We gave him enough opportunity and, sure enough, every senator succumbed to corruption. acceptable There seem to be a good feeling developing among the students. acceptable Tom ordered bacon, and Dick ordered lettuce, and Harry ordered tomatoes. acceptable Either Professor Swansong or the graduate students are going to proctor the exam.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:32:00 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:32:02 - INFO - __main__ - time use for computing 24 examples: 4.500113487243652
+01/17/2024 16:32:02 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:32:06 - INFO - __main__ - Checking the first example...
+Input:
+unacceptable We gave him enough opportunity and, sure enough, every senator succumbed to corruption. acceptable There seem to be a good feeling developing among the students. acceptable Tom ordered bacon, and Dick ordered lettuce, and Harry ordered tomatoes. acceptable Either Professor Swansong or the graduate students are going to proctor the exam.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:32:06 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:32:08 - INFO - __main__ - time use for computing 24 examples: 4.681158542633057
+01/17/2024 16:32:08 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:32:12 - INFO - __main__ - Checking the first example...
+Input:
+unacceptable We gave him enough opportunity and, sure enough, every senator succumbed to corruption. acceptable There seem to be a good feeling developing among the students. acceptable Tom ordered bacon, and Dick ordered lettuce, and Harry ordered tomatoes. acceptable Either Professor Swansong or the graduate students are going to proctor the exam.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:32:12 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:32:14 - INFO - __main__ - time use for computing 24 examples: 5.203138113021851
+01/17/2024 16:32:14 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:32:18 - INFO - __main__ - Checking the first example...
+Input:
+unacceptable We gave him enough opportunity and, sure enough, every senator succumbed to corruption. acceptable There seem to be a good feeling developing among the students. acceptable Tom ordered bacon, and Dick ordered lettuce, and Harry ordered tomatoes. acceptable Either Professor Swansong or the graduate students are going to proctor the exam.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:32:18 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:32:20 - INFO - __main__ - time use for computing 24 examples: 4.3679869174957275
+01/17/2024 16:32:21 - INFO - __main__ - Checking the first example...
+Input:
+unacceptable We gave him enough opportunity and, sure enough, every senator succumbed to corruption. acceptable There seem to be a good feeling developing among the students. acceptable Tom ordered bacon, and Dick ordered lettuce, and Harry ordered tomatoes. acceptable Either Professor Swansong or the graduate students are going to proctor the exam. acceptable
+Output:
+ John made Bill master of himself.
+01/17/2024 16:32:21 - INFO - __main__ - torch.Size([2000, 1024])
+01/17/2024 16:34:55 - INFO - __main__ - None task (seed=42): Macro-F1: 52.0, Accuracy: 58.9
+01/17/2024 16:34:55 - INFO - __main__ - [Train] glue-cola	8551
+01/17/2024 16:34:55 - INFO - __main__ - [Dev] glue-cola	1043
+01/17/2024 16:34:55 - INFO - __main__ - channel on None (1 train, 1 dev)
+01/17/2024 16:34:55 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:34:55 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:34:58 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Jean moved at the table.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:34:58 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:35:14 - INFO - __main__ - time use for computing 100 examples: 18.755819082260132
+01/17/2024 16:35:14 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:35:14 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:35:17 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Jean moved at the table.
+Output:
+<glue-mnli-0><glue-mnli-1><glue-mnli-2><glue-mnli-3><glue-mnli-4><glue-mnli-5><glue-mnli-6><glue-mnli-7><glue-mnli-8><glue-mnli-9>
+01/17/2024 16:35:17 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:35:32 - INFO - __main__ - time use for computing 100 examples: 18.804051876068115
+01/17/2024 16:35:32 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:35:32 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:35:37 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Jean moved at the table.
+Output:
+<glue-qqp-0><glue-qqp-1><glue-qqp-2><glue-qqp-3><glue-qqp-4><glue-qqp-5><glue-qqp-6><glue-qqp-7><glue-qqp-8><glue-qqp-9>
+01/17/2024 16:35:37 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:35:52 - INFO - __main__ - time use for computing 100 examples: 19.606441259384155
+01/17/2024 16:35:52 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:35:52 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:35:56 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Jean moved at the table.
+Output:
+<glue-mrpc-0><glue-mrpc-1><glue-mrpc-2><glue-mrpc-3><glue-mrpc-4><glue-mrpc-5><glue-mrpc-6><glue-mrpc-7><glue-mrpc-8><glue-mrpc-9>
+01/17/2024 16:35:56 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:36:11 - INFO - __main__ - time use for computing 100 examples: 19.05512237548828
+01/17/2024 16:36:11 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:36:11 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:36:15 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Jean moved at the table.
+Output:
+<glue-qnli-0><glue-qnli-1><glue-qnli-2><glue-qnli-3><glue-qnli-4><glue-qnli-5><glue-qnli-6><glue-qnli-7><glue-qnli-8><glue-qnli-9>
+01/17/2024 16:36:15 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:36:30 - INFO - __main__ - time use for computing 100 examples: 18.934288024902344
+01/17/2024 16:36:30 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:36:30 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:36:34 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Jean moved at the table.
+Output:
+<glue-rte-0><glue-rte-1><glue-rte-2><glue-rte-3><glue-rte-4><glue-rte-5><glue-rte-6><glue-rte-7><glue-rte-8><glue-rte-9>
+01/17/2024 16:36:34 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:36:49 - INFO - __main__ - time use for computing 100 examples: 19.03835415840149
+01/17/2024 16:36:49 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:36:49 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:36:53 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Jean moved at the table.
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/17/2024 16:36:53 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:37:08 - INFO - __main__ - time use for computing 100 examples: 19.137757301330566
+01/17/2024 16:37:08 - INFO - __main__ - start running soft prefix model
+01/17/2024 16:37:08 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:37:12 - INFO - __main__ - Checking the first example...
+Input:
+acceptable Jean moved at the table.
+Output:
+<glue-wnli-0><glue-wnli-1><glue-wnli-2><glue-wnli-3><glue-wnli-4><glue-wnli-5><glue-wnli-6><glue-wnli-7><glue-wnli-8><glue-wnli-9>
+01/17/2024 16:37:12 - INFO - __main__ - torch.Size([200, 1024])
+01/17/2024 16:37:27 - INFO - __main__ - time use for computing 100 examples: 19.214937210083008
+01/17/2024 16:37:27 - INFO - __main__ - min difficulty: 0.9167129240285157
+01/17/2024 16:37:27 - INFO - __main__ - max difficulty: 0.9999999999999991
+01/17/2024 16:37:27 - INFO - __main__ - average difficulty: 0.9966606007828652
+01/17/2024 16:37:27 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:37:32 - INFO - __main__ - Checking the first example...
+Input:
+acceptable I had hoped that it was true that Rosa Luxemburg had actually defected to Iceland for many years. acceptable Every politician is worried when the press starts attacking him. acceptable It's fine that he paid and apologized, but I don't really care about his gratitude, or the money, or anything. acceptable I just know that the Big 12 South teams everyone knew would win actually won the game.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:37:32 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:37:34 - INFO - __main__ - time use for computing 24 examples: 4.914787530899048
+01/17/2024 16:37:34 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:37:38 - INFO - __main__ - Checking the first example...
+Input:
+acceptable I had hoped that it was true that Rosa Luxemburg had actually defected to Iceland for many years. acceptable Every politician is worried when the press starts attacking him. acceptable It's fine that he paid and apologized, but I don't really care about his gratitude, or the money, or anything. acceptable I just know that the Big 12 South teams everyone knew would win actually won the game.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:37:38 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:37:40 - INFO - __main__ - time use for computing 24 examples: 4.536311864852905
+01/17/2024 16:37:40 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:37:44 - INFO - __main__ - Checking the first example...
+Input:
+acceptable I had hoped that it was true that Rosa Luxemburg had actually defected to Iceland for many years. acceptable Every politician is worried when the press starts attacking him. acceptable It's fine that he paid and apologized, but I don't really care about his gratitude, or the money, or anything. acceptable I just know that the Big 12 South teams everyone knew would win actually won the game.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:37:44 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:37:46 - INFO - __main__ - time use for computing 24 examples: 4.499999761581421
+01/17/2024 16:37:46 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:37:50 - INFO - __main__ - Checking the first example...
+Input:
+acceptable I had hoped that it was true that Rosa Luxemburg had actually defected to Iceland for many years. acceptable Every politician is worried when the press starts attacking him. acceptable It's fine that he paid and apologized, but I don't really care about his gratitude, or the money, or anything. acceptable I just know that the Big 12 South teams everyone knew would win actually won the game.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:37:50 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:37:52 - INFO - __main__ - time use for computing 24 examples: 4.535387754440308
+01/17/2024 16:37:52 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:37:57 - INFO - __main__ - Checking the first example...
+Input:
+acceptable I had hoped that it was true that Rosa Luxemburg had actually defected to Iceland for many years. acceptable Every politician is worried when the press starts attacking him. acceptable It's fine that he paid and apologized, but I don't really care about his gratitude, or the money, or anything. acceptable I just know that the Big 12 South teams everyone knew would win actually won the game.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:37:57 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:37:59 - INFO - __main__ - time use for computing 24 examples: 4.650149822235107
+01/17/2024 16:37:59 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:38:03 - INFO - __main__ - Checking the first example...
+Input:
+acceptable I had hoped that it was true that Rosa Luxemburg had actually defected to Iceland for many years. acceptable Every politician is worried when the press starts attacking him. acceptable It's fine that he paid and apologized, but I don't really care about his gratitude, or the money, or anything. acceptable I just know that the Big 12 South teams everyone knew would win actually won the game.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:38:03 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:38:05 - INFO - __main__ - time use for computing 24 examples: 4.447732448577881
+01/17/2024 16:38:05 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:38:09 - INFO - __main__ - Checking the first example...
+Input:
+acceptable I had hoped that it was true that Rosa Luxemburg had actually defected to Iceland for many years. acceptable Every politician is worried when the press starts attacking him. acceptable It's fine that he paid and apologized, but I don't really care about his gratitude, or the money, or anything. acceptable I just know that the Big 12 South teams everyone knew would win actually won the game.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:38:09 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:38:11 - INFO - __main__ - time use for computing 24 examples: 4.4014976024627686
+01/17/2024 16:38:11 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 16:38:15 - INFO - __main__ - Checking the first example...
+Input:
+acceptable I had hoped that it was true that Rosa Luxemburg had actually defected to Iceland for many years. acceptable Every politician is worried when the press starts attacking him. acceptable It's fine that he paid and apologized, but I don't really care about his gratitude, or the money, or anything. acceptable I just know that the Big 12 South teams everyone knew would win actually won the game.
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/17/2024 16:38:15 - INFO - __main__ - torch.Size([24, 1024])
+01/17/2024 16:38:17 - INFO - __main__ - time use for computing 24 examples: 4.438226699829102
+01/17/2024 16:38:18 - INFO - __main__ - Checking the first example...
+Input:
+acceptable I had hoped that it was true that Rosa Luxemburg had actually defected to Iceland for many years. acceptable Every politician is worried when the press starts attacking him. acceptable It's fine that he paid and apologized, but I don't really care about his gratitude, or the money, or anything. acceptable I just know that the Big 12 South teams everyone knew would win actually won the game. acceptable
+Output:
+ John is sick.
+01/17/2024 16:38:18 - INFO - __main__ - torch.Size([2000, 1024])
+01/17/2024 16:40:52 - INFO - __main__ - None task (seed=87): Macro-F1: 49.5, Accuracy: 56.8
+01/17/2024 16:40:52 - INFO - __main__ - None over 1 target tasks with majority vote: Macro-F1: 49.7, Accuracy: 60.6
+01/17/2024 16:40:52 - INFO - __main__ - None over 1 target tasks on average: Macro-F1: 50.3 +- 1.3, Accuracy: 56.4 +- 2.2

@@ -1,0 +1,31 @@
+01/19/2024 16:48:58 - INFO - __main__ - Namespace(do_tensorize=False, tensorize_dir='tensorized', n_gpu=1, n_process=40, n_prefix_tokens=10, use_demonstrations=False, log_dir='logs', prefix_embed_file=None, dataset=None, task='glue', split='glue', data_dir='data/', k=16384, test_k=4, seed=100, train_seed=1, lr=1e-06, warmup_steps=0, batch_size=8, num_training_steps=6000, weight_decay=0.0, no_masking=False, use_random_english_words=False, out_dir='checkpoints\\gpt2-medium\\glue-glue\\prefix={10}-{channel}-lr={1e-6}-initByVocab', method='channel', gpt2='gpt2-medium', optimization='adamw', fp16=False, local_rank=-1)
+01/19/2024 16:48:58 - INFO - __main__ - batch_size=8	max_length=256	max_length_per_example=256
+01/19/2024 16:48:58 - INFO - __main__ - [Train] glue-cola	8551
+01/19/2024 16:48:58 - INFO - __main__ - [Train] glue-mnli	16384
+01/19/2024 16:48:58 - INFO - __main__ - [Train] glue-qqp	16384
+01/19/2024 16:48:58 - INFO - __main__ - [Train] glue-mrpc	3668
+01/19/2024 16:48:58 - INFO - __main__ - [Train] glue-qnli	16384
+01/19/2024 16:48:58 - INFO - __main__ - [Train] glue-rte	2490
+01/19/2024 16:48:58 - INFO - __main__ - [Train] glue-sst2	16384
+01/19/2024 16:48:58 - INFO - __main__ - [Train] glue-wnli	635
+01/19/2024 16:48:58 - INFO - __main__ - channel on None (8 train)
+01/19/2024 16:49:00 - INFO - __main__ - tensorized\glue_channel_k=80880_seed=100_length=10-256-rank=%d.pkl
+01/19/2024 16:49:02 - INFO - __main__ - Checking the first example...
+Input:
+<glue-qnli-0><glue-qnli-1><glue-qnli-2><glue-qnli-3><glue-qnli-4><glue-qnli-5><glue-qnli-6><glue-qnli-7><glue-qnli-8><glue-qnli-9>entailment
+Output:
+ question: What is Yale largely known for? [SEP] sentence: Yale is noted for its largely Collegiate Gothic campus as well as for several iconic modern buildings commonly discussed in architectural history survey courses: Louis Kahn's Yale Art Gallery and Center for British Art, Eero Saarinen's Ingalls Rink and Ezra Stiles and Morse Colleges, and Paul Rudolph's Art & Architecture Building.
+01/19/2024 16:49:02 - INFO - __main__ - checkpoints\gpt2-medium\glue-glue\prefix={10}-{channel}-lr={1e-6}-initByVocab
+01/19/2024 16:49:02 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 16:49:07 - INFO - __main__ - torch.Size([80880, 256])
+01/19/2024 16:49:07 - INFO - __main__ - Training 1 parameters on 80880 examples for 6000 steps using 1 GPUs
+01/19/2024 16:54:58 - INFO - __main__ - local rank -1	global step 100	train loss 10.35
+01/19/2024 17:00:51 - INFO - __main__ - local rank -1	global step 200	train loss 12.24
+01/19/2024 17:06:43 - INFO - __main__ - local rank -1	global step 300	train loss 12.61
+01/19/2024 17:12:36 - INFO - __main__ - local rank -1	global step 400	train loss 12.54
+01/19/2024 17:18:29 - INFO - __main__ - local rank -1	global step 500	train loss 12.61
+01/19/2024 17:24:22 - INFO - __main__ - local rank -1	global step 600	train loss 12.53
+01/19/2024 17:30:12 - INFO - __main__ - local rank -1	global step 700	train loss 12.60
+01/19/2024 17:36:02 - INFO - __main__ - local rank -1	global step 800	train loss 12.47
+01/19/2024 17:41:52 - INFO - __main__ - local rank -1	global step 900	train loss 12.68
+01/19/2024 17:47:42 - INFO - __main__ - local rank -1	global step 1000	train loss 12.46

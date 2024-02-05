@@ -1,0 +1,42 @@
+02/04/2024 23:38:52 - INFO - __main__ - Namespace(do_tensorize=False, tensorize_dir='tensorized', n_gpu=1, n_process=40, n_prefix_tokens=10, use_demonstrations=False, log_dir='logs', prefix_embed_file=None, dataset=None, task='tune', split='train', data_dir='data/', k=16384, test_k=4, seed=100, train_seed=1, lr=0.01, warmup_steps=0, batch_size=8, num_training_steps=3000, weight_decay=0.0, no_masking=False, use_random_english_words=False, out_dir='checkpoints\\gpt2\\tune-train\\prefix={10}-{channel}-lr={1e-2}-initByVocab', method='channel', gpt2='gpt2', optimization='adamw', fp16=False, local_rank=-1)
+02/04/2024 23:38:52 - INFO - __main__ - batch_size=8	max_length=256	max_length_per_example=256
+02/04/2024 23:38:53 - INFO - __main__ - [Train] glue-sst2	16384
+02/04/2024 23:38:53 - INFO - __main__ - [Train] amazon_polarity	10000
+02/04/2024 23:38:53 - INFO - __main__ - [Train] financial_phrasebank	1811
+02/04/2024 23:38:53 - INFO - __main__ - [Train] poem_sentiment	843
+02/04/2024 23:38:53 - INFO - __main__ - [Train] yelp_polarity	16384
+02/04/2024 23:38:53 - INFO - __main__ - [Train] glue-cola	8551
+02/04/2024 23:38:53 - INFO - __main__ - [Train] blimp-sentential_negation_npi_scope	800
+02/04/2024 23:38:53 - INFO - __main__ - [Train] blimp-sentential_negation_npi_licensor_present	800
+02/04/2024 23:38:53 - INFO - __main__ - [Train] blimp-ellipsis_n_bar_2	800
+02/04/2024 23:38:53 - INFO - __main__ - [Train] blimp-anaphor_number_agreement	800
+02/04/2024 23:38:53 - INFO - __main__ - [Train] ag_news	16384
+02/04/2024 23:38:53 - INFO - __main__ - [Train] dbpedia_14	16384
+02/04/2024 23:38:53 - INFO - __main__ - [Train] ethos-sexual_orientation	346
+02/04/2024 23:38:53 - INFO - __main__ - [Train] ethos-religion	346
+02/04/2024 23:38:53 - INFO - __main__ - [Train] ethos-race	346
+02/04/2024 23:38:53 - INFO - __main__ - [Train] ethos-gender	346
+02/04/2024 23:38:53 - INFO - __main__ - [Train] ethos-disability	346
+02/04/2024 23:38:53 - INFO - __main__ - [Train] ethos-directed_vs_generalized	346
+02/04/2024 23:38:53 - INFO - __main__ - [Train] emo	16384
+02/04/2024 23:38:53 - INFO - __main__ - [Train] emotion	16000
+02/04/2024 23:38:53 - INFO - __main__ - channel on None (20 train)
+02/04/2024 23:38:56 - INFO - __main__ - tensorized\tune_channel_k=124401_seed=100_length=10-256-rank=%d.pkl
+02/04/2024 23:38:59 - INFO - __main__ - Checking the first example...
+Input:
+<ag_news-0><ag_news-1><ag_news-2><ag_news-3><ag_news-4><ag_news-5><ag_news-6><ag_news-7><ag_news-8><ag_news-9>Sports
+Output:
+ Nuggets hang on to Nene DENVER The Denver Nuggets have picked up their three million dollar option for next NBA season for forward Nene (nuh-NAY #39;) but not for Nikoloz Tskitishvili (NIH-koh-lohs skee-tish-VEE #39;-lee).
+02/04/2024 23:38:59 - INFO - __main__ - checkpoints\gpt2\tune-train\prefix={10}-{channel}-lr={1e-2}-initByVocab
+02/04/2024 23:38:59 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/04/2024 23:39:04 - INFO - __main__ - torch.Size([124401, 256])
+02/04/2024 23:39:05 - INFO - __main__ - Training 1 parameters on 124401 examples for 3000 steps using 1 GPUs
+02/04/2024 23:39:32 - INFO - __main__ - local rank -1	global step 100	train loss 4.90
+02/04/2024 23:39:59 - INFO - __main__ - local rank -1	global step 200	train loss 4.49
+02/04/2024 23:40:26 - INFO - __main__ - local rank -1	global step 300	train loss 4.42
+02/04/2024 23:40:53 - INFO - __main__ - local rank -1	global step 400	train loss 4.36
+02/04/2024 23:41:20 - INFO - __main__ - local rank -1	global step 500	train loss 4.44
+02/04/2024 23:41:47 - INFO - __main__ - local rank -1	global step 600	train loss 4.32
+02/04/2024 23:42:14 - INFO - __main__ - local rank -1	global step 700	train loss 4.39
+02/04/2024 23:42:41 - INFO - __main__ - local rank -1	global step 800	train loss 4.34
+02/04/2024 23:43:08 - INFO - __main__ - local rank -1	global step 900	train loss 4.33

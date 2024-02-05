@@ -1,0 +1,421 @@
+02/05/2024 15:52:30 - INFO - __main__ - Namespace(use_demonstrations=True, use_soft_prefix=False, use_soft_postfix=False, n_prefix_tokens=10, max_length=1024, prior=['easiest'], difficulty='concept_calibrated', reorder=True, log_dir='logs', out_dir='out\\gpt2', load_dir=None, concept_dir='concept_likelihood\\gpt2\\tune-train-100\\emo-channel-prefix=10-lr=1e-3-3000', prefix_embed_file='checkpoints\\gpt2\\tune-train\\prefix={10}-{channel}-lr={1e-3}-initByVocab\\soft_embeddings-3000.pt', task=None, dataset='emo', data_dir='data/', k=4, seed='100,13,21,42,87', test_batch_size=8, global_step=None, use_random_english_words=False, use_random_label=False, use_instruction=False, unseen_domain_only=False, split='test', method='channel', gpt='gpt2', api=None, test_size=1000, train_size=100, embedding_dir='embeddings\\', embedding_model='all-mpnet-base-v2', similarity_temperature=0.1, concept_temperature=50.0)
+02/05/2024 15:52:32 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 15:52:33 - INFO - __main__ - batch_size=8	max_length=1024	max_length_per_example=256
+02/05/2024 15:52:34 - INFO - __main__ - [Train] emo	30160
+02/05/2024 15:52:34 - INFO - __main__ - [Dev] emo	5509
+02/05/2024 15:52:34 - INFO - __main__ - channel on None (1 train, 1 dev)
+02/05/2024 15:52:34 - INFO - __main__ - start running soft prefix model
+02/05/2024 15:52:34 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 15:52:38 - INFO - __main__ - Checking the first example...
+Input:
+angry why lol just because better with you later on
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/05/2024 15:52:38 - INFO - __main__ - torch.Size([400, 1024])
+02/05/2024 15:53:08 - INFO - __main__ - time use for computing 100 examples: 34.00326442718506
+02/05/2024 15:53:08 - INFO - __main__ - start running soft prefix model
+02/05/2024 15:53:08 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 15:53:13 - INFO - __main__ - Checking the first example...
+Input:
+angry why lol just because better with you later on
+Output:
+<amazon_polarity-0><amazon_polarity-1><amazon_polarity-2><amazon_polarity-3><amazon_polarity-4><amazon_polarity-5><amazon_polarity-6><amazon_polarity-7><amazon_polarity-8><amazon_polarity-9>
+02/05/2024 15:53:13 - INFO - __main__ - torch.Size([400, 1024])
+02/05/2024 15:53:43 - INFO - __main__ - time use for computing 100 examples: 34.65020680427551
+02/05/2024 15:53:43 - INFO - __main__ - start running soft prefix model
+02/05/2024 15:53:43 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 15:53:47 - INFO - __main__ - Checking the first example...
+Input:
+angry why lol just because better with you later on
+Output:
+<financial_phrasebank-0><financial_phrasebank-1><financial_phrasebank-2><financial_phrasebank-3><financial_phrasebank-4><financial_phrasebank-5><financial_phrasebank-6><financial_phrasebank-7><financial_phrasebank-8><financial_phrasebank-9>
+02/05/2024 15:53:47 - INFO - __main__ - torch.Size([400, 1024])
+02/05/2024 15:54:17 - INFO - __main__ - time use for computing 100 examples: 34.02913308143616
+02/05/2024 15:54:17 - INFO - __main__ - start running soft prefix model
+02/05/2024 15:54:17 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 15:54:22 - INFO - __main__ - Checking the first example...
+Input:
+angry why lol just because better with you later on
+Output:
+<poem_sentiment-0><poem_sentiment-1><poem_sentiment-2><poem_sentiment-3><poem_sentiment-4><poem_sentiment-5><poem_sentiment-6><poem_sentiment-7><poem_sentiment-8><poem_sentiment-9>
+02/05/2024 15:54:22 - INFO - __main__ - torch.Size([400, 1024])
+02/05/2024 15:54:52 - INFO - __main__ - time use for computing 100 examples: 34.4657781124115
+02/05/2024 15:54:52 - INFO - __main__ - start running soft prefix model
+02/05/2024 15:54:52 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 15:54:56 - INFO - __main__ - Checking the first example...
+Input:
+angry why lol just because better with you later on
+Output:
+<yelp_polarity-0><yelp_polarity-1><yelp_polarity-2><yelp_polarity-3><yelp_polarity-4><yelp_polarity-5><yelp_polarity-6><yelp_polarity-7><yelp_polarity-8><yelp_polarity-9>
+02/05/2024 15:54:56 - INFO - __main__ - torch.Size([400, 1024])
+02/05/2024 15:55:26 - INFO - __main__ - time use for computing 100 examples: 34.12446045875549
+02/05/2024 15:55:26 - INFO - __main__ - start running soft prefix model
+02/05/2024 15:55:26 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 15:55:30 - INFO - __main__ - Checking the first example...
+Input:
+angry why lol just because better with you later on
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+02/05/2024 15:55:30 - INFO - __main__ - torch.Size([400, 1024])
+02/05/2024 15:56:00 - INFO - __main__ - time use for computing 100 examples: 34.09527015686035
+02/05/2024 15:56:00 - INFO - __main__ - start running soft prefix model
+02/05/2024 15:56:00 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 15:56:04 - INFO - __main__ - Checking the first example...
+Input:
+angry why lol just because better with you later on
+Output:
+<blimp-sentential_negation_npi_scope-0><blimp-sentential_negation_npi_scope-1><blimp-sentential_negation_npi_scope-2><blimp-sentential_negation_npi_scope-3><blimp-sentential_negation_npi_scope-4><blimp-sentential_negation_npi_scope-5><blimp-sentential_negation_npi_scope-6><blimp-sentential_negation_npi_scope-7><blimp-sentential_negation_npi_scope-8><blimp-sentential_negation_npi_scope-9>
+02/05/2024 15:56:04 - INFO - __main__ - torch.Size([400, 1024])
+02/05/2024 15:56:34 - INFO - __main__ - time use for computing 100 examples: 34.409886837005615
+02/05/2024 15:56:34 - INFO - __main__ - start running soft prefix model
+02/05/2024 15:56:34 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 15:56:39 - INFO - __main__ - Checking the first example...
+Input:
+angry why lol just because better with you later on
+Output:
+<blimp-sentential_negation_npi_licensor_present-0><blimp-sentential_negation_npi_licensor_present-1><blimp-sentential_negation_npi_licensor_present-2><blimp-sentential_negation_npi_licensor_present-3><blimp-sentential_negation_npi_licensor_present-4><blimp-sentential_negation_npi_licensor_present-5><blimp-sentential_negation_npi_licensor_present-6><blimp-sentential_negation_npi_licensor_present-7><blimp-sentential_negation_npi_licensor_present-8><blimp-sentential_negation_npi_licensor_present-9>
+02/05/2024 15:56:39 - INFO - __main__ - torch.Size([400, 1024])
+02/05/2024 15:57:09 - INFO - __main__ - time use for computing 100 examples: 34.395986795425415
+02/05/2024 15:57:09 - INFO - __main__ - start running soft prefix model
+02/05/2024 15:57:09 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 15:57:13 - INFO - __main__ - Checking the first example...
+Input:
+angry why lol just because better with you later on
+Output:
+<blimp-ellipsis_n_bar_2-0><blimp-ellipsis_n_bar_2-1><blimp-ellipsis_n_bar_2-2><blimp-ellipsis_n_bar_2-3><blimp-ellipsis_n_bar_2-4><blimp-ellipsis_n_bar_2-5><blimp-ellipsis_n_bar_2-6><blimp-ellipsis_n_bar_2-7><blimp-ellipsis_n_bar_2-8><blimp-ellipsis_n_bar_2-9>
+02/05/2024 15:57:13 - INFO - __main__ - torch.Size([400, 1024])
+02/05/2024 15:57:43 - INFO - __main__ - time use for computing 100 examples: 34.241923809051514
+02/05/2024 15:57:43 - INFO - __main__ - start running soft prefix model
+02/05/2024 15:57:43 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 15:57:48 - INFO - __main__ - Checking the first example...
+Input:
+angry why lol just because better with you later on
+Output:
+<blimp-anaphor_number_agreement-0><blimp-anaphor_number_agreement-1><blimp-anaphor_number_agreement-2><blimp-anaphor_number_agreement-3><blimp-anaphor_number_agreement-4><blimp-anaphor_number_agreement-5><blimp-anaphor_number_agreement-6><blimp-anaphor_number_agreement-7><blimp-anaphor_number_agreement-8><blimp-anaphor_number_agreement-9>
+02/05/2024 15:57:48 - INFO - __main__ - torch.Size([400, 1024])
+02/05/2024 15:58:18 - INFO - __main__ - time use for computing 100 examples: 34.702112436294556
+02/05/2024 15:58:18 - INFO - __main__ - start running soft prefix model
+02/05/2024 15:58:18 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 15:58:22 - INFO - __main__ - Checking the first example...
+Input:
+angry why lol just because better with you later on
+Output:
+<ag_news-0><ag_news-1><ag_news-2><ag_news-3><ag_news-4><ag_news-5><ag_news-6><ag_news-7><ag_news-8><ag_news-9>
+02/05/2024 15:58:22 - INFO - __main__ - torch.Size([400, 1024])
+02/05/2024 15:58:52 - INFO - __main__ - time use for computing 100 examples: 33.91527462005615
+02/05/2024 15:58:52 - INFO - __main__ - start running soft prefix model
+02/05/2024 15:58:52 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 15:58:56 - INFO - __main__ - Checking the first example...
+Input:
+angry why lol just because better with you later on
+Output:
+<dbpedia_14-0><dbpedia_14-1><dbpedia_14-2><dbpedia_14-3><dbpedia_14-4><dbpedia_14-5><dbpedia_14-6><dbpedia_14-7><dbpedia_14-8><dbpedia_14-9>
+02/05/2024 15:58:56 - INFO - __main__ - torch.Size([400, 1024])
+02/05/2024 15:59:26 - INFO - __main__ - time use for computing 100 examples: 34.12333655357361
+02/05/2024 15:59:26 - INFO - __main__ - start running soft prefix model
+02/05/2024 15:59:26 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 15:59:30 - INFO - __main__ - Checking the first example...
+Input:
+angry why lol just because better with you later on
+Output:
+<ethos-sexual_orientation-0><ethos-sexual_orientation-1><ethos-sexual_orientation-2><ethos-sexual_orientation-3><ethos-sexual_orientation-4><ethos-sexual_orientation-5><ethos-sexual_orientation-6><ethos-sexual_orientation-7><ethos-sexual_orientation-8><ethos-sexual_orientation-9>
+02/05/2024 15:59:30 - INFO - __main__ - torch.Size([400, 1024])
+02/05/2024 16:00:00 - INFO - __main__ - time use for computing 100 examples: 34.21697473526001
+02/05/2024 16:00:00 - INFO - __main__ - start running soft prefix model
+02/05/2024 16:00:00 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:00:04 - INFO - __main__ - Checking the first example...
+Input:
+angry why lol just because better with you later on
+Output:
+<ethos-religion-0><ethos-religion-1><ethos-religion-2><ethos-religion-3><ethos-religion-4><ethos-religion-5><ethos-religion-6><ethos-religion-7><ethos-religion-8><ethos-religion-9>
+02/05/2024 16:00:04 - INFO - __main__ - torch.Size([400, 1024])
+02/05/2024 16:00:34 - INFO - __main__ - time use for computing 100 examples: 34.14821434020996
+02/05/2024 16:00:34 - INFO - __main__ - start running soft prefix model
+02/05/2024 16:00:34 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:00:38 - INFO - __main__ - Checking the first example...
+Input:
+angry why lol just because better with you later on
+Output:
+<ethos-race-0><ethos-race-1><ethos-race-2><ethos-race-3><ethos-race-4><ethos-race-5><ethos-race-6><ethos-race-7><ethos-race-8><ethos-race-9>
+02/05/2024 16:00:38 - INFO - __main__ - torch.Size([400, 1024])
+02/05/2024 16:01:08 - INFO - __main__ - time use for computing 100 examples: 34.19521522521973
+02/05/2024 16:01:08 - INFO - __main__ - start running soft prefix model
+02/05/2024 16:01:08 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:01:12 - INFO - __main__ - Checking the first example...
+Input:
+angry why lol just because better with you later on
+Output:
+<ethos-gender-0><ethos-gender-1><ethos-gender-2><ethos-gender-3><ethos-gender-4><ethos-gender-5><ethos-gender-6><ethos-gender-7><ethos-gender-8><ethos-gender-9>
+02/05/2024 16:01:12 - INFO - __main__ - torch.Size([400, 1024])
+02/05/2024 16:01:42 - INFO - __main__ - time use for computing 100 examples: 34.20537781715393
+02/05/2024 16:01:42 - INFO - __main__ - start running soft prefix model
+02/05/2024 16:01:42 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:01:47 - INFO - __main__ - Checking the first example...
+Input:
+angry why lol just because better with you later on
+Output:
+<ethos-disability-0><ethos-disability-1><ethos-disability-2><ethos-disability-3><ethos-disability-4><ethos-disability-5><ethos-disability-6><ethos-disability-7><ethos-disability-8><ethos-disability-9>
+02/05/2024 16:01:47 - INFO - __main__ - torch.Size([400, 1024])
+02/05/2024 16:02:17 - INFO - __main__ - time use for computing 100 examples: 34.169426679611206
+02/05/2024 16:02:17 - INFO - __main__ - start running soft prefix model
+02/05/2024 16:02:17 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:02:21 - INFO - __main__ - Checking the first example...
+Input:
+angry why lol just because better with you later on
+Output:
+<ethos-directed_vs_generalized-0><ethos-directed_vs_generalized-1><ethos-directed_vs_generalized-2><ethos-directed_vs_generalized-3><ethos-directed_vs_generalized-4><ethos-directed_vs_generalized-5><ethos-directed_vs_generalized-6><ethos-directed_vs_generalized-7><ethos-directed_vs_generalized-8><ethos-directed_vs_generalized-9>
+02/05/2024 16:02:21 - INFO - __main__ - torch.Size([400, 1024])
+02/05/2024 16:02:51 - INFO - __main__ - time use for computing 100 examples: 34.36775875091553
+02/05/2024 16:02:51 - INFO - __main__ - start running soft prefix model
+02/05/2024 16:02:51 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:02:55 - INFO - __main__ - Checking the first example...
+Input:
+angry why lol just because better with you later on
+Output:
+<emo-0><emo-1><emo-2><emo-3><emo-4><emo-5><emo-6><emo-7><emo-8><emo-9>
+02/05/2024 16:02:55 - INFO - __main__ - torch.Size([400, 1024])
+02/05/2024 16:03:25 - INFO - __main__ - time use for computing 100 examples: 34.06036710739136
+02/05/2024 16:03:25 - INFO - __main__ - start running soft prefix model
+02/05/2024 16:03:25 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:03:29 - INFO - __main__ - Checking the first example...
+Input:
+angry why lol just because better with you later on
+Output:
+<emotion-0><emotion-1><emotion-2><emotion-3><emotion-4><emotion-5><emotion-6><emotion-7><emotion-8><emotion-9>
+02/05/2024 16:03:29 - INFO - __main__ - torch.Size([400, 1024])
+02/05/2024 16:03:59 - INFO - __main__ - time use for computing 100 examples: 34.112624168395996
+02/05/2024 16:03:59 - INFO - __main__ - min difficulty: -inf
+02/05/2024 16:03:59 - INFO - __main__ - max difficulty: 0.00015468201424650996
+02/05/2024 16:03:59 - INFO - __main__ - average difficulty: -inf
+02/05/2024 16:03:59 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:04:03 - INFO - __main__ - Checking the first example...
+Input:
+others why you say that it's nothing personal i just know how you people are i'm not doing anything others i was grom school now i am back busy chatting with u i miss chatting with you too can u tell me who are u happy where r  u came form from hell d so funny others lol i meant gender this isn't a laughing matter why not
+Output:
+<emo-0><emo-1><emo-2><emo-3><emo-4><emo-5><emo-6><emo-7><emo-8><emo-9>
+02/05/2024 16:04:03 - INFO - __main__ - torch.Size([24, 1024])
+02/05/2024 16:04:05 - INFO - __main__ - time use for computing 24 examples: 4.620716333389282
+02/05/2024 16:04:05 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:04:10 - INFO - __main__ - Checking the first example...
+Input:
+others why you say that it's nothing personal i just know how you people are i'm not doing anything others i was grom school now i am back busy chatting with u i miss chatting with you too can u tell me who are u happy where r  u came form from hell d so funny others lol i meant gender this isn't a laughing matter why not
+Output:
+<emo-0><emo-1><emo-2><emo-3><emo-4><emo-5><emo-6><emo-7><emo-8><emo-9>
+02/05/2024 16:04:10 - INFO - __main__ - torch.Size([24, 1024])
+02/05/2024 16:04:12 - INFO - __main__ - time use for computing 24 examples: 4.774948835372925
+02/05/2024 16:04:12 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:04:15 - INFO - __main__ - Checking the first example...
+Input:
+others why you say that it's nothing personal i just know how you people are i'm not doing anything others i was grom school now i am back busy chatting with u i miss chatting with you too can u tell me who are u happy where r  u came form from hell d so funny others lol i meant gender this isn't a laughing matter why not
+Output:
+<emo-0><emo-1><emo-2><emo-3><emo-4><emo-5><emo-6><emo-7><emo-8><emo-9>
+02/05/2024 16:04:15 - INFO - __main__ - torch.Size([24, 1024])
+02/05/2024 16:04:17 - INFO - __main__ - time use for computing 24 examples: 4.273531913757324
+02/05/2024 16:04:17 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:04:22 - INFO - __main__ - Checking the first example...
+Input:
+others why you say that it's nothing personal i just know how you people are i'm not doing anything others i was grom school now i am back busy chatting with u i miss chatting with you too can u tell me who are u happy where r  u came form from hell d so funny others lol i meant gender this isn't a laughing matter why not
+Output:
+<emo-0><emo-1><emo-2><emo-3><emo-4><emo-5><emo-6><emo-7><emo-8><emo-9>
+02/05/2024 16:04:22 - INFO - __main__ - torch.Size([24, 1024])
+02/05/2024 16:04:24 - INFO - __main__ - time use for computing 24 examples: 4.490959644317627
+02/05/2024 16:04:24 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:04:28 - INFO - __main__ - Checking the first example...
+Input:
+others why you say that it's nothing personal i just know how you people are i'm not doing anything others i was grom school now i am back busy chatting with u i miss chatting with you too can u tell me who are u happy where r  u came form from hell d so funny others lol i meant gender this isn't a laughing matter why not
+Output:
+<emo-0><emo-1><emo-2><emo-3><emo-4><emo-5><emo-6><emo-7><emo-8><emo-9>
+02/05/2024 16:04:28 - INFO - __main__ - torch.Size([24, 1024])
+02/05/2024 16:04:30 - INFO - __main__ - time use for computing 24 examples: 4.466130495071411
+02/05/2024 16:04:30 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:04:35 - INFO - __main__ - Checking the first example...
+Input:
+others why you say that it's nothing personal i just know how you people are i'm not doing anything others i was grom school now i am back busy chatting with u i miss chatting with you too can u tell me who are u happy where r  u came form from hell d so funny others lol i meant gender this isn't a laughing matter why not
+Output:
+<emo-0><emo-1><emo-2><emo-3><emo-4><emo-5><emo-6><emo-7><emo-8><emo-9>
+02/05/2024 16:04:35 - INFO - __main__ - torch.Size([24, 1024])
+02/05/2024 16:04:37 - INFO - __main__ - time use for computing 24 examples: 5.614360809326172
+02/05/2024 16:04:37 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:04:41 - INFO - __main__ - Checking the first example...
+Input:
+others why you say that it's nothing personal i just know how you people are i'm not doing anything others i was grom school now i am back busy chatting with u i miss chatting with you too can u tell me who are u happy where r  u came form from hell d so funny others lol i meant gender this isn't a laughing matter why not
+Output:
+<emo-0><emo-1><emo-2><emo-3><emo-4><emo-5><emo-6><emo-7><emo-8><emo-9>
+02/05/2024 16:04:41 - INFO - __main__ - torch.Size([24, 1024])
+02/05/2024 16:04:43 - INFO - __main__ - time use for computing 24 examples: 4.7934722900390625
+02/05/2024 16:04:43 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:04:48 - INFO - __main__ - Checking the first example...
+Input:
+others why you say that it's nothing personal i just know how you people are i'm not doing anything others i was grom school now i am back busy chatting with u i miss chatting with you too can u tell me who are u happy where r  u came form from hell d so funny others lol i meant gender this isn't a laughing matter why not
+Output:
+<emo-0><emo-1><emo-2><emo-3><emo-4><emo-5><emo-6><emo-7><emo-8><emo-9>
+02/05/2024 16:04:48 - INFO - __main__ - torch.Size([24, 1024])
+02/05/2024 16:04:50 - INFO - __main__ - time use for computing 24 examples: 4.827146053314209
+02/05/2024 16:04:50 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:04:54 - INFO - __main__ - Checking the first example...
+Input:
+others why you say that it's nothing personal i just know how you people are i'm not doing anything others i was grom school now i am back busy chatting with u i miss chatting with you too can u tell me who are u happy where r  u came form from hell d so funny others lol i meant gender this isn't a laughing matter why not
+Output:
+<emo-0><emo-1><emo-2><emo-3><emo-4><emo-5><emo-6><emo-7><emo-8><emo-9>
+02/05/2024 16:04:54 - INFO - __main__ - torch.Size([24, 1024])
+02/05/2024 16:04:56 - INFO - __main__ - time use for computing 24 examples: 4.491316318511963
+02/05/2024 16:04:56 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:05:00 - INFO - __main__ - Checking the first example...
+Input:
+others why you say that it's nothing personal i just know how you people are i'm not doing anything others i was grom school now i am back busy chatting with u i miss chatting with you too can u tell me who are u happy where r  u came form from hell d so funny others lol i meant gender this isn't a laughing matter why not
+Output:
+<emo-0><emo-1><emo-2><emo-3><emo-4><emo-5><emo-6><emo-7><emo-8><emo-9>
+02/05/2024 16:05:00 - INFO - __main__ - torch.Size([24, 1024])
+02/05/2024 16:05:02 - INFO - __main__ - time use for computing 24 examples: 4.407600402832031
+02/05/2024 16:05:02 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:05:06 - INFO - __main__ - Checking the first example...
+Input:
+others why you say that it's nothing personal i just know how you people are i'm not doing anything others i was grom school now i am back busy chatting with u i miss chatting with you too can u tell me who are u happy where r  u came form from hell d so funny others lol i meant gender this isn't a laughing matter why not
+Output:
+<emo-0><emo-1><emo-2><emo-3><emo-4><emo-5><emo-6><emo-7><emo-8><emo-9>
+02/05/2024 16:05:06 - INFO - __main__ - torch.Size([24, 1024])
+02/05/2024 16:05:08 - INFO - __main__ - time use for computing 24 examples: 4.4394190311431885
+02/05/2024 16:05:08 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:05:12 - INFO - __main__ - Checking the first example...
+Input:
+others why you say that it's nothing personal i just know how you people are i'm not doing anything others i was grom school now i am back busy chatting with u i miss chatting with you too can u tell me who are u happy where r  u came form from hell d so funny others lol i meant gender this isn't a laughing matter why not
+Output:
+<emo-0><emo-1><emo-2><emo-3><emo-4><emo-5><emo-6><emo-7><emo-8><emo-9>
+02/05/2024 16:05:12 - INFO - __main__ - torch.Size([24, 1024])
+02/05/2024 16:05:14 - INFO - __main__ - time use for computing 24 examples: 4.473132610321045
+02/05/2024 16:05:14 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:05:18 - INFO - __main__ - Checking the first example...
+Input:
+others why you say that it's nothing personal i just know how you people are i'm not doing anything others i was grom school now i am back busy chatting with u i miss chatting with you too can u tell me who are u happy where r  u came form from hell d so funny others lol i meant gender this isn't a laughing matter why not
+Output:
+<emo-0><emo-1><emo-2><emo-3><emo-4><emo-5><emo-6><emo-7><emo-8><emo-9>
+02/05/2024 16:05:18 - INFO - __main__ - torch.Size([24, 1024])
+02/05/2024 16:05:20 - INFO - __main__ - time use for computing 24 examples: 4.745551347732544
+02/05/2024 16:05:20 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:05:24 - INFO - __main__ - Checking the first example...
+Input:
+others why you say that it's nothing personal i just know how you people are i'm not doing anything others i was grom school now i am back busy chatting with u i miss chatting with you too can u tell me who are u happy where r  u came form from hell d so funny others lol i meant gender this isn't a laughing matter why not
+Output:
+<emo-0><emo-1><emo-2><emo-3><emo-4><emo-5><emo-6><emo-7><emo-8><emo-9>
+02/05/2024 16:05:24 - INFO - __main__ - torch.Size([24, 1024])
+02/05/2024 16:05:26 - INFO - __main__ - time use for computing 24 examples: 4.44946813583374
+02/05/2024 16:05:26 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:05:31 - INFO - __main__ - Checking the first example...
+Input:
+others why you say that it's nothing personal i just know how you people are i'm not doing anything others i was grom school now i am back busy chatting with u i miss chatting with you too can u tell me who are u happy where r  u came form from hell d so funny others lol i meant gender this isn't a laughing matter why not
+Output:
+<emo-0><emo-1><emo-2><emo-3><emo-4><emo-5><emo-6><emo-7><emo-8><emo-9>
+02/05/2024 16:05:31 - INFO - __main__ - torch.Size([24, 1024])
+02/05/2024 16:05:33 - INFO - __main__ - time use for computing 24 examples: 4.491435527801514
+02/05/2024 16:05:33 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:05:37 - INFO - __main__ - Checking the first example...
+Input:
+others why you say that it's nothing personal i just know how you people are i'm not doing anything others i was grom school now i am back busy chatting with u i miss chatting with you too can u tell me who are u happy where r  u came form from hell d so funny others lol i meant gender this isn't a laughing matter why not
+Output:
+<emo-0><emo-1><emo-2><emo-3><emo-4><emo-5><emo-6><emo-7><emo-8><emo-9>
+02/05/2024 16:05:37 - INFO - __main__ - torch.Size([24, 1024])
+02/05/2024 16:05:39 - INFO - __main__ - time use for computing 24 examples: 4.776492118835449
+02/05/2024 16:05:39 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:05:43 - INFO - __main__ - Checking the first example...
+Input:
+others why you say that it's nothing personal i just know how you people are i'm not doing anything others i was grom school now i am back busy chatting with u i miss chatting with you too can u tell me who are u happy where r  u came form from hell d so funny others lol i meant gender this isn't a laughing matter why not
+Output:
+<emo-0><emo-1><emo-2><emo-3><emo-4><emo-5><emo-6><emo-7><emo-8><emo-9>
+02/05/2024 16:05:43 - INFO - __main__ - torch.Size([24, 1024])
+02/05/2024 16:05:45 - INFO - __main__ - time use for computing 24 examples: 4.652132749557495
+02/05/2024 16:05:45 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:05:49 - INFO - __main__ - Checking the first example...
+Input:
+others why you say that it's nothing personal i just know how you people are i'm not doing anything others i was grom school now i am back busy chatting with u i miss chatting with you too can u tell me who are u happy where r  u came form from hell d so funny others lol i meant gender this isn't a laughing matter why not
+Output:
+<emo-0><emo-1><emo-2><emo-3><emo-4><emo-5><emo-6><emo-7><emo-8><emo-9>
+02/05/2024 16:05:49 - INFO - __main__ - torch.Size([24, 1024])
+02/05/2024 16:05:52 - INFO - __main__ - time use for computing 24 examples: 4.630793809890747
+02/05/2024 16:05:52 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:05:55 - INFO - __main__ - Checking the first example...
+Input:
+others why you say that it's nothing personal i just know how you people are i'm not doing anything others i was grom school now i am back busy chatting with u i miss chatting with you too can u tell me who are u happy where r  u came form from hell d so funny others lol i meant gender this isn't a laughing matter why not
+Output:
+<emo-0><emo-1><emo-2><emo-3><emo-4><emo-5><emo-6><emo-7><emo-8><emo-9>
+02/05/2024 16:05:55 - INFO - __main__ - torch.Size([24, 1024])
+02/05/2024 16:05:57 - INFO - __main__ - time use for computing 24 examples: 4.337857723236084
+02/05/2024 16:05:57 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:06:01 - INFO - __main__ - Checking the first example...
+Input:
+others why you say that it's nothing personal i just know how you people are i'm not doing anything others i was grom school now i am back busy chatting with u i miss chatting with you too can u tell me who are u happy where r  u came form from hell d so funny others lol i meant gender this isn't a laughing matter why not
+Output:
+<emo-0><emo-1><emo-2><emo-3><emo-4><emo-5><emo-6><emo-7><emo-8><emo-9>
+02/05/2024 16:06:01 - INFO - __main__ - torch.Size([24, 1024])
+02/05/2024 16:06:03 - INFO - __main__ - time use for computing 24 examples: 4.339649677276611
+02/05/2024 16:06:05 - INFO - __main__ - Checking the first example...
+Input:
+others why you say that it's nothing personal i just know how you people are i'm not doing anything others i was grom school now i am back busy chatting with u i miss chatting with you too can u tell me who are u others lol i meant gender this isn't a laughing matter why not happy where r  u came form from hell d so funny angry
+Output:
+ what do your parents do keep pushing me to get married parents and relatives alike you ready to get married
+02/05/2024 16:06:05 - INFO - __main__ - torch.Size([4000, 1024])
+02/05/2024 16:11:09 - INFO - __main__ - None task (seed=100): Macro-F1: 25.1, Accuracy: 42.8
+02/05/2024 16:11:10 - INFO - __main__ - [Train] emo	30160
+02/05/2024 16:11:10 - INFO - __main__ - [Dev] emo	5509
+02/05/2024 16:11:10 - INFO - __main__ - channel on None (1 train, 1 dev)
+02/05/2024 16:11:10 - INFO - __main__ - start running soft prefix model
+02/05/2024 16:11:10 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:11:14 - INFO - __main__ - Checking the first example...
+Input:
+angry ohh tkqa to the end i guess i feeling lonely
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+02/05/2024 16:11:14 - INFO - __main__ - torch.Size([400, 1024])
+02/05/2024 16:11:44 - INFO - __main__ - time use for computing 100 examples: 34.43566393852234
+02/05/2024 16:11:44 - INFO - __main__ - start running soft prefix model
+02/05/2024 16:11:44 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:11:48 - INFO - __main__ - Checking the first example...
+Input:
+angry ohh tkqa to the end i guess i feeling lonely
+Output:
+<amazon_polarity-0><amazon_polarity-1><amazon_polarity-2><amazon_polarity-3><amazon_polarity-4><amazon_polarity-5><amazon_polarity-6><amazon_polarity-7><amazon_polarity-8><amazon_polarity-9>
+02/05/2024 16:11:48 - INFO - __main__ - torch.Size([400, 1024])
+02/05/2024 16:12:18 - INFO - __main__ - time use for computing 100 examples: 34.26895260810852
+02/05/2024 16:12:18 - INFO - __main__ - start running soft prefix model
+02/05/2024 16:12:18 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:12:28 - INFO - __main__ - Checking the first example...
+Input:
+angry ohh tkqa to the end i guess i feeling lonely
+Output:
+<financial_phrasebank-0><financial_phrasebank-1><financial_phrasebank-2><financial_phrasebank-3><financial_phrasebank-4><financial_phrasebank-5><financial_phrasebank-6><financial_phrasebank-7><financial_phrasebank-8><financial_phrasebank-9>
+02/05/2024 16:12:28 - INFO - __main__ - torch.Size([400, 1024])
+02/05/2024 16:12:58 - INFO - __main__ - time use for computing 100 examples: 39.670379638671875
+02/05/2024 16:12:58 - INFO - __main__ - start running soft prefix model
+02/05/2024 16:12:58 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:13:02 - INFO - __main__ - Checking the first example...
+Input:
+angry ohh tkqa to the end i guess i feeling lonely
+Output:
+<poem_sentiment-0><poem_sentiment-1><poem_sentiment-2><poem_sentiment-3><poem_sentiment-4><poem_sentiment-5><poem_sentiment-6><poem_sentiment-7><poem_sentiment-8><poem_sentiment-9>
+02/05/2024 16:13:02 - INFO - __main__ - torch.Size([400, 1024])
+02/05/2024 16:13:32 - INFO - __main__ - time use for computing 100 examples: 34.12666130065918
+02/05/2024 16:13:32 - INFO - __main__ - start running soft prefix model
+02/05/2024 16:13:32 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:13:36 - INFO - __main__ - Checking the first example...
+Input:
+angry ohh tkqa to the end i guess i feeling lonely
+Output:
+<yelp_polarity-0><yelp_polarity-1><yelp_polarity-2><yelp_polarity-3><yelp_polarity-4><yelp_polarity-5><yelp_polarity-6><yelp_polarity-7><yelp_polarity-8><yelp_polarity-9>
+02/05/2024 16:13:36 - INFO - __main__ - torch.Size([400, 1024])
+02/05/2024 16:14:06 - INFO - __main__ - time use for computing 100 examples: 33.70404410362244
+02/05/2024 16:14:06 - INFO - __main__ - start running soft prefix model
+02/05/2024 16:14:06 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:14:10 - INFO - __main__ - Checking the first example...
+Input:
+angry ohh tkqa to the end i guess i feeling lonely
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+02/05/2024 16:14:10 - INFO - __main__ - torch.Size([400, 1024])
+02/05/2024 16:14:40 - INFO - __main__ - time use for computing 100 examples: 34.287394285202026
+02/05/2024 16:14:40 - INFO - __main__ - start running soft prefix model
+02/05/2024 16:14:40 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+02/05/2024 16:14:44 - INFO - __main__ - Checking the first example...
+Input:
+angry ohh tkqa to the end i guess i feeling lonely
+Output:
+<blimp-sentential_negation_npi_scope-0><blimp-sentential_negation_npi_scope-1><blimp-sentential_negation_npi_scope-2><blimp-sentential_negation_npi_scope-3><blimp-sentential_negation_npi_scope-4><blimp-sentential_negation_npi_scope-5><blimp-sentential_negation_npi_scope-6><blimp-sentential_negation_npi_scope-7><blimp-sentential_negation_npi_scope-8><blimp-sentential_negation_npi_scope-9>
+02/05/2024 16:14:44 - INFO - __main__ - torch.Size([400, 1024])

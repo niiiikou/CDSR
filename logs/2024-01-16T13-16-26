@@ -1,0 +1,8 @@
+01/16/2024 13:16:26 - INFO - __main__ - Namespace(use_demonstrations=True, use_soft_prefix=False, use_soft_postfix=False, n_prefix_tokens=10, max_length=1024, prior=['most_similar'], difficulty='concept_calibrated', reorder=True, log_dir='logs', out_dir='out\\gpt2', load_dir=None, concept_dir='concept_likelihood\\gpt2\\glue-glue-100\\glue-sst2-channel-prefix=10-lr=1e-2-1000', prefix_embed_file='checkpoints\\gpt2\\glue-glue\\prefix={10}-{channel}-lr={1e-2}-initByVocab\\soft_embeddings-1000.pt', task=None, dataset='glue-sst2', data_dir='data/', k=4, seed='100,13,21,42,87', test_batch_size=8, global_step=None, use_random_english_words=False, use_random_label=False, use_instruction=False, unseen_domain_only=False, split='test', method='channel', gpt='gpt2', api=None, test_size=1000, train_size=100, embedding_dir='embeddings\\', embedding_model='all-mpnet-base-v2', similarity_temperature=0.1, concept_temperature=50.0)
+01/16/2024 13:16:27 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/16/2024 13:16:29 - INFO - sentence_transformers.SentenceTransformer - Load pretrained SentenceTransformer: all-mpnet-base-v2
+01/16/2024 13:16:29 - INFO - sentence_transformers.SentenceTransformer - Use pytorch device: cuda
+01/16/2024 13:16:29 - INFO - __main__ - batch_size=8	max_length=1024	max_length_per_example=256
+01/16/2024 13:16:31 - INFO - __main__ - [Train] glue-sst2	67349
+01/16/2024 13:16:31 - INFO - __main__ - [Dev] glue-sst2	872
+01/16/2024 13:16:31 - INFO - __main__ - channel on None (1 train, 1 dev)

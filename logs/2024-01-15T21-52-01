@@ -1,0 +1,286 @@
+01/15/2024 21:52:01 - INFO - __main__ - Namespace(use_demonstrations=True, use_soft_prefix=False, use_soft_postfix=False, n_prefix_tokens=10, max_length=1024, prior=['easiest'], difficulty='concept_calibrated', reorder=True, log_dir='logs', out_dir='out\\gpt2', load_dir=None, concept_dir='concept_likelihood\\gpt2-medium\\glue-glue-100\\glue-sst2-channel-prefix=10-lr=1e-5-1000', prefix_embed_file='checkpoints\\gpt2-medium\\glue-glue\\prefix={10}-{channel}-lr={1e-5}-initByVocab\\soft_embeddings-1000.pt', task=None, dataset='glue-sst2', data_dir='data/', k=4, seed='100,13,21,42,87', test_batch_size=8, global_step=None, use_random_english_words=False, use_random_label=False, use_instruction=False, unseen_domain_only=False, split='test', method='channel', gpt='gpt2', api=None, test_size=1000, train_size=100, embedding_dir='embeddings\\', embedding_model='all-mpnet-base-v2', similarity_temperature=0.1, concept_temperature=50.0)
+01/15/2024 21:52:02 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 21:52:34 - INFO - __main__ - batch_size=8	max_length=1024	max_length_per_example=256
+01/15/2024 21:52:43 - INFO - __main__ - [Train] glue-sst2	67349
+01/15/2024 21:52:43 - INFO - __main__ - [Dev] glue-sst2	872
+01/15/2024 21:52:43 - INFO - __main__ - channel on None (1 train, 1 dev)
+01/15/2024 21:52:43 - INFO - __main__ - start running soft prefix model
+01/15/2024 21:52:43 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 21:52:52 - INFO - __main__ - Checking the first example...
+Input:
+negative
+sentence: the stars may be college kids, but the subject matter is as adult as you can get :
+Output:
+<glue-cola-0><glue-cola-1><glue-cola-2><glue-cola-3><glue-cola-4><glue-cola-5><glue-cola-6><glue-cola-7><glue-cola-8><glue-cola-9>
+01/15/2024 21:52:52 - INFO - __main__ - torch.Size([200, 1024])
+01/15/2024 21:53:54 - INFO - __main__ - time use for computing 100 examples: 70.86821365356445
+01/15/2024 21:53:54 - INFO - __main__ - start running soft prefix model
+01/15/2024 21:53:54 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 21:54:17 - INFO - __main__ - Checking the first example...
+Input:
+negative
+sentence: the stars may be college kids, but the subject matter is as adult as you can get :
+Output:
+<glue-mnli-0><glue-mnli-1><glue-mnli-2><glue-mnli-3><glue-mnli-4><glue-mnli-5><glue-mnli-6><glue-mnli-7><glue-mnli-8><glue-mnli-9>
+01/15/2024 21:54:17 - INFO - __main__ - torch.Size([200, 1024])
+01/15/2024 21:55:20 - INFO - __main__ - time use for computing 100 examples: 86.26867580413818
+01/15/2024 21:55:20 - INFO - __main__ - start running soft prefix model
+01/15/2024 21:55:20 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 21:55:35 - INFO - __main__ - Checking the first example...
+Input:
+negative
+sentence: the stars may be college kids, but the subject matter is as adult as you can get :
+Output:
+<glue-qqp-0><glue-qqp-1><glue-qqp-2><glue-qqp-3><glue-qqp-4><glue-qqp-5><glue-qqp-6><glue-qqp-7><glue-qqp-8><glue-qqp-9>
+01/15/2024 21:55:35 - INFO - __main__ - torch.Size([200, 1024])
+01/15/2024 21:56:40 - INFO - __main__ - time use for computing 100 examples: 79.87771439552307
+01/15/2024 21:56:40 - INFO - __main__ - start running soft prefix model
+01/15/2024 21:56:40 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 21:57:08 - INFO - __main__ - Checking the first example...
+Input:
+negative
+sentence: the stars may be college kids, but the subject matter is as adult as you can get :
+Output:
+<glue-mrpc-0><glue-mrpc-1><glue-mrpc-2><glue-mrpc-3><glue-mrpc-4><glue-mrpc-5><glue-mrpc-6><glue-mrpc-7><glue-mrpc-8><glue-mrpc-9>
+01/15/2024 21:57:08 - INFO - __main__ - torch.Size([200, 1024])
+01/15/2024 21:58:15 - INFO - __main__ - time use for computing 100 examples: 94.66452693939209
+01/15/2024 21:58:15 - INFO - __main__ - start running soft prefix model
+01/15/2024 21:58:15 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 21:58:42 - INFO - __main__ - Checking the first example...
+Input:
+negative
+sentence: the stars may be college kids, but the subject matter is as adult as you can get :
+Output:
+<glue-qnli-0><glue-qnli-1><glue-qnli-2><glue-qnli-3><glue-qnli-4><glue-qnli-5><glue-qnli-6><glue-qnli-7><glue-qnli-8><glue-qnli-9>
+01/15/2024 21:58:42 - INFO - __main__ - torch.Size([200, 1024])
+01/15/2024 21:59:42 - INFO - __main__ - time use for computing 100 examples: 87.75742983818054
+01/15/2024 21:59:42 - INFO - __main__ - start running soft prefix model
+01/15/2024 21:59:42 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 21:59:46 - INFO - __main__ - Checking the first example...
+Input:
+negative
+sentence: the stars may be college kids, but the subject matter is as adult as you can get :
+Output:
+<glue-rte-0><glue-rte-1><glue-rte-2><glue-rte-3><glue-rte-4><glue-rte-5><glue-rte-6><glue-rte-7><glue-rte-8><glue-rte-9>
+01/15/2024 21:59:46 - INFO - __main__ - torch.Size([200, 1024])
+01/15/2024 22:00:46 - INFO - __main__ - time use for computing 100 examples: 63.29168939590454
+01/15/2024 22:00:46 - INFO - __main__ - start running soft prefix model
+01/15/2024 22:00:46 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 22:00:50 - INFO - __main__ - Checking the first example...
+Input:
+negative
+sentence: the stars may be college kids, but the subject matter is as adult as you can get :
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/15/2024 22:00:50 - INFO - __main__ - torch.Size([200, 1024])
+01/15/2024 22:01:49 - INFO - __main__ - time use for computing 100 examples: 63.76901984214783
+01/15/2024 22:01:49 - INFO - __main__ - start running soft prefix model
+01/15/2024 22:01:49 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 22:01:54 - INFO - __main__ - Checking the first example...
+Input:
+negative
+sentence: the stars may be college kids, but the subject matter is as adult as you can get :
+Output:
+<glue-wnli-0><glue-wnli-1><glue-wnli-2><glue-wnli-3><glue-wnli-4><glue-wnli-5><glue-wnli-6><glue-wnli-7><glue-wnli-8><glue-wnli-9>
+01/15/2024 22:01:54 - INFO - __main__ - torch.Size([200, 1024])
+01/15/2024 22:02:54 - INFO - __main__ - time use for computing 100 examples: 64.30004000663757
+01/15/2024 22:02:54 - INFO - __main__ - min difficulty: -inf
+01/15/2024 22:02:54 - INFO - __main__ - max difficulty: -inf
+01/15/2024 22:02:54 - INFO - __main__ - average difficulty: -inf
+01/15/2024 22:02:54 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 22:03:08 - INFO - __main__ - Checking the first example...
+Input:
+positive
+sentence: the stars may be college kids, but the subject matter is as adult as you can get :
+
+
+negative
+sentence:, it isn't much fun.
+
+
+negative
+sentence: a case of too many chefs fussing over too weak a recipe
+
+
+positive
+sentence: hubert with a mixture of deadpan cool, wry humor and just the measure of tenderness required to give this comic slugfest some heart
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/15/2024 22:03:08 - INFO - __main__ - torch.Size([24, 1024])
+01/15/2024 22:03:16 - INFO - __main__ - time use for computing 24 examples: 10.495989799499512
+01/15/2024 22:03:16 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 22:03:21 - INFO - __main__ - Checking the first example...
+Input:
+positive
+sentence: the stars may be college kids, but the subject matter is as adult as you can get :
+
+
+negative
+sentence:, it isn't much fun.
+
+
+negative
+sentence: a case of too many chefs fussing over too weak a recipe
+
+
+positive
+sentence: hubert with a mixture of deadpan cool, wry humor and just the measure of tenderness required to give this comic slugfest some heart
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/15/2024 22:03:21 - INFO - __main__ - torch.Size([24, 1024])
+01/15/2024 22:03:28 - INFO - __main__ - time use for computing 24 examples: 10.026628971099854
+01/15/2024 22:03:28 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 22:03:33 - INFO - __main__ - Checking the first example...
+Input:
+positive
+sentence: the stars may be college kids, but the subject matter is as adult as you can get :
+
+
+negative
+sentence:, it isn't much fun.
+
+
+negative
+sentence: a case of too many chefs fussing over too weak a recipe
+
+
+positive
+sentence: hubert with a mixture of deadpan cool, wry humor and just the measure of tenderness required to give this comic slugfest some heart
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/15/2024 22:03:33 - INFO - __main__ - torch.Size([24, 1024])
+01/15/2024 22:03:40 - INFO - __main__ - time use for computing 24 examples: 9.850970029830933
+01/15/2024 22:03:40 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 22:03:45 - INFO - __main__ - Checking the first example...
+Input:
+positive
+sentence: the stars may be college kids, but the subject matter is as adult as you can get :
+
+
+negative
+sentence:, it isn't much fun.
+
+
+negative
+sentence: a case of too many chefs fussing over too weak a recipe
+
+
+positive
+sentence: hubert with a mixture of deadpan cool, wry humor and just the measure of tenderness required to give this comic slugfest some heart
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/15/2024 22:03:45 - INFO - __main__ - torch.Size([24, 1024])
+01/15/2024 22:03:52 - INFO - __main__ - time use for computing 24 examples: 9.945061445236206
+01/15/2024 22:03:52 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 22:03:57 - INFO - __main__ - Checking the first example...
+Input:
+positive
+sentence: the stars may be college kids, but the subject matter is as adult as you can get :
+
+
+negative
+sentence:, it isn't much fun.
+
+
+negative
+sentence: a case of too many chefs fussing over too weak a recipe
+
+
+positive
+sentence: hubert with a mixture of deadpan cool, wry humor and just the measure of tenderness required to give this comic slugfest some heart
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/15/2024 22:03:57 - INFO - __main__ - torch.Size([24, 1024])
+01/15/2024 22:04:04 - INFO - __main__ - time use for computing 24 examples: 9.796587705612183
+01/15/2024 22:04:04 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 22:04:08 - INFO - __main__ - Checking the first example...
+Input:
+positive
+sentence: the stars may be college kids, but the subject matter is as adult as you can get :
+
+
+negative
+sentence:, it isn't much fun.
+
+
+negative
+sentence: a case of too many chefs fussing over too weak a recipe
+
+
+positive
+sentence: hubert with a mixture of deadpan cool, wry humor and just the measure of tenderness required to give this comic slugfest some heart
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/15/2024 22:04:08 - INFO - __main__ - torch.Size([24, 1024])
+01/15/2024 22:04:15 - INFO - __main__ - time use for computing 24 examples: 9.549149990081787
+01/15/2024 22:04:15 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 22:04:20 - INFO - __main__ - Checking the first example...
+Input:
+positive
+sentence: the stars may be college kids, but the subject matter is as adult as you can get :
+
+
+negative
+sentence:, it isn't much fun.
+
+
+negative
+sentence: a case of too many chefs fussing over too weak a recipe
+
+
+positive
+sentence: hubert with a mixture of deadpan cool, wry humor and just the measure of tenderness required to give this comic slugfest some heart
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/15/2024 22:04:20 - INFO - __main__ - torch.Size([24, 1024])
+01/15/2024 22:04:27 - INFO - __main__ - time use for computing 24 examples: 9.561412334442139
+01/15/2024 22:04:27 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 22:04:31 - INFO - __main__ - Checking the first example...
+Input:
+positive
+sentence: the stars may be college kids, but the subject matter is as adult as you can get :
+
+
+negative
+sentence:, it isn't much fun.
+
+
+negative
+sentence: a case of too many chefs fussing over too weak a recipe
+
+
+positive
+sentence: hubert with a mixture of deadpan cool, wry humor and just the measure of tenderness required to give this comic slugfest some heart
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/15/2024 22:04:31 - INFO - __main__ - torch.Size([24, 1024])
+01/15/2024 22:04:39 - INFO - __main__ - time use for computing 24 examples: 10.039242267608643
+01/15/2024 22:04:40 - INFO - __main__ - Checking the first example...
+Input:
+positive
+sentence: the stars may be college kids, but the subject matter is as adult as you can get :
+
+
+negative
+sentence:, it isn't much fun.
+
+
+negative
+sentence: a case of too many chefs fussing over too weak a recipe
+
+
+positive
+sentence: hubert with a mixture of deadpan cool, wry humor and just the measure of tenderness required to give this comic slugfest some heart
+
+
+negative
+Output:
+
+sentence: it's a charming and often affecting journey.
+01/15/2024 22:04:40 - INFO - __main__ - torch.Size([1744, 1024])
+01/15/2024 22:11:03 - INFO - __main__ - None task (seed=100): Macro-F1: 34.4, Accuracy: 49.8
+01/15/2024 22:11:03 - INFO - __main__ - [Train] glue-sst2	67349
+01/15/2024 22:11:03 - INFO - __main__ - [Dev] glue-sst2	872
+01/15/2024 22:11:03 - INFO - __main__ - channel on None (1 train, 1 dev)
+01/15/2024 22:11:03 - INFO - __main__ - start running soft prefix model
+01/15/2024 22:11:03 - INFO - __main__ - Setting up for local_rank=-1, world_size=1

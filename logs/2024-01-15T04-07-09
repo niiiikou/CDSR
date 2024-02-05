@@ -1,0 +1,19 @@
+01/15/2024 04:07:09 - INFO - __main__ - Namespace(do_tensorize=False, tensorize_dir='tensorized', n_gpu=1, n_process=40, n_prefix_tokens=10, use_demonstrations=False, log_dir='logs', prefix_embed_file=None, dataset=None, task='glue', split='glue', data_dir='data/', k=16384, test_k=4, seed=100, train_seed=1, lr=0.01, warmup_steps=0, batch_size=8, num_training_steps=3000, weight_decay=0.0, no_masking=False, use_random_english_words=False, out_dir='checkpoints\\gpt2-large\\glue-glue\\prefix={10}-{direct}-lr={1e-2}-initByVocab', method='direct', gpt2='gpt2-large', optimization='adamw', fp16=False, local_rank=-1)
+01/15/2024 04:07:09 - INFO - __main__ - batch_size=8	max_length=256	max_length_per_example=256
+01/15/2024 04:07:09 - INFO - __main__ - [Train] glue-cola	8551
+01/15/2024 04:07:09 - INFO - __main__ - [Train] glue-mnli	16384
+01/15/2024 04:07:09 - INFO - __main__ - [Train] glue-qqp	16384
+01/15/2024 04:07:09 - INFO - __main__ - [Train] glue-mrpc	3668
+01/15/2024 04:07:09 - INFO - __main__ - [Train] glue-qnli	16384
+01/15/2024 04:07:09 - INFO - __main__ - [Train] glue-rte	2490
+01/15/2024 04:07:09 - INFO - __main__ - [Train] glue-sst2	16384
+01/15/2024 04:07:09 - INFO - __main__ - [Train] glue-wnli	635
+01/15/2024 04:07:09 - INFO - __main__ - direct on None (8 train)
+01/15/2024 04:07:15 - INFO - __main__ - tensorized\glue_direct_k=80880_seed=100_length=10-256-rank=%d.pkl
+01/15/2024 04:07:17 - INFO - __main__ - Checking the first example...
+Input:
+<glue-mnli-0><glue-mnli-1><glue-mnli-2><glue-mnli-3><glue-mnli-4><glue-mnli-5><glue-mnli-6><glue-mnli-7><glue-mnli-8><glue-mnli-9>premise: This entitles you to a roundtrip train ticket from Shinjuku to Gora, connecting with the funicular railway up into the mountains to a cable car. [SEP] hypothesis: There's a shuttle bus waiting for you at the end of the railway up the mountains.
+Output:
+ neutral
+01/15/2024 04:07:17 - INFO - __main__ - checkpoints\gpt2-large\glue-glue\prefix={10}-{direct}-lr={1e-2}-initByVocab
+01/15/2024 04:07:17 - INFO - __main__ - Setting up for local_rank=-1, world_size=1

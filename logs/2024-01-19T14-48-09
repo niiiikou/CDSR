@@ -1,0 +1,490 @@
+01/19/2024 14:48:09 - INFO - __main__ - Namespace(use_demonstrations=True, use_soft_prefix=False, use_soft_postfix=False, n_prefix_tokens=10, max_length=1024, prior=['easiest'], difficulty='concept_calibrated', reorder=True, log_dir='logs', out_dir='out\\gpt2', load_dir=None, concept_dir='concept_likelihood\\gpt2-medium\\glue-glue-100\\glue-sst2-channel-prefix=10-lr=1e-4-1000', prefix_embed_file='checkpoints\\gpt2-medium\\glue-glue\\prefix={10}-{channel}-lr={1e-4}-initByVocab\\soft_embeddings-1000.pt', task=None, dataset='glue-sst2', data_dir='data/', k=4, seed='100,13,21,42,87', test_batch_size=8, global_step=None, use_random_english_words=False, use_random_label=False, use_instruction=False, unseen_domain_only=False, split='test', method='channel', gpt='gpt2', api=None, test_size=1000, train_size=100, embedding_dir='embeddings\\', embedding_model='all-mpnet-base-v2', similarity_temperature=0.1, concept_temperature=50.0)
+01/19/2024 14:48:11 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:48:12 - INFO - __main__ - batch_size=8	max_length=1024	max_length_per_example=256
+01/19/2024 14:48:13 - INFO - __main__ - [Train] glue-sst2	67349
+01/19/2024 14:48:13 - INFO - __main__ - [Dev] glue-sst2	872
+01/19/2024 14:48:13 - INFO - __main__ - channel on None (1 train, 1 dev)
+01/19/2024 14:48:13 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:48:13 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:48:13 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:48:13 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:48:13 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:48:13 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:48:13 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:48:13 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:48:13 - INFO - __main__ - min difficulty: 0.8741074747977294
+01/19/2024 14:48:13 - INFO - __main__ - max difficulty: 0.8784739641891861
+01/19/2024 14:48:13 - INFO - __main__ - average difficulty: 0.8757630209129447
+01/19/2024 14:48:13 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:48:15 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:48:15 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:48:17 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:48:17 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:48:19 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:48:19 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:48:20 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:48:20 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:48:22 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:48:22 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:48:23 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:48:23 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:48:25 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:48:25 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:48:26 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:48:27 - INFO - __main__ - Checking the first example...
+Input:
+negative
+sentence: don't really seem all that profound, at least by way of what can be gleaned from this three-hour endurance test built around an hour's worth of actual material.
+
+
+positive
+sentence: better characters, some genuine quirkiness and at least
+
+
+negative
+sentence:'s a liability
+
+
+negative
+sentence: more to be prescribed than recommended -- as visually bland as a dentist's waiting room, complete with soothing muzak and a cushion of predictable narrative rhythms
+
+
+negative
+Output:
+
+sentence: it's a charming and often affecting journey.
+01/19/2024 14:48:27 - INFO - __main__ - torch.Size([1744, 1024])
+01/19/2024 14:50:57 - INFO - __main__ - None task (seed=100): Macro-F1: 53.9, Accuracy: 61.2
+01/19/2024 14:50:57 - INFO - __main__ - [Train] glue-sst2	67349
+01/19/2024 14:50:57 - INFO - __main__ - [Dev] glue-sst2	872
+01/19/2024 14:50:57 - INFO - __main__ - channel on None (1 train, 1 dev)
+01/19/2024 14:50:57 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:50:57 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:50:57 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:50:57 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:50:57 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:50:57 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:50:57 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:50:57 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:50:57 - INFO - __main__ - min difficulty: 0.8744733269798485
+01/19/2024 14:50:57 - INFO - __main__ - max difficulty: 0.8782032438655037
+01/19/2024 14:50:57 - INFO - __main__ - average difficulty: 0.8758978998690846
+01/19/2024 14:50:57 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:50:59 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:50:59 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:51:01 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:51:01 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:51:03 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:51:03 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:51:04 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:51:04 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:51:06 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:51:06 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:51:07 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:51:07 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:51:09 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:51:09 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:51:10 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:51:11 - INFO - __main__ - Checking the first example...
+Input:
+positive
+sentence: ` a'list cast
+
+
+positive
+sentence: contribute to a mood that's sustained through the surprisingly somber conclusion.
+
+
+positive
+sentence: a genial romance that maintains a surprisingly buoyant tone throughout, notwithstanding some of the writers'sporadic dips into pop freudianism
+
+
+negative
+sentence: a random series of collected gags, pranks, pratfalls, dares, injuries, etc.
+
+
+negative
+Output:
+
+sentence: it's a charming and often affecting journey.
+01/19/2024 14:51:11 - INFO - __main__ - torch.Size([1744, 1024])
+01/19/2024 14:53:41 - INFO - __main__ - None task (seed=13): Macro-F1: 42.9, Accuracy: 55.3
+01/19/2024 14:53:41 - INFO - __main__ - [Train] glue-sst2	67349
+01/19/2024 14:53:41 - INFO - __main__ - [Dev] glue-sst2	872
+01/19/2024 14:53:41 - INFO - __main__ - channel on None (1 train, 1 dev)
+01/19/2024 14:53:41 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:53:41 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:53:41 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:53:41 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:53:41 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:53:41 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:53:41 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:53:41 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:53:41 - INFO - __main__ - min difficulty: 0.8731871137875128
+01/19/2024 14:53:41 - INFO - __main__ - max difficulty: 0.8792394026670053
+01/19/2024 14:53:41 - INFO - __main__ - average difficulty: 0.875815327046595
+01/19/2024 14:53:41 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:53:43 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:53:43 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:53:45 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:53:45 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:53:46 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:53:46 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:53:49 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:53:49 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:53:50 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:53:50 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:53:52 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:53:52 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:53:53 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:53:53 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:53:55 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:53:56 - INFO - __main__ - Checking the first example...
+Input:
+negative
+sentence: a snail's pace
+
+
+positive
+sentence: of the ideal casting of the masterful british actor ian holm
+
+
+negative
+sentence: applies more detail to the film's music than to the story line
+
+
+positive
+sentence: gives a human face to what's often discussed in purely abstract terms
+
+
+negative
+Output:
+
+sentence: it's a charming and often affecting journey.
+01/19/2024 14:53:56 - INFO - __main__ - torch.Size([1744, 1024])
+01/19/2024 14:56:25 - INFO - __main__ - None task (seed=21): Macro-F1: 39.2, Accuracy: 51.9
+01/19/2024 14:56:25 - INFO - __main__ - [Train] glue-sst2	67349
+01/19/2024 14:56:25 - INFO - __main__ - [Dev] glue-sst2	872
+01/19/2024 14:56:25 - INFO - __main__ - channel on None (1 train, 1 dev)
+01/19/2024 14:56:25 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:56:25 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:56:25 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:56:25 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:56:25 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:56:25 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:56:25 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:56:25 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:56:25 - INFO - __main__ - min difficulty: 0.8729583139813913
+01/19/2024 14:56:25 - INFO - __main__ - max difficulty: 0.8777180815416133
+01/19/2024 14:56:25 - INFO - __main__ - average difficulty: 0.8758009578033298
+01/19/2024 14:56:25 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:56:27 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:56:27 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:56:29 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:56:29 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:56:30 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:56:30 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:56:32 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:56:32 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:56:33 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:56:33 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:56:35 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:56:35 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:56:37 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:56:37 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:56:38 - INFO - __main__ - loading saved demo nlls
+01/19/2024 14:56:39 - INFO - __main__ - Checking the first example...
+Input:
+negative
+sentence: with outtakes in which most of the characters forget their lines and just utter ` uhhh,'which is better than most of the writing in the movie
+
+
+positive
+sentence: a buoyant delivery
+
+
+positive
+sentence: it shows us a slice of life that's very different from our own and yet instantly recognizable.
+
+
+negative
+sentence: such a flat, plodding picture
+
+
+negative
+Output:
+
+sentence: it's a charming and often affecting journey.
+01/19/2024 14:56:39 - INFO - __main__ - torch.Size([1744, 1024])
+01/19/2024 14:59:08 - INFO - __main__ - None task (seed=42): Macro-F1: 39.1, Accuracy: 53.3
+01/19/2024 14:59:09 - INFO - __main__ - [Train] glue-sst2	67349
+01/19/2024 14:59:09 - INFO - __main__ - [Dev] glue-sst2	872
+01/19/2024 14:59:09 - INFO - __main__ - channel on None (1 train, 1 dev)
+01/19/2024 14:59:09 - INFO - __main__ - loading saved concept likelihoods
+01/19/2024 14:59:09 - INFO - __main__ - start running soft prefix model
+01/19/2024 14:59:09 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 14:59:12 - INFO - __main__ - Checking the first example...
+Input:
+negative
+sentence: titular
+Output:
+<glue-mnli-0><glue-mnli-1><glue-mnli-2><glue-mnli-3><glue-mnli-4><glue-mnli-5><glue-mnli-6><glue-mnli-7><glue-mnli-8><glue-mnli-9>
+01/19/2024 14:59:12 - INFO - __main__ - torch.Size([200, 1024])
+01/19/2024 15:00:05 - INFO - __main__ - time use for computing 100 examples: 56.38169002532959
+01/19/2024 15:00:05 - INFO - __main__ - start running soft prefix model
+01/19/2024 15:00:05 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 15:00:09 - INFO - __main__ - Checking the first example...
+Input:
+negative
+sentence: titular
+Output:
+<glue-qqp-0><glue-qqp-1><glue-qqp-2><glue-qqp-3><glue-qqp-4><glue-qqp-5><glue-qqp-6><glue-qqp-7><glue-qqp-8><glue-qqp-9>
+01/19/2024 15:00:09 - INFO - __main__ - torch.Size([200, 1024])
+01/19/2024 15:01:01 - INFO - __main__ - time use for computing 100 examples: 56.43895864486694
+01/19/2024 15:01:01 - INFO - __main__ - start running soft prefix model
+01/19/2024 15:01:01 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 15:01:05 - INFO - __main__ - Checking the first example...
+Input:
+negative
+sentence: titular
+Output:
+<glue-mrpc-0><glue-mrpc-1><glue-mrpc-2><glue-mrpc-3><glue-mrpc-4><glue-mrpc-5><glue-mrpc-6><glue-mrpc-7><glue-mrpc-8><glue-mrpc-9>
+01/19/2024 15:01:05 - INFO - __main__ - torch.Size([200, 1024])
+01/19/2024 15:01:58 - INFO - __main__ - time use for computing 100 examples: 56.26784634590149
+01/19/2024 15:01:58 - INFO - __main__ - start running soft prefix model
+01/19/2024 15:01:58 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 15:02:02 - INFO - __main__ - Checking the first example...
+Input:
+negative
+sentence: titular
+Output:
+<glue-qnli-0><glue-qnli-1><glue-qnli-2><glue-qnli-3><glue-qnli-4><glue-qnli-5><glue-qnli-6><glue-qnli-7><glue-qnli-8><glue-qnli-9>
+01/19/2024 15:02:02 - INFO - __main__ - torch.Size([200, 1024])
+01/19/2024 15:02:55 - INFO - __main__ - time use for computing 100 examples: 56.88692879676819
+01/19/2024 15:02:55 - INFO - __main__ - start running soft prefix model
+01/19/2024 15:02:55 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 15:02:58 - INFO - __main__ - Checking the first example...
+Input:
+negative
+sentence: titular
+Output:
+<glue-rte-0><glue-rte-1><glue-rte-2><glue-rte-3><glue-rte-4><glue-rte-5><glue-rte-6><glue-rte-7><glue-rte-8><glue-rte-9>
+01/19/2024 15:02:58 - INFO - __main__ - torch.Size([200, 1024])
+01/19/2024 15:03:51 - INFO - __main__ - time use for computing 100 examples: 56.240750312805176
+01/19/2024 15:03:51 - INFO - __main__ - start running soft prefix model
+01/19/2024 15:03:51 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 15:03:54 - INFO - __main__ - Checking the first example...
+Input:
+negative
+sentence: titular
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/19/2024 15:03:54 - INFO - __main__ - torch.Size([200, 1024])
+01/19/2024 15:04:47 - INFO - __main__ - time use for computing 100 examples: 56.06465029716492
+01/19/2024 15:04:47 - INFO - __main__ - start running soft prefix model
+01/19/2024 15:04:47 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 15:04:51 - INFO - __main__ - Checking the first example...
+Input:
+negative
+sentence: titular
+Output:
+<glue-wnli-0><glue-wnli-1><glue-wnli-2><glue-wnli-3><glue-wnli-4><glue-wnli-5><glue-wnli-6><glue-wnli-7><glue-wnli-8><glue-wnli-9>
+01/19/2024 15:04:51 - INFO - __main__ - torch.Size([200, 1024])
+01/19/2024 15:05:43 - INFO - __main__ - time use for computing 100 examples: 56.307008266448975
+01/19/2024 15:05:43 - INFO - __main__ - min difficulty: 0.8735760892734273
+01/19/2024 15:05:43 - INFO - __main__ - max difficulty: 0.8772919044718611
+01/19/2024 15:05:43 - INFO - __main__ - average difficulty: 0.8757317610786601
+01/19/2024 15:05:43 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 15:05:47 - INFO - __main__ - Checking the first example...
+Input:
+positive
+sentence: my little eye is the best little `` horror '' movie i've seen in years.
+
+
+negative
+sentence:'s hard to imagine any recent film, independent or otherwise, that makes as much of a mess as this one
+
+
+negative
+sentence: rifkin no doubt fancies himself something of a hubert selby jr., but there isn't an ounce of honest poetry in his entire script ;
+
+
+positive
+sentence: amused and entertained by the unfolding of bielinsky's
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/19/2024 15:05:47 - INFO - __main__ - torch.Size([24, 1024])
+01/19/2024 15:05:53 - INFO - __main__ - time use for computing 24 examples: 8.467037200927734
+01/19/2024 15:05:53 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 15:05:58 - INFO - __main__ - Checking the first example...
+Input:
+positive
+sentence: my little eye is the best little `` horror '' movie i've seen in years.
+
+
+negative
+sentence:'s hard to imagine any recent film, independent or otherwise, that makes as much of a mess as this one
+
+
+negative
+sentence: rifkin no doubt fancies himself something of a hubert selby jr., but there isn't an ounce of honest poetry in his entire script ;
+
+
+positive
+sentence: amused and entertained by the unfolding of bielinsky's
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/19/2024 15:05:58 - INFO - __main__ - torch.Size([24, 1024])
+01/19/2024 15:06:04 - INFO - __main__ - time use for computing 24 examples: 8.63798999786377
+01/19/2024 15:06:04 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 15:06:08 - INFO - __main__ - Checking the first example...
+Input:
+positive
+sentence: my little eye is the best little `` horror '' movie i've seen in years.
+
+
+negative
+sentence:'s hard to imagine any recent film, independent or otherwise, that makes as much of a mess as this one
+
+
+negative
+sentence: rifkin no doubt fancies himself something of a hubert selby jr., but there isn't an ounce of honest poetry in his entire script ;
+
+
+positive
+sentence: amused and entertained by the unfolding of bielinsky's
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/19/2024 15:06:08 - INFO - __main__ - torch.Size([24, 1024])
+01/19/2024 15:06:14 - INFO - __main__ - time use for computing 24 examples: 8.522242307662964
+01/19/2024 15:06:14 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 15:06:18 - INFO - __main__ - Checking the first example...
+Input:
+positive
+sentence: my little eye is the best little `` horror '' movie i've seen in years.
+
+
+negative
+sentence:'s hard to imagine any recent film, independent or otherwise, that makes as much of a mess as this one
+
+
+negative
+sentence: rifkin no doubt fancies himself something of a hubert selby jr., but there isn't an ounce of honest poetry in his entire script ;
+
+
+positive
+sentence: amused and entertained by the unfolding of bielinsky's
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/19/2024 15:06:18 - INFO - __main__ - torch.Size([24, 1024])
+01/19/2024 15:06:25 - INFO - __main__ - time use for computing 24 examples: 8.490869760513306
+01/19/2024 15:06:25 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 15:06:28 - INFO - __main__ - Checking the first example...
+Input:
+positive
+sentence: my little eye is the best little `` horror '' movie i've seen in years.
+
+
+negative
+sentence:'s hard to imagine any recent film, independent or otherwise, that makes as much of a mess as this one
+
+
+negative
+sentence: rifkin no doubt fancies himself something of a hubert selby jr., but there isn't an ounce of honest poetry in his entire script ;
+
+
+positive
+sentence: amused and entertained by the unfolding of bielinsky's
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/19/2024 15:06:28 - INFO - __main__ - torch.Size([24, 1024])
+01/19/2024 15:06:35 - INFO - __main__ - time use for computing 24 examples: 8.656240940093994
+01/19/2024 15:06:35 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 15:06:40 - INFO - __main__ - Checking the first example...
+Input:
+positive
+sentence: my little eye is the best little `` horror '' movie i've seen in years.
+
+
+negative
+sentence:'s hard to imagine any recent film, independent or otherwise, that makes as much of a mess as this one
+
+
+negative
+sentence: rifkin no doubt fancies himself something of a hubert selby jr., but there isn't an ounce of honest poetry in his entire script ;
+
+
+positive
+sentence: amused and entertained by the unfolding of bielinsky's
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/19/2024 15:06:40 - INFO - __main__ - torch.Size([24, 1024])
+01/19/2024 15:06:46 - INFO - __main__ - time use for computing 24 examples: 9.163636445999146
+01/19/2024 15:06:46 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 15:06:50 - INFO - __main__ - Checking the first example...
+Input:
+positive
+sentence: my little eye is the best little `` horror '' movie i've seen in years.
+
+
+negative
+sentence:'s hard to imagine any recent film, independent or otherwise, that makes as much of a mess as this one
+
+
+negative
+sentence: rifkin no doubt fancies himself something of a hubert selby jr., but there isn't an ounce of honest poetry in his entire script ;
+
+
+positive
+sentence: amused and entertained by the unfolding of bielinsky's
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/19/2024 15:06:50 - INFO - __main__ - torch.Size([24, 1024])
+01/19/2024 15:06:57 - INFO - __main__ - time use for computing 24 examples: 8.63756799697876
+01/19/2024 15:06:57 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/19/2024 15:07:00 - INFO - __main__ - Checking the first example...
+Input:
+positive
+sentence: my little eye is the best little `` horror '' movie i've seen in years.
+
+
+negative
+sentence:'s hard to imagine any recent film, independent or otherwise, that makes as much of a mess as this one
+
+
+negative
+sentence: rifkin no doubt fancies himself something of a hubert selby jr., but there isn't an ounce of honest poetry in his entire script ;
+
+
+positive
+sentence: amused and entertained by the unfolding of bielinsky's
+Output:
+<glue-sst2-0><glue-sst2-1><glue-sst2-2><glue-sst2-3><glue-sst2-4><glue-sst2-5><glue-sst2-6><glue-sst2-7><glue-sst2-8><glue-sst2-9>
+01/19/2024 15:07:00 - INFO - __main__ - torch.Size([24, 1024])
+01/19/2024 15:07:07 - INFO - __main__ - time use for computing 24 examples: 8.251952409744263
+01/19/2024 15:07:07 - INFO - __main__ - Checking the first example...
+Input:
+positive
+sentence: my little eye is the best little `` horror '' movie i've seen in years.
+
+
+negative
+sentence: rifkin no doubt fancies himself something of a hubert selby jr., but there isn't an ounce of honest poetry in his entire script ;
+
+
+negative
+sentence:'s hard to imagine any recent film, independent or otherwise, that makes as much of a mess as this one
+
+
+positive
+sentence: amused and entertained by the unfolding of bielinsky's
+
+
+negative
+Output:
+
+sentence: it's a charming and often affecting journey.
+01/19/2024 15:07:07 - INFO - __main__ - torch.Size([1744, 1024])
+01/19/2024 15:09:42 - INFO - __main__ - None task (seed=87): Macro-F1: 44.1, Accuracy: 55.5
+01/19/2024 15:09:42 - INFO - __main__ - None over 1 target tasks with majority vote: Macro-F1: 44.4, Accuracy: 56.0
+01/19/2024 15:09:42 - INFO - __main__ - None over 1 target tasks on average: Macro-F1: 43.8 +- 5.4, Accuracy: 55.5 +- 3.2

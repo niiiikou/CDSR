@@ -1,0 +1,14 @@
+01/15/2024 15:25:36 - INFO - __main__ - Namespace(do_tensorize=True, tensorize_dir='tensorized', n_gpu=1, n_process=10, n_prefix_tokens=10, use_demonstrations=False, log_dir='logs', prefix_embed_file=None, dataset=None, task='glue', split='glue', data_dir='data/', k=16384, test_k=4, seed=100, train_seed=1, lr=0.001, warmup_steps=0, batch_size=1, num_training_steps=10000, weight_decay=0.0, no_masking=False, use_random_english_words=False, out_dir='checkpoints', method='channel', gpt2='gpt2', optimization='adamw', fp16=False, local_rank=-1)
+01/15/2024 15:25:36 - INFO - __main__ - batch_size=1	max_length=256	max_length_per_example=256
+01/15/2024 15:25:36 - INFO - __main__ - [Train] glue-cola	8551
+01/15/2024 15:25:36 - INFO - __main__ - [Train] glue-mnli	16384
+01/15/2024 15:25:36 - INFO - __main__ - [Train] glue-qqp	16384
+01/15/2024 15:25:36 - INFO - __main__ - [Train] glue-mrpc	3668
+01/15/2024 15:25:36 - INFO - __main__ - [Train] glue-qnli	16384
+01/15/2024 15:25:36 - INFO - __main__ - [Train] glue-rte	2490
+01/15/2024 15:25:36 - INFO - __main__ - [Train] glue-sst2	16384
+01/15/2024 15:25:36 - INFO - __main__ - [Train] glue-wnli	635
+01/15/2024 15:25:36 - INFO - __main__ - channel on None (8 train)
+01/15/2024 15:25:36 - INFO - __main__ - tensorized\glue_channel_k=80880_seed=100_length=10-256-rank=%d.pkl
+01/15/2024 15:25:47 - INFO - __main__ - Preprocessing done for i=0
+01/15/2024 15:25:47 - INFO - __main__ - Finish saving preprocessed data ...

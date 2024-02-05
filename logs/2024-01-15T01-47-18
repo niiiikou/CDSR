@@ -1,0 +1,122 @@
+01/15/2024 01:47:18 - INFO - __main__ - Namespace(do_tensorize=False, tensorize_dir='tensorized', n_gpu=1, n_process=40, n_prefix_tokens=10, use_demonstrations=False, log_dir='logs', prefix_embed_file=None, dataset=None, task='glue', split='glue', data_dir='data/', k=16384, test_k=4, seed=100, train_seed=1, lr=0.01, warmup_steps=0, batch_size=8, num_training_steps=10000, weight_decay=0.0, no_masking=False, use_random_english_words=False, out_dir='checkpoints\\gpt2\\glue-glue\\prefix={10}-{direct}-lr={1e-2}-initByVocab', method='direct', gpt2='gpt2', optimization='adamw', fp16=False, local_rank=-1)
+01/15/2024 01:47:18 - INFO - __main__ - batch_size=8	max_length=256	max_length_per_example=256
+01/15/2024 01:47:19 - INFO - __main__ - [Train] glue-cola	8551
+01/15/2024 01:47:19 - INFO - __main__ - [Train] glue-mnli	16384
+01/15/2024 01:47:19 - INFO - __main__ - [Train] glue-qqp	16384
+01/15/2024 01:47:19 - INFO - __main__ - [Train] glue-mrpc	3668
+01/15/2024 01:47:19 - INFO - __main__ - [Train] glue-qnli	16384
+01/15/2024 01:47:19 - INFO - __main__ - [Train] glue-rte	2490
+01/15/2024 01:47:19 - INFO - __main__ - [Train] glue-sst2	16384
+01/15/2024 01:47:19 - INFO - __main__ - [Train] glue-wnli	635
+01/15/2024 01:47:19 - INFO - __main__ - direct on None (8 train)
+01/15/2024 01:47:19 - INFO - __main__ - tensorized\glue_direct_k=80880_seed=100_length=10-256-rank=%d.pkl
+01/15/2024 01:47:22 - INFO - __main__ - Checking the first example...
+Input:
+<glue-mnli-0><glue-mnli-1><glue-mnli-2><glue-mnli-3><glue-mnli-4><glue-mnli-5><glue-mnli-6><glue-mnli-7><glue-mnli-8><glue-mnli-9>premise: Given Japan's relatively low crime rates, you can be sure you'll be reunited with your precious souvenirs. [SEP] hypothesis: You are not likely to be robbed while in Japan.
+Output:
+ neutral
+01/15/2024 01:47:22 - INFO - __main__ - checkpoints\gpt2\glue-glue\prefix={10}-{direct}-lr={1e-2}-initByVocab
+01/15/2024 01:47:22 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 01:47:25 - INFO - __main__ - torch.Size([80880, 256])
+01/15/2024 01:47:25 - INFO - __main__ - Training 1 parameters on 80880 examples for 10000 steps using 1 GPUs
+01/15/2024 01:47:52 - INFO - __main__ - local rank -1	global step 100	train loss 5.17
+01/15/2024 01:48:19 - INFO - __main__ - local rank -1	global step 200	train loss 1.42
+01/15/2024 01:48:46 - INFO - __main__ - local rank -1	global step 300	train loss 1.09
+01/15/2024 01:49:13 - INFO - __main__ - local rank -1	global step 400	train loss 0.95
+01/15/2024 01:49:40 - INFO - __main__ - local rank -1	global step 500	train loss 0.94
+01/15/2024 01:50:07 - INFO - __main__ - local rank -1	global step 600	train loss 0.80
+01/15/2024 01:50:34 - INFO - __main__ - local rank -1	global step 700	train loss 0.76
+01/15/2024 01:51:01 - INFO - __main__ - local rank -1	global step 800	train loss 0.73
+01/15/2024 01:51:28 - INFO - __main__ - local rank -1	global step 900	train loss 0.80
+01/15/2024 01:51:55 - INFO - __main__ - local rank -1	global step 1000	train loss 0.76
+01/15/2024 01:52:23 - INFO - __main__ - local rank -1	global step 1100	train loss 0.66
+01/15/2024 01:52:50 - INFO - __main__ - local rank -1	global step 1200	train loss 0.68
+01/15/2024 01:53:17 - INFO - __main__ - local rank -1	global step 1300	train loss 0.69
+01/15/2024 01:53:44 - INFO - __main__ - local rank -1	global step 1400	train loss 0.68
+01/15/2024 01:54:11 - INFO - __main__ - local rank -1	global step 1500	train loss 0.64
+01/15/2024 01:54:38 - INFO - __main__ - local rank -1	global step 1600	train loss 0.64
+01/15/2024 01:55:05 - INFO - __main__ - local rank -1	global step 1700	train loss 0.62
+01/15/2024 01:55:32 - INFO - __main__ - local rank -1	global step 1800	train loss 0.65
+01/15/2024 01:55:59 - INFO - __main__ - local rank -1	global step 1900	train loss 0.64
+01/15/2024 01:56:26 - INFO - __main__ - local rank -1	global step 2000	train loss 0.62
+01/15/2024 01:56:53 - INFO - __main__ - local rank -1	global step 2100	train loss 0.60
+01/15/2024 01:57:20 - INFO - __main__ - local rank -1	global step 2200	train loss 0.62
+01/15/2024 01:57:48 - INFO - __main__ - local rank -1	global step 2300	train loss 0.62
+01/15/2024 01:58:15 - INFO - __main__ - local rank -1	global step 2400	train loss 0.58
+01/15/2024 01:58:42 - INFO - __main__ - local rank -1	global step 2500	train loss 0.61
+01/15/2024 01:59:09 - INFO - __main__ - local rank -1	global step 2600	train loss 0.59
+01/15/2024 01:59:36 - INFO - __main__ - local rank -1	global step 2700	train loss 0.65
+01/15/2024 02:00:03 - INFO - __main__ - local rank -1	global step 2800	train loss 0.58
+01/15/2024 02:00:30 - INFO - __main__ - local rank -1	global step 2900	train loss 0.56
+01/15/2024 02:00:57 - INFO - __main__ - local rank -1	global step 3000	train loss 0.56
+01/15/2024 02:01:24 - INFO - __main__ - local rank -1	global step 3100	train loss 0.59
+01/15/2024 02:01:51 - INFO - __main__ - local rank -1	global step 3200	train loss 0.55
+01/15/2024 02:02:18 - INFO - __main__ - local rank -1	global step 3300	train loss 0.57
+01/15/2024 02:02:45 - INFO - __main__ - local rank -1	global step 3400	train loss 0.65
+01/15/2024 02:03:13 - INFO - __main__ - local rank -1	global step 3500	train loss 0.55
+01/15/2024 02:03:40 - INFO - __main__ - local rank -1	global step 3600	train loss 0.58
+01/15/2024 02:04:07 - INFO - __main__ - local rank -1	global step 3700	train loss 0.54
+01/15/2024 02:04:34 - INFO - __main__ - local rank -1	global step 3800	train loss 0.54
+01/15/2024 02:05:01 - INFO - __main__ - local rank -1	global step 3900	train loss 0.57
+01/15/2024 02:05:28 - INFO - __main__ - local rank -1	global step 4000	train loss 0.55
+01/15/2024 02:05:55 - INFO - __main__ - local rank -1	global step 4100	train loss 0.52
+01/15/2024 02:06:22 - INFO - __main__ - local rank -1	global step 4200	train loss 0.56
+01/15/2024 02:06:49 - INFO - __main__ - local rank -1	global step 4300	train loss 0.54
+01/15/2024 02:07:16 - INFO - __main__ - local rank -1	global step 4400	train loss 0.54
+01/15/2024 02:07:43 - INFO - __main__ - local rank -1	global step 4500	train loss 0.57
+01/15/2024 02:08:11 - INFO - __main__ - local rank -1	global step 4600	train loss 0.53
+01/15/2024 02:08:38 - INFO - __main__ - local rank -1	global step 4700	train loss 0.57
+01/15/2024 02:09:05 - INFO - __main__ - local rank -1	global step 4800	train loss 0.54
+01/15/2024 02:09:32 - INFO - __main__ - local rank -1	global step 4900	train loss 0.53
+01/15/2024 02:09:59 - INFO - __main__ - local rank -1	global step 5000	train loss 0.53
+01/15/2024 02:10:26 - INFO - __main__ - local rank -1	global step 5100	train loss 0.53
+01/15/2024 02:10:53 - INFO - __main__ - local rank -1	global step 5200	train loss 0.53
+01/15/2024 02:11:20 - INFO - __main__ - local rank -1	global step 5300	train loss 0.52
+01/15/2024 02:11:47 - INFO - __main__ - local rank -1	global step 5400	train loss 0.54
+01/15/2024 02:12:14 - INFO - __main__ - local rank -1	global step 5500	train loss 0.52
+01/15/2024 02:12:41 - INFO - __main__ - local rank -1	global step 5600	train loss 0.54
+01/15/2024 02:13:08 - INFO - __main__ - local rank -1	global step 5700	train loss 0.52
+01/15/2024 02:13:35 - INFO - __main__ - local rank -1	global step 5800	train loss 0.51
+01/15/2024 02:14:03 - INFO - __main__ - local rank -1	global step 5900	train loss 0.51
+01/15/2024 02:14:30 - INFO - __main__ - local rank -1	global step 6000	train loss 0.50
+01/15/2024 02:14:57 - INFO - __main__ - local rank -1	global step 6100	train loss 0.52
+01/15/2024 02:15:24 - INFO - __main__ - local rank -1	global step 6200	train loss 0.54
+01/15/2024 02:15:51 - INFO - __main__ - local rank -1	global step 6300	train loss 0.50
+01/15/2024 02:16:18 - INFO - __main__ - local rank -1	global step 6400	train loss 0.52
+01/15/2024 02:16:45 - INFO - __main__ - local rank -1	global step 6500	train loss 0.55
+01/15/2024 02:17:12 - INFO - __main__ - local rank -1	global step 6600	train loss 0.52
+01/15/2024 02:17:39 - INFO - __main__ - local rank -1	global step 6700	train loss 0.52
+01/15/2024 02:18:06 - INFO - __main__ - local rank -1	global step 6800	train loss 0.50
+01/15/2024 02:18:33 - INFO - __main__ - local rank -1	global step 6900	train loss 0.52
+01/15/2024 02:19:00 - INFO - __main__ - local rank -1	global step 7000	train loss 0.52
+01/15/2024 02:19:28 - INFO - __main__ - local rank -1	global step 7100	train loss 0.48
+01/15/2024 02:19:55 - INFO - __main__ - local rank -1	global step 7200	train loss 0.52
+01/15/2024 02:20:22 - INFO - __main__ - local rank -1	global step 7300	train loss 0.49
+01/15/2024 02:20:49 - INFO - __main__ - local rank -1	global step 7400	train loss 0.50
+01/15/2024 02:21:16 - INFO - __main__ - local rank -1	global step 7500	train loss 0.53
+01/15/2024 02:21:43 - INFO - __main__ - local rank -1	global step 7600	train loss 0.54
+01/15/2024 02:22:10 - INFO - __main__ - local rank -1	global step 7700	train loss 0.50
+01/15/2024 02:22:37 - INFO - __main__ - local rank -1	global step 7800	train loss 0.51
+01/15/2024 02:23:04 - INFO - __main__ - local rank -1	global step 7900	train loss 0.48
+01/15/2024 02:23:31 - INFO - __main__ - local rank -1	global step 8000	train loss 0.52
+01/15/2024 02:23:59 - INFO - __main__ - local rank -1	global step 8100	train loss 0.51
+01/15/2024 02:24:26 - INFO - __main__ - local rank -1	global step 8200	train loss 0.50
+01/15/2024 02:24:53 - INFO - __main__ - local rank -1	global step 8300	train loss 0.49
+01/15/2024 02:25:20 - INFO - __main__ - local rank -1	global step 8400	train loss 0.53
+01/15/2024 02:25:47 - INFO - __main__ - local rank -1	global step 8500	train loss 0.52
+01/15/2024 02:26:14 - INFO - __main__ - local rank -1	global step 8600	train loss 0.53
+01/15/2024 02:26:41 - INFO - __main__ - local rank -1	global step 8700	train loss 0.50
+01/15/2024 02:27:08 - INFO - __main__ - local rank -1	global step 8800	train loss 0.51
+01/15/2024 02:27:35 - INFO - __main__ - local rank -1	global step 8900	train loss 0.51
+01/15/2024 02:28:02 - INFO - __main__ - local rank -1	global step 9000	train loss 0.50
+01/15/2024 02:28:30 - INFO - __main__ - local rank -1	global step 9100	train loss 0.50
+01/15/2024 02:28:57 - INFO - __main__ - local rank -1	global step 9200	train loss 0.47
+01/15/2024 02:29:24 - INFO - __main__ - local rank -1	global step 9300	train loss 0.49
+01/15/2024 02:29:51 - INFO - __main__ - local rank -1	global step 9400	train loss 0.50
+01/15/2024 02:30:18 - INFO - __main__ - local rank -1	global step 9500	train loss 0.52
+01/15/2024 02:30:45 - INFO - __main__ - local rank -1	global step 9600	train loss 0.51
+01/15/2024 02:31:12 - INFO - __main__ - local rank -1	global step 9700	train loss 0.48
+01/15/2024 02:31:39 - INFO - __main__ - local rank -1	global step 9800	train loss 0.50
+01/15/2024 02:32:06 - INFO - __main__ - local rank -1	global step 9900	train loss 0.51
+01/15/2024 02:32:33 - INFO - __main__ - local rank -1	global step 10000	train loss 0.48
+01/15/2024 02:32:34 - INFO - __main__ - Finish training

@@ -1,0 +1,6 @@
+01/15/2024 09:30:28 - INFO - __main__ - Namespace(use_demonstrations=True, use_soft_prefix=False, use_soft_postfix=False, n_prefix_tokens=10, max_length=1024, prior=['easiest'], difficulty='concept_calibrated', reorder=True, log_dir='logs', out_dir='out\\gpt2', load_dir=None, concept_dir='concept_likelihood\\gpt2\\glue-glue-100\\glue-cola-direct-prefix=10-lr=1e-2-3000', prefix_embed_file='checkpoints\\gpt2\\glue-glue\\prefix={10}-{direct}-lr={1e-2}-initByVocab\\soft_embeddings-3000.pt', task=None, dataset='glue-cola', data_dir='data/', k=4, seed='100,13,21,42,87', test_batch_size=8, global_step=None, use_random_english_words=False, use_random_label=False, use_instruction=False, unseen_domain_only=False, split='test', method='direct', gpt='gpt2', api=None, test_size=1000, train_size=100, embedding_dir='embeddings\\', embedding_model='all-mpnet-base-v2', similarity_temperature=0.1, concept_temperature=50.0)
+01/15/2024 09:30:30 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/15/2024 09:30:31 - INFO - __main__ - batch_size=8	max_length=1024	max_length_per_example=256
+01/15/2024 09:30:31 - INFO - __main__ - [Train] glue-cola	8551
+01/15/2024 09:30:31 - INFO - __main__ - [Dev] glue-cola	1043
+01/15/2024 09:30:31 - INFO - __main__ - direct on None (1 train, 1 dev)

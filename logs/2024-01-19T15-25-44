@@ -1,0 +1,11 @@
+01/19/2024 15:25:44 - INFO - __main__ - Namespace(do_tensorize=False, tensorize_dir='tensorized', n_gpu=1, n_process=40, n_prefix_tokens=10, use_demonstrations=False, log_dir='logs', prefix_embed_file=None, dataset=None, task='glue', split='glue', data_dir='data/', k=16384, test_k=4, seed=100, train_seed=1, lr=0.0001, warmup_steps=0, batch_size=8, num_training_steps=3000, weight_decay=0.0, no_masking=False, use_random_english_words=False, out_dir='checkpoints\\gpt2-medium\\glue-glue\\prefix={10}-{channel}-lr={1e-4}-initByVocab', method='channel', gpt2='gpt2-medium', optimization='adamw', fp16=False, local_rank=-1)
+01/19/2024 15:25:44 - INFO - __main__ - batch_size=8	max_length=256	max_length_per_example=256
+01/19/2024 15:25:44 - INFO - __main__ - [Train] glue-cola	8551
+01/19/2024 15:25:44 - INFO - __main__ - [Train] glue-mnli	16384
+01/19/2024 15:25:44 - INFO - __main__ - [Train] glue-qqp	16384
+01/19/2024 15:25:44 - INFO - __main__ - [Train] glue-mrpc	3668
+01/19/2024 15:25:44 - INFO - __main__ - [Train] glue-qnli	16384
+01/19/2024 15:25:44 - INFO - __main__ - [Train] glue-rte	2490
+01/19/2024 15:25:44 - INFO - __main__ - [Train] glue-sst2	16384
+01/19/2024 15:25:44 - INFO - __main__ - [Train] glue-wnli	635
+01/19/2024 15:25:44 - INFO - __main__ - channel on None (8 train)

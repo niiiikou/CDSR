@@ -1,0 +1,190 @@
+01/17/2024 15:14:37 - INFO - __main__ - Namespace(use_demonstrations=True, use_soft_prefix=False, use_soft_postfix=False, n_prefix_tokens=10, max_length=1024, prior=['easiest'], difficulty='concept_calibrated', reorder=True, log_dir='logs', out_dir='out\\gpt2', load_dir=None, concept_dir='concept_likelihood\\gpt2\\glue-glue-100\\glue-sst2-channel-prefix=10-lr=1e-5-3000', prefix_embed_file='checkpoints\\gpt2\\glue-glue\\prefix={10}-{channel}-lr={1e-5}-initByVocab\\soft_embeddings-3000.pt', task=None, dataset='glue-sst2', data_dir='data/', k=4, seed='100,13,21,42,87', test_batch_size=8, global_step=None, use_random_english_words=False, use_random_label=False, use_instruction=False, unseen_domain_only=False, split='test', method='channel', gpt='gpt2', api=None, test_size=1000, train_size=100, embedding_dir='embeddings\\', embedding_model='all-mpnet-base-v2', similarity_temperature=0.1, concept_temperature=50.0)
+01/17/2024 15:14:39 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:14:40 - INFO - __main__ - batch_size=8	max_length=1024	max_length_per_example=256
+01/17/2024 15:14:42 - INFO - __main__ - [Train] glue-sst2	67349
+01/17/2024 15:14:42 - INFO - __main__ - [Dev] glue-sst2	872
+01/17/2024 15:14:42 - INFO - __main__ - channel on None (1 train, 1 dev)
+01/17/2024 15:14:42 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:14:42 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:14:42 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:14:42 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:14:42 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:14:42 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:14:42 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:14:42 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:14:42 - INFO - __main__ - min difficulty: -inf
+01/17/2024 15:14:42 - INFO - __main__ - max difficulty: 1.0
+01/17/2024 15:14:42 - INFO - __main__ - average difficulty: -inf
+01/17/2024 15:14:42 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:14:43 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:14:43 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:14:45 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:14:45 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:14:46 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:14:46 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:14:47 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:14:47 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:14:48 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:14:48 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:14:49 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:14:49 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:14:51 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:14:51 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:14:52 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:14:52 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence: a well-executed spy-thriller. negative sentence: ( jackson and bledel ) seem to have been picked not for their acting chops, but for their looks and appeal to the pre-teen crowd. negative sentence: don't really seem all that profound, at least by way of what can be gleaned from this three-hour endurance test built around an hour's worth of actual material. negative sentence: the problem with the bread, my sweet is that it's far too sentimental. negative
+Output:
+ sentence: it's a charming and often affecting journey.
+01/17/2024 15:14:52 - INFO - __main__ - torch.Size([1744, 1024])
+01/17/2024 15:17:01 - INFO - __main__ - None task (seed=100): Macro-F1: 67.2, Accuracy: 67.7
+01/17/2024 15:17:01 - INFO - __main__ - [Train] glue-sst2	67349
+01/17/2024 15:17:01 - INFO - __main__ - [Dev] glue-sst2	872
+01/17/2024 15:17:01 - INFO - __main__ - channel on None (1 train, 1 dev)
+01/17/2024 15:17:01 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:17:01 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:17:01 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:17:01 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:17:01 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:17:01 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:17:01 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:17:01 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:17:01 - INFO - __main__ - min difficulty: -inf
+01/17/2024 15:17:01 - INFO - __main__ - max difficulty: 1.0
+01/17/2024 15:17:01 - INFO - __main__ - average difficulty: -inf
+01/17/2024 15:17:01 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:17:02 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:17:02 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:17:04 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:17:04 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:17:05 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:17:05 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:17:07 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:17:07 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:17:08 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:17:08 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:17:10 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:17:10 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:17:11 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:17:11 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:17:13 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:17:14 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: there are very, very good reasons for certain movies to be sealed in a jar and left on a remote shelf indefinitely. negative sentence:'s also curious to note that this film, like the similarly ill-timed antitrust, is easily as bad at a fraction the budget. positive sentence: what ( denis ) accomplishes in his chilling, unnerving film is a double portrait of two young women whose lives were as claustrophic, suffocating and chilly as the attics to which they were inevitably consigned. positive sentence: with each of her three protagonists, miller eloquently captures the moment when a woman's life, out of a deep-seated, emotional need, is about to turn onto a different path. negative
+Output:
+ sentence: it's a charming and often affecting journey.
+01/17/2024 15:17:14 - INFO - __main__ - torch.Size([1744, 1024])
+01/17/2024 15:19:22 - INFO - __main__ - None task (seed=13): Macro-F1: 74.7, Accuracy: 74.7
+01/17/2024 15:19:22 - INFO - __main__ - [Train] glue-sst2	67349
+01/17/2024 15:19:22 - INFO - __main__ - [Dev] glue-sst2	872
+01/17/2024 15:19:22 - INFO - __main__ - channel on None (1 train, 1 dev)
+01/17/2024 15:19:22 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:19:22 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:19:22 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:19:22 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:19:22 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:19:22 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:19:22 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:19:22 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:19:22 - INFO - __main__ - min difficulty: -inf
+01/17/2024 15:19:22 - INFO - __main__ - max difficulty: 1.0
+01/17/2024 15:19:22 - INFO - __main__ - average difficulty: -inf
+01/17/2024 15:19:22 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:19:25 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:19:25 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:19:27 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:19:27 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:19:29 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:19:29 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:19:31 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:19:31 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:19:33 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:19:33 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:19:35 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:19:35 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:19:38 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:19:38 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:19:40 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:19:41 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: in his role of observer of the scene, lawrence sounds whiny and defensive, as if his life-altering experiences made him bitter and less mature. positive sentence: at its most basic, this cartoon adventure is that wind-in-the-hair exhilarating. negative sentence: a story which fails to rise above its disgusting source material. positive sentence: dong stakes out the emotional heart of happy. negative
+Output:
+ sentence: it's a charming and often affecting journey.
+01/17/2024 15:19:41 - INFO - __main__ - torch.Size([1744, 1024])
+01/17/2024 15:21:49 - INFO - __main__ - None task (seed=21): Macro-F1: 77.8, Accuracy: 77.9
+01/17/2024 15:21:49 - INFO - __main__ - [Train] glue-sst2	67349
+01/17/2024 15:21:49 - INFO - __main__ - [Dev] glue-sst2	872
+01/17/2024 15:21:49 - INFO - __main__ - channel on None (1 train, 1 dev)
+01/17/2024 15:21:49 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:21:49 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:21:49 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:21:49 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:21:49 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:21:49 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:21:49 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:21:49 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:21:49 - INFO - __main__ - min difficulty: -inf
+01/17/2024 15:21:49 - INFO - __main__ - max difficulty: 1.0
+01/17/2024 15:21:49 - INFO - __main__ - average difficulty: -inf
+01/17/2024 15:21:49 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:21:51 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:21:51 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:21:53 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:21:53 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:21:55 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:21:55 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:21:57 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:21:57 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:21:58 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:21:58 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:21:59 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:21:59 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:22:01 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:22:01 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:22:02 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:22:03 - INFO - __main__ - Checking the first example...
+Input:
+negative sentence: godard uses his characters -- if that's not too glorified a term -- as art things, mouthpieces, visual motifs, blanks. negative sentence: no cliche escapes the perfervid treatment of gang warfare called ces wild. negative sentence: is less concerned with cultural and political issues than doting on its eccentric characters. positive sentence: it shows us a slice of life that's very different from our own and yet instantly recognizable. negative
+Output:
+ sentence: it's a charming and often affecting journey.
+01/17/2024 15:22:03 - INFO - __main__ - torch.Size([1744, 1024])
+01/17/2024 15:24:11 - INFO - __main__ - None task (seed=42): Macro-F1: 70.6, Accuracy: 70.9
+01/17/2024 15:24:11 - INFO - __main__ - [Train] glue-sst2	67349
+01/17/2024 15:24:11 - INFO - __main__ - [Dev] glue-sst2	872
+01/17/2024 15:24:11 - INFO - __main__ - channel on None (1 train, 1 dev)
+01/17/2024 15:24:11 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:24:12 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:24:12 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:24:12 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:24:12 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:24:12 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:24:12 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:24:12 - INFO - __main__ - loading saved concept likelihoods
+01/17/2024 15:24:12 - INFO - __main__ - min difficulty: -inf
+01/17/2024 15:24:12 - INFO - __main__ - max difficulty: 1.0
+01/17/2024 15:24:12 - INFO - __main__ - average difficulty: -inf
+01/17/2024 15:24:12 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:24:13 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:24:13 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:24:15 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:24:15 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:24:16 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:24:16 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:24:18 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:24:18 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:24:20 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:24:20 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:24:21 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:24:21 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:24:23 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:24:23 - INFO - __main__ - Setting up for local_rank=-1, world_size=1
+01/17/2024 15:24:24 - INFO - __main__ - loading saved demo nlls
+01/17/2024 15:24:25 - INFO - __main__ - Checking the first example...
+Input:
+positive sentence:, it succeeds as a powerful look at a failure of our justice system. positive sentence: it has fun with the quirks of family life, but it also treats the subject with fondness and respect. negative sentence: and it's not that funny -- which is just generally insulting. negative sentence:, it actually hurts to watch. negative
+Output:
+ sentence: it's a charming and often affecting journey.
+01/17/2024 15:24:25 - INFO - __main__ - torch.Size([1744, 1024])
+01/17/2024 15:26:33 - INFO - __main__ - None task (seed=87): Macro-F1: 66.2, Accuracy: 67.4
+01/17/2024 15:26:33 - INFO - __main__ - None over 1 target tasks with majority vote: Macro-F1: 77.1, Accuracy: 77.2
+01/17/2024 15:26:33 - INFO - __main__ - None over 1 target tasks on average: Macro-F1: 71.3 +- 4.4, Accuracy: 71.7 +- 4.0

@@ -1,0 +1,26 @@
+02/04/2024 23:38:15 - INFO - __main__ - Namespace(do_tensorize=True, tensorize_dir='tensorized', n_gpu=1, n_process=10, n_prefix_tokens=10, use_demonstrations=False, log_dir='logs', prefix_embed_file=None, dataset=None, task='tune', split='train', data_dir='data/', k=16384, test_k=4, seed=100, train_seed=1, lr=0.001, warmup_steps=0, batch_size=1, num_training_steps=10000, weight_decay=0.0, no_masking=False, use_random_english_words=False, out_dir='checkpoints', method='channel', gpt2='gpt2', optimization='adamw', fp16=False, local_rank=-1)
+02/04/2024 23:38:15 - INFO - __main__ - batch_size=1	max_length=256	max_length_per_example=256
+02/04/2024 23:38:15 - INFO - __main__ - [Train] glue-sst2	16384
+02/04/2024 23:38:15 - INFO - __main__ - [Train] amazon_polarity	10000
+02/04/2024 23:38:15 - INFO - __main__ - [Train] financial_phrasebank	1811
+02/04/2024 23:38:15 - INFO - __main__ - [Train] poem_sentiment	843
+02/04/2024 23:38:15 - INFO - __main__ - [Train] yelp_polarity	16384
+02/04/2024 23:38:15 - INFO - __main__ - [Train] glue-cola	8551
+02/04/2024 23:38:15 - INFO - __main__ - [Train] blimp-sentential_negation_npi_scope	800
+02/04/2024 23:38:15 - INFO - __main__ - [Train] blimp-sentential_negation_npi_licensor_present	800
+02/04/2024 23:38:15 - INFO - __main__ - [Train] blimp-ellipsis_n_bar_2	800
+02/04/2024 23:38:15 - INFO - __main__ - [Train] blimp-anaphor_number_agreement	800
+02/04/2024 23:38:15 - INFO - __main__ - [Train] ag_news	16384
+02/04/2024 23:38:15 - INFO - __main__ - [Train] dbpedia_14	16384
+02/04/2024 23:38:15 - INFO - __main__ - [Train] ethos-sexual_orientation	346
+02/04/2024 23:38:15 - INFO - __main__ - [Train] ethos-religion	346
+02/04/2024 23:38:15 - INFO - __main__ - [Train] ethos-race	346
+02/04/2024 23:38:15 - INFO - __main__ - [Train] ethos-gender	346
+02/04/2024 23:38:15 - INFO - __main__ - [Train] ethos-disability	346
+02/04/2024 23:38:15 - INFO - __main__ - [Train] ethos-directed_vs_generalized	346
+02/04/2024 23:38:15 - INFO - __main__ - [Train] emo	16384
+02/04/2024 23:38:15 - INFO - __main__ - [Train] emotion	16000
+02/04/2024 23:38:15 - INFO - __main__ - channel on None (20 train)
+02/04/2024 23:38:18 - INFO - __main__ - tensorized\tune_channel_k=124401_seed=100_length=10-256-rank=%d.pkl
+02/04/2024 23:38:31 - INFO - __main__ - Preprocessing done for i=0
+02/04/2024 23:38:31 - INFO - __main__ - Finish saving preprocessed data ...
